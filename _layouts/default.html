@@ -15,12 +15,9 @@
         </h3>
         <nav>
           <a class="{% if page.url == site.url %} active {% endif %}" href="/">Home</a>
-          <a class="{% if page.url == site.pages.tag %} active {% endif %}" href="/tag/">Tag</a>
-          <a class="{% if page.url == about %} active {% endif %}" href="/about/">About</a>
-          <a class="{% if page.category == '' %} selected {% endif %}" href="/portfolio/">Portfolio</a>
-          <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog</a>
-          <a href="https://github.com/ssaunier">Github</a>
-          <a href="https://www.linkedin.com/in/saunier/">Linkedin</a>
+          <a class="{% if page.url == tags %} active {% endif %}" href="/tags">Tags</a>
+          <a class="{% if page.url == about %} active {% endif %}" href="/about">About</a>
+          <a href="https://github.com/mioscode">Github</a>
          <!-- <a class="{% if page.category == 'contact' %} selected {% endif %} contact" href="/contact/">Contact</a> -->
          <!-- <a href="https://www.officehour.fr/ssaunier" target="_blank">Contact</a> -->
        </nav>
