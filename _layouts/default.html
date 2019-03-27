@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include sidebar.html %}
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+       content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <!-- <a href="/" title="Home">{{ site.name }}</a> -->
+          <larger>{{ site.description }}</larger>
+        </h3>
+        <nav>
+          <a class="{% if page.url == site.url %} active {% endif %}" href="/">Home</a>
+          <a class="{% if page.url == site.pages.tag %} active {% endif %}" href="/tag/">Tag</a>
+          <a class="{% if page.url == about %} active {% endif %}" href="/about/">About</a>
+          <a class="{% if page.category == '' %} selected {% endif %}" href="/portfolio/">Portfolio</a>
+          <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog</a>
+          <a href="https://github.com/ssaunier">Github</a>
+          <a href="https://www.linkedin.com/in/saunier/">Linkedin</a>
+         <!-- <a class="{% if page.category == 'contact' %} selected {% endif %} contact" href="/contact/">Contact</a> -->
+         <!-- <a href="https://www.officehour.fr/ssaunier" target="_blank">Contact</a> -->
+       </nav>
+        <!-- <nav>
+          <a class="{% if page.url == site.url %} active{% endif %}" href="/">Home</a>
+          {% assign pages_list = site.pages | sort:"url" %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "page" %}
+                <a class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </nav> -->
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div class="container content">
+      {{ content }}
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"><i class="fa fa-bars"></i></label>
+
+{% include scripts.html %}
+
+<div  style="border-bottom: 1px solid #ddd"></div>
+
+{% include footer.html %}
+
+</body>
+</html>
