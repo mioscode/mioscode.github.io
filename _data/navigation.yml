@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "프로필"
+    url: /about/
+  - title: "카테고리별"
+    url: /categories/
+  - title: "태그별"
+    url: /tags/
+  - title: "잡담"
+    url: /chatter/
