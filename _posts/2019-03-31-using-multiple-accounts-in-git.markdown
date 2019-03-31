@@ -1,9 +1,8 @@
 ---
-title: "한 대의 컴퓨터에서 여러 개의 github 계정 사용하기어"
+title: "한 대의 컴퓨터에서 여러 개의 github 계정 사용하기"
 categories:
-  - Git
+  - github
 tags:
-  - git
   - github
 comments: true
 ---

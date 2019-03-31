@@ -1,9 +1,9 @@
 ---
 title: "Git remote repository 변경"
 categories:
-  - Git
+  - github
 tags:
-  - git
+  - github
 comments: true
 ---
 
