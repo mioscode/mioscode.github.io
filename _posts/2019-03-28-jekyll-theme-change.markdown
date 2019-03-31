@@ -1,5 +1,5 @@
 ---
-title: "Jekyll 템플릿 변경"
+title: "Jekyll 테마 변경"
 categories:
   - Jekyll
 tags:
