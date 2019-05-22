@@ -9,6 +9,7 @@ comments: true
 ---
 
 ## Finder
+
 | key | 내용 |
 | ------ | ------ |
 | <kbd>⌘ Cmd</kbd>+<kbd>⌫ Delete</kbd> | 파일 삭제 |
@@ -16,11 +17,13 @@ comments: true
 | <kbd>⌘ Cmd</kbd>+<kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd> | 보기 모드 |
 
 ## 전체
+
 | key | 내용 |
 | ------ | ------ |
 | <kbd>⌘ Cmd</kbd>+<kbd>←</kbd>,<kbd>→</kbd> | 줄 내 이동 |
 
 ## 스크린샷
+
 | key | 내용 |
 | ------ | ------ |
 | <kbd>⌘ Cmd</kbd>+<kbd>⇧ Shift</kbd>+<kbd>4</kbd>+<kbd>space bar</kbd> | 촬영 대상이 하늘색으로 강조 |
@@ -31,6 +34,7 @@ comments: true
 | <kbd>⇧ Shift</kbd>+<kbd>⌘ Cmd</kbd>+<kbd>⌃ Ctrl</kbd>+<kbd>4</kbd> | 클립보드, 영역 선택 |
 
 ## 창
+
 | key | 내용 |
 | ------ | ------ |
 | <kbd>⌘ Cmd</kbd>+<kbd>⌥ Option</kbd>+<kbd>H</kbd> | 작업창 하나 외 숨기기 |
@@ -39,18 +43,21 @@ comments: true
 | <kbd>⌘ Cmd</kbd>+<kbd>⇥ Tab</kbd>*n | <kbd>⇥ Tab</kbd>누르면 현재 열린 창에서 이동 |
 
 ## Tab
+
 | key | 내용 |
 | ------ | ------ |
 | <kbd>⌘ Cmd</kbd>+<kbd>⇧ Shift</kbd>+<kbd>tab</kbd> | mac 실행 프로그램 내 탭 전환 |
 | <kbd>⌘ Cmd</kbd>+<kbd>⇧ Shift</kbd>+<kbd>`</kbd> | mac 실행 프로그램 내 탭 전환 |
 
 ## Mission Control
+
 | key | 내용 |
 | ------ | ------ |
 | <kbd>⌃ Ctrl</kbd>+<kbd>←</kbd>,<kbd>→</kbd> | 왼쪽 또는 오른쪽으로 한 작업공간 이동 |
 | <kbd>⌃ Ctrl</kbd>+<kbd>1</kbd>,<kbd>2</kbd> | 첫번째, 두번째 작업공간 이동 |
 
 ## Chrome
+
 | key | 내용 |
 | ------ | ------ |
 | <kbd>⌘ Cmd</kbd>+<kbd>⇧ Shift</kbd>+<kbd>T</kbd> | 크롬 닫은창 복구 |
