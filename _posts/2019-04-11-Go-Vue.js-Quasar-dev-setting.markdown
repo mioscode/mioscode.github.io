@@ -3,11 +3,12 @@ title: "(macOS) Go-Vue.js 2-Quasar 개발 셋팅"
 categories:
   -  Quasar
 tags:
-  - Go, Vue.js, Quasar
+  - Go 
+  - Vue.js
+  - Quasar
 comments: true
 ---
 
-# (macOS) Go-Vue.js 2-Quasar 개발 셋팅
 ## Homebrew 
 - update
 ```

@@ -3,7 +3,8 @@ title: "Eclipse에 ERMaster plugin 설치"
 categories:
   -  ERMaster
 tags:
-  - Eclipse, ERMaster
+  - Eclipse
+  - ERMaster
 comments: true
 ---
 
