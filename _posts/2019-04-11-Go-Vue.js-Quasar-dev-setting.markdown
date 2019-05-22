@@ -12,7 +12,7 @@ comments: true
 ## Homebrew 
 - update
 ```
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 - xcode command line tool 없으면 설치
 
@@ -36,7 +36,7 @@ github.com
 ## mariaDB 설치 
 ```
 $ brew install mariadb 
-````
+```
 ## Quasar 설치
 - vue-cli 설치
 install vue-cli globally
@@ -77,21 +77,21 @@ $ quasar init <folder-name>
 ```
 - 개발 시작
 ```
-// Developing a SPA
+# Developing a SPA
 $ quasar dev
-// ...or
+# ...or
 $ quasar dev -m spa
 
-// Developing for SSR
+# Developing for SSR
 $ quasar dev -m ssr
 
-// Developing a PWA
+# Developing a PWA
 $ quasar dev -m pwa
 
-// Developing a Mobile App (through Cordova)
+# Developing a Mobile App (through Cordova)
 $ quasar dev -m cordova -T [android|ios]
 
-// Developing an Electron App
+# Developing an Electron App
 $ quasar dev -m electron
 ```
 
