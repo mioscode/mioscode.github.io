@@ -3,22 +3,22 @@ title: "(macOS) Go-Vue.js 2-Quasar 개발 셋팅"
 categories:
   -  Quasar
 tags:
-  - Go 
+  - Go
   - Vue.js
   - Quasar
 comments: true
 ---
 
 ## Homebrew 
-- update
+update
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 - xcode command line tool 없으면 설치
 
 ## node.js/npm 최신 버전 설치 
-- nodejs.org
-- 설치 확인
+nodejs.org
+설치 확인
 ```
 $ npm -v
 6.4.1
@@ -27,7 +27,7 @@ v10.15.3
 ```
 
 ## golang 최신 버전 설치 
-- golang.org
+golang.org
 
 
 ## GitHub Desktop 설치 
@@ -38,20 +38,17 @@ github.com
 $ brew install mariadb 
 ```
 ## Quasar 설치
-- vue-cli 설치
-install vue-cli globally
+vue-cli 설치
 ```
 $ npm install -g vue-cli # or @vue/cli @vue/cli-init // recommended
 ```
-- quasar-cli 설치
+quasar-cli 설치
 ```
 $ npm uninstall -g quasar-cli
 removed 1111 packages in 9.432s
 $ npm i -g quasar-cli@0.6.5
 $ quasar
-
 ...
-
 Commands
 init          Create a project folder
 dev           Start a dev server for your App
@@ -62,20 +59,21 @@ mode          Add/remove Quasar Modes for your App
 info          Display info about your machine and your App
 serve         Create an ad-hoc (production-ready) server on App distributables
 help          Displays this message
-
-$ 
 ```
-- cordova 설치
+
+cordova 설치
 ```
 $ npm install -g cordova
 /usr/local/bin/cordova -> /usr/local/lib/node_modules/cordova/bin/cordova
 + cordova@9.0.0
 ```
-- Quasar CLI가 전역 적으로 설치되면 이제 새로운 프로젝트를 생성 가능
+
+Quasar CLI가 전역 적으로 설치되면 이제 새로운 프로젝트를 생성 가능
 ```
 $ quasar init <folder-name>
 ```
-- 개발 시작
+
+개발 시작
 ```
 # Developing a SPA
 $ quasar dev
