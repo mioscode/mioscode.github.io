@@ -39,8 +39,8 @@ $ brew install mariadb
 ````
 ## Quasar 설치
 - vue-cli 설치
+install vue-cli globally
 ```
-# install vue-cli globally
 $ npm install -g vue-cli # or @vue/cli @vue/cli-init // recommended
 ```
 - quasar-cli 설치
@@ -77,21 +77,21 @@ $ quasar init <folder-name>
 ```
 - 개발 시작
 ```
-# Developing a SPA
+// Developing a SPA
 $ quasar dev
-# ...or
+// ...or
 $ quasar dev -m spa
 
-# Developing for SSR
+// Developing for SSR
 $ quasar dev -m ssr
 
-# Developing a PWA
+// Developing a PWA
 $ quasar dev -m pwa
 
-# Developing a Mobile App (through Cordova)
+// Developing a Mobile App (through Cordova)
 $ quasar dev -m cordova -T [android|ios]
 
-# Developing an Electron App
+// Developing an Electron App
 $ quasar dev -m electron
 ```
 
