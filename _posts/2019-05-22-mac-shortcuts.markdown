@@ -13,7 +13,7 @@ comments: true
 | ------ | ------ |
 | <kbd>⌘ Cmd</kbd>+<kbd>⌫ Delete</kbd> | 파일 삭제 |
 | <kbd>⌘ Cmd</kbd>+<kbd>C</kbd>, <kbd>⌘ Cmd</kbd>+<kbd>⌥ Option</kbd>+<kbd>V</kbd> | 잘라내기, 붙여넣기 | 
-| <kbd>⌘ Cmd</kbd>+<kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd> | 보기 모드 
+| <kbd>⌘ Cmd</kbd>+<kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd> | 보기 모드 |
 
 ## 전체
 | key | 내용 |
