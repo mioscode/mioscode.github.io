@@ -33,7 +33,7 @@ from /usr/local/bin/jekyll:22:in `<main>'
 $ bundle exec jekyll serve
 ```
 번들러는 Ruby에서 필요한 정확한 gem과 버전을 추적하고 설치하여 루비 프로젝트를 위한 일관된 환경을 제공한다.
-번들러는 의존성 지옥에서 벗어나게 하고, 필요한 gem이 개발, 스테이징, 프로덕션에 있는지 확인해준다,
+번들러는 의존성 지옥에서 벗어나게 하고, 필요한 gem이 개발, 스테이징, 프로덕션에 있는지 확인해준다.
 ```
 Configuration file: /Users/somi.han/Dropbox/mioscode.github.io/_config.yml
 Remote Theme: Using theme mmistakes/minimal-mistakes
@@ -49,3 +49,6 @@ Auto-regeneration: enabled for '/Users/somi.han/Dropbox/mioscode.github.io'
 Server address: http://127.0.0.1:4000
 Server running... press ctrl-c to stop.
 ```
+
+# Reference
+[https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/](https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/)

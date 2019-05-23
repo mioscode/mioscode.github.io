@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-23T15:37:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">블록체인을 위한 암호학 (1)</title><link href="http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1/" rel="alternate" type="text/html" title="블록체인을 위한 암호학 (1)" /><published>2019-05-23T00:00:00+09:00</published><updated>2019-05-23T00:00:00+09:00</updated><id>http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1</id><content type="html" xml:base="http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1/">&lt;h1 id=&quot;블록체인을-위한-암호학&quot;&gt;블록체인을 위한 암호학&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-23T15:41:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">블록체인을 위한 암호학 (1)</title><link href="http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1/" rel="alternate" type="text/html" title="블록체인을 위한 암호학 (1)" /><published>2019-05-23T00:00:00+09:00</published><updated>2019-05-23T00:00:00+09:00</updated><id>http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1</id><content type="html" xml:base="http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1/">&lt;h1 id=&quot;블록체인을-위한-암호학&quot;&gt;블록체인을 위한 암호학&lt;/h1&gt;
 &lt;h2 id=&quot;1-digital-signature&quot;&gt;1. Digital Signature&lt;/h2&gt;
 &lt;p&gt;디지털 서명은 비대칭키와 해쉬 함수를 이용해서 다음과 같은 방식으로 데이터의 진위 여부를 확인할 수 있게 해준다
 &lt;img src=&quot;http://localhost:4000/assets/images/digital_signature.png&quot; alt=&quot;Image Alt 텍스트&quot; /&gt;&lt;/p&gt;
@@ -200,7 +200,7 @@ from /usr/local/bin/jekyll:22:in `&amp;lt;main&amp;gt;'
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle exec jekyll serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;번들러는 Ruby에서 필요한 정확한 gem과 버전을 추적하고 설치하여 루비 프로젝트를 위한 일관된 환경을 제공한다.
-번들러는 의존성 지옥에서 벗어나게 하고, 필요한 gem이 개발, 스테이징, 프로덕션에 있는지 확인해준다,&lt;/p&gt;
+번들러는 의존성 지옥에서 벗어나게 하고, 필요한 gem이 개발, 스테이징, 프로덕션에 있는지 확인해준다.&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuration file: /Users/somi.han/Dropbox/mioscode.github.io/_config.yml
 Remote Theme: Using theme mmistakes/minimal-mistakes
 Source: /Users/somi.han/Dropbox/mioscode.github.io
@@ -214,7 +214,10 @@ done in 4.287 seconds.
 Auto-regeneration: enabled for '/Users/somi.han/Dropbox/mioscode.github.io'
 Server address: http://127.0.0.1:4000
 Server running... press ctrl-c to stop.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="github page" /><category term="error" /><summary type="html">Error $ jekyll serve 원래는 이 명령을 통해 jekyll이 내장하고 있는 서버를 동작시키고 이를 로컬 PC(localhost:4000)에서 확인 가능한데, 에러 발생</summary></entry><entry><title type="html">(mac) 단축키</title><link href="http://localhost:4000/mac/2019/05/22/mac-shortcuts/" rel="alternate" type="text/html" title="(mac) 단축키" /><published>2019-05-22T00:00:00+09:00</published><updated>2019-05-22T00:00:00+09:00</updated><id>http://localhost:4000/mac/2019/05/22/mac-shortcuts</id><content type="html" xml:base="http://localhost:4000/mac/2019/05/22/mac-shortcuts/">&lt;h2 id=&quot;finder&quot;&gt;Finder&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/&quot;&gt;https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="github page" /><category term="error" /><summary type="html">Error $ jekyll serve 원래는 이 명령을 통해 jekyll이 내장하고 있는 서버를 동작시키고 이를 로컬 PC(localhost:4000)에서 확인 가능한데, 에러 발생</summary></entry><entry><title type="html">(mac) 단축키</title><link href="http://localhost:4000/mac/2019/05/22/mac-shortcuts/" rel="alternate" type="text/html" title="(mac) 단축키" /><published>2019-05-22T00:00:00+09:00</published><updated>2019-05-22T00:00:00+09:00</updated><id>http://localhost:4000/mac/2019/05/22/mac-shortcuts</id><content type="html" xml:base="http://localhost:4000/mac/2019/05/22/mac-shortcuts/">&lt;h2 id=&quot;finder&quot;&gt;Finder&lt;/h2&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
