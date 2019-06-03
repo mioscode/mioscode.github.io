@@ -1,10 +1,10 @@
 ---
 title: "블록체인을 위한 암호학 (1)"
 categories:
-  -  mac
+  -  blockchain
 tags:
-  - mac
-  - shorcuts
+  - blockchain
+  - cryptography
 comments: true
 ---
 
