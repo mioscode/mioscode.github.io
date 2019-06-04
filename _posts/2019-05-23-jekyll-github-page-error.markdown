@@ -1,5 +1,5 @@
 ---
-title: Jekyll - Github page 오류 해결
+title: "Jekyll Github page 오류 해결"
 categories:
   -  jekyll
 tags:

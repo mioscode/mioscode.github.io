@@ -1,5 +1,5 @@
 ---
-title: Jekyll - (Python) Anaconda environment.yml error 해결
+title: "Python Anaconda environment.yml error 해결"
 categories:
   -  python
 tags:

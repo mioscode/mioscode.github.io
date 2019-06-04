@@ -1,5 +1,5 @@
 ---
-title: Jekyll - (mac) mysql - Can't read dir of '/usr/local/etc/my.cnf.d' 해결
+title: "macOS 에서 mysql 실행 시 Can't read dir of '/usr/local/etc/my.cnf.d' 해결"
 categories:
   -  mysql
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "MacOS에서 Flutter 설치하기"
+title: "(macOS) Flutter 설치하기"
 categories:
   -  Flutter
 tags:
