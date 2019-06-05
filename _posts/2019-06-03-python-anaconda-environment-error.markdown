@@ -1,10 +1,10 @@
 ---
 title: "Python Anaconda environment.yml error 해결"
 categories:
-  -  python
+  -  Python
 tags:
-  - python
-  - anaconda
+  - Python
+  - Anaconda
   - error
 comments: true
 ---

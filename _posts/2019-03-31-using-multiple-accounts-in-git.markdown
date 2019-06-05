@@ -1,9 +1,9 @@
 ---
 title: "한 대의 컴퓨터에서 여러 개의 github 계정 사용하기"
 categories:
-  - github
+  - Github
 tags:
-  - github
+  - Github
 comments: true
 ---
 # 1. 새로운 SSH 키 생성

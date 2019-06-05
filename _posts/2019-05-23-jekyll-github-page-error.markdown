@@ -1,9 +1,9 @@
 ---
 title: "Jekyll Github page 오류 해결"
 categories:
-  -  jekyll
+  -  Jekyll
 tags:
-  - github page
+  - Github Page
   - error
 comments: true
 ---

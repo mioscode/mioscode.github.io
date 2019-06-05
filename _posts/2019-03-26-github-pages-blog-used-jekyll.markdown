@@ -3,8 +3,8 @@ title: "Jekyll 사용하여 GitHub Pages 블로그 만들기"
 categories:
   - Jekyll
 tags:
-  - jekyll
-  - github
+  - Jekyll
+  - Github
 comments: true
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "mysql 명령어"
 categories:
-  -  mysql
+  -  MySQL
 tags:
-  - mysql
+  - MySQL
 comments: true
 ---
 

@@ -3,8 +3,8 @@ title: "Jekyll 테마 변경"
 categories:
   - Jekyll
 tags:
-  - jekyll
-  - github
+  - Jekyll
+  - Github
 comments: true
 ---
 

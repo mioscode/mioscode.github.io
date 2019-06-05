@@ -1,9 +1,9 @@
 ---
 title: "Git 명령어"
 categories:
-  - github
+  - Github
 tags:
-  - github
+  - Github
 comments: true
 ---
 

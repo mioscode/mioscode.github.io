@@ -3,7 +3,7 @@ title: "(macOS) Flutter 설치하기"
 categories:
   -  Flutter
 tags:
-  - flutter
+  - Flutter
   - install
 comments: true
 ---
