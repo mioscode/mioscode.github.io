@@ -28,11 +28,11 @@ error: could not write rcfile file: '/Users/somi.han/.profile'
 info: caused by: Permission denied (os error 13)
 ```
 ## 1.2. Solution
+[https://stackoverflow.com/questions/45899815/could-not-write-to-bash-profile-when-installing-rust-on-macos-sierra](https://stackoverflow.com/questions/45899815/could-not-write-to-bash-profile-when-installing-rust-on-macos-sierra)
 ```
 $ curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path
 ```
 --no-modify-path    Don't configure the PATH environment variable
-[https://stackoverflow.com/questions/45899815/could-not-write-to-bash-profile-when-installing-rust-on-macos-sierra](https://stackoverflow.com/questions/45899815/could-not-write-to-bash-profile-when-installing-rust-on-macos-sierra)
 
 ```
 Welcome to Rust!
@@ -76,7 +76,49 @@ $ cargo new (프로젝트 이름) --bin
 $ cargo run
 ```
 
+# 3. Rust nightly install
+## 3.1. toolchain 설치
+```
+$ rustup toolchain install nightly
+info: syncing channel updates for 'nightly-x86_64-apple-darwin'
+376.4 KiB / 376.4 KiB (100 %) 188.2 KiB/s in  2s ETA:  0s
+info: latest update on 2019-06-07, rust version 1.37.0-nightly (5eeb567a2 2019-06-06)
+info: downloading component 'rustc'
+ 81.9 MiB /  81.9 MiB (100 %)  11.2 MiB/s in  8s ETA:  0s
+info: downloading component 'rust-std'
+ 56.1 MiB /  56.1 MiB (100 %)   9.8 MiB/s in  5s ETA:  0s
+info: downloading component 'cargo'
+info: downloading component 'rust-docs'
+ 11.2 MiB /  11.2 MiB (100 %)   9.5 MiB/s in  1s ETA:  0s
+info: installing component 'rustc'
+ 81.9 MiB /  81.9 MiB (100 %)  12.5 MiB/s in  6s ETA:  0s
+info: installing component 'rust-std'
+ 56.1 MiB /  56.1 MiB (100 %)  14.7 MiB/s in  3s ETA:  0s
+info: installing component 'cargo'
+info: installing component 'rust-docs'
+ 11.2 MiB /  11.2 MiB (100 %)   2.1 MiB/s in  5s ETA:  0s
+
+  nightly-x86_64-apple-darwin installed - rustc 1.37.0-nightly (5eeb567a2 2019-06-06)
+```
+
+## 3.2. 테스트 실행
+```
+$ rustup run nightly rustc --version
+rustc 1.37.0-nightly (5eeb567a2 2019-06-06)
+```
+
+## 3.3. nightly로 디폴트 변경
+```
+$ rustup default nightly
+info: using existing install for 'nightly-x86_64-apple-darwin'
+info: default toolchain set to 'nightly-x86_64-apple-darwin'
+
+  nightly-x86_64-apple-darwin unchanged - rustc 1.37.0-nightly (5eeb567a2 2019-06-06)
+```
+
+
 # Reference
 [https://www.rust-lang.org/tools/](https://www.rust-lang.org/tools/install)
 [https://doc.rust-lang.org/book/title-page.html](https://doc.rust-lang.org/book/title-page.html)
 [http://sarojaba.github.io/rust-doc-korean/doc/tutorial.html](http://sarojaba.github.io/rust-doc-korean/doc/tutorial.html)
+[https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust](https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust)
