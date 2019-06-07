@@ -77,6 +77,8 @@ $ cargo run
 ```
 
 # 3. Rust nightly install
+[https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust](https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust)
+
 ## 3.1. toolchain 설치
 ```
 $ rustup toolchain install nightly
