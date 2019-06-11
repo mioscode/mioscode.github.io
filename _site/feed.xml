@@ -1,184 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-23T15:41:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">블록체인을 위한 암호학 (1)</title><link href="http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1/" rel="alternate" type="text/html" title="블록체인을 위한 암호학 (1)" /><published>2019-05-23T00:00:00+09:00</published><updated>2019-05-23T00:00:00+09:00</updated><id>http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1</id><content type="html" xml:base="http://localhost:4000/mac/2019/05/23/cryptography-for-blockchain-1/">&lt;h1 id=&quot;블록체인을-위한-암호학&quot;&gt;블록체인을 위한 암호학&lt;/h1&gt;
-&lt;h2 id=&quot;1-digital-signature&quot;&gt;1. Digital Signature&lt;/h2&gt;
-&lt;p&gt;디지털 서명은 비대칭키와 해쉬 함수를 이용해서 다음과 같은 방식으로 데이터의 진위 여부를 확인할 수 있게 해준다
-&lt;img src=&quot;http://localhost:4000/assets/images/digital_signature.png&quot; alt=&quot;Image Alt 텍스트&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-11T16:39:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">Jekyll Admin 실행</title><link href="http://localhost:4000/jekyll/2019/06/11/jekyll-admin/" rel="alternate" type="text/html" title="Jekyll Admin 실행" /><published>2019-06-11T00:00:00+09:00</published><updated>2019-06-11T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/2019/06/11/jekyll-admin</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/06/11/jekyll-admin/">&lt;h1 id=&quot;1-jekyll-admin-플러그인-추가&quot;&gt;1. Jekyll Admin 플러그인 추가&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; 파일 오픈해서 아래와 같이 추가&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h3 id=&quot;1-hash-function해시-함수&quot;&gt;1. Hash Function(해시 함수)&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gem 'jekyll-admin', group: :jekyll_plugins&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;finder&quot;&gt;Finder&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;루트 디렉토리에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; 실행&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;http://localhost:4000/admin 접속 시 관리자 보임&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⌫ Delete&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;파일 삭제&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;C&lt;/kbd&gt;, &lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⌥ Option&lt;/kbd&gt;+&lt;kbd&gt;V&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;잘라내기, 붙여넣기&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;1&lt;/kbd&gt;/&lt;kbd&gt;2&lt;/kbd&gt;/&lt;kbd&gt;3&lt;/kbd&gt;/&lt;kbd&gt;4&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;보기 모드&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll-admin/blob/master/README.md&quot;&gt;https://github.com/jekyll/jekyll-admin/blob/master/README.md&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Jekyll" /><category term="Github" /><summary type="html">1. Jekyll Admin 플러그인 추가 Gemfile 파일 오픈해서 아래와 같이 추가</summary></entry><entry><title type="html">Rust 설치, Hello World</title><link href="http://localhost:4000/rust/2019/06/05/rust-install/" rel="alternate" type="text/html" title="Rust 설치, Hello World" /><published>2019-06-05T00:00:00+09:00</published><updated>2019-06-05T00:00:00+09:00</updated><id>http://localhost:4000/rust/2019/06/05/rust-install</id><content type="html" xml:base="http://localhost:4000/rust/2019/06/05/rust-install/">&lt;h1 id=&quot;1-rustup-설치&quot;&gt;1. Rustup 설치&lt;/h1&gt;
+&lt;p&gt;rustup: a command line tool for managing Rust versions and associated tools
+&lt;a href=&quot;https://www.rust-lang.org/tools/install&quot;&gt;https://www.rust-lang.org/tools/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;전체&quot;&gt;전체&lt;/h2&gt;
+&lt;p&gt;(macOS)&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;←&lt;/kbd&gt;,&lt;kbd&gt;→&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;줄 내 이동&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl https://sh.rustup.rs -sSf | sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;스크린샷&quot;&gt;스크린샷&lt;/h2&gt;
+&lt;h2 id=&quot;11-error&quot;&gt;1.1. Error&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+&amp;gt;1
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;4&lt;/kbd&gt;+&lt;kbd&gt;space bar&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;촬영 대상이 하늘색으로 강조&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⌃ Ctrl&lt;/kbd&gt;+&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;4&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;스크린샷 클립보드에 저장&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;3&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;파일, 화면&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⌃ Ctrl&lt;/kbd&gt;+&lt;kbd&gt;3&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;클립보드, 화면&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;4&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;파일, 영역 선택&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⌃ Ctrl&lt;/kbd&gt;+&lt;kbd&gt;4&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;클립보드, 영역 선택&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+error: could not write rcfile file: '/Users/somi.han/.profile'
+info: caused by: Permission denied (os error 13)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;12-solution&quot;&gt;1.2. Solution&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/45899815/could-not-write-to-bash-profile-when-installing-rust-on-macos-sierra&quot;&gt;https://stackoverflow.com/questions/45899815/could-not-write-to-bash-profile-when-installing-rust-on-macos-sierra&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;–no-modify-path    Don’t configure the PATH environment variable&lt;/p&gt;
 
-&lt;h2 id=&quot;창&quot;&gt;창&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Welcome to Rust!
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⌥ Option&lt;/kbd&gt;+&lt;kbd&gt;H&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;작업창 하나 외 숨기기&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;H&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;현재 작업창 숨기기&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;F3&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;모든창 숨기기&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⇥ Tab&lt;/kbd&gt;*n&lt;/td&gt;
-      &lt;td&gt;&lt;kbd&gt;⇥ Tab&lt;/kbd&gt;누르면 현재 열린 창에서 이동&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+This will download and install the official compiler for the Rust programming
+language, and its package manager, Cargo.
 
-&lt;h2 id=&quot;tab&quot;&gt;Tab&lt;/h2&gt;
+It will add the cargo, rustc, rustup and other commands to Cargo's bin
+directory, located at:
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;tab&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;mac 실행 프로그램 내 탭 전환&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;`&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;mac 실행 프로그램 내 탭 전환&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+  /Users/somi.han/.cargo/bin
 
-&lt;h2 id=&quot;mission-control&quot;&gt;Mission Control&lt;/h2&gt;
+This path needs to be in your PATH environment variable, but will not be added
+automatically.
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌃ Ctrl&lt;/kbd&gt;+&lt;kbd&gt;←&lt;/kbd&gt;,&lt;kbd&gt;→&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;왼쪽 또는 오른쪽으로 한 작업공간 이동&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌃ Ctrl&lt;/kbd&gt;+&lt;kbd&gt;1&lt;/kbd&gt;,&lt;kbd&gt;2&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;첫번째, 두번째 작업공간 이동&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+You can uninstall at any time with rustup self uninstall and these changes will
+be reverted.
 
-&lt;h2 id=&quot;chrome&quot;&gt;Chrome&lt;/h2&gt;
+....
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;+&lt;kbd&gt;T&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;크롬 닫은창 복구&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌥ Option&lt;/kbd&gt;+&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;←&lt;/kbd&gt;,&lt;kbd&gt;→&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;크롬 내 탭 이동&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;+&lt;kbd&gt;1&lt;/kbd&gt;~&lt;kbd&gt;9&lt;/kbd&gt;&lt;/td&gt;
-      &lt;td&gt;크롬 내 탭 이동&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="mac" /><category term="shorcuts" /><summary type="html">블록체인을 위한 암호학 1. Digital Signature 디지털 서명은 비대칭키와 해쉬 함수를 이용해서 다음과 같은 방식으로 데이터의 진위 여부를 확인할 수 있게 해준다</summary></entry><entry><title type="html">Jekyll - Github page 오류 해결</title><link href="http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error/" rel="alternate" type="text/html" title="Jekyll - Github page 오류 해결" /><published>2019-05-23T00:00:00+09:00</published><updated>2019-05-23T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error/">&lt;h2 id=&quot;error&quot;&gt;Error&lt;/h2&gt;
+Rust is installed now. Great!
+
+To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
+environment variable.
+
+To configure your current shell run source $HOME/.cargo/env
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;터미널을 다시 시작하는 대신 Rust를 바로 사용하려면 쉘에서 다음 명령을 실행하여 시스템 PATH에 수동으로 Rust를 추가&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ source $HOME/.cargo/env
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;2-hello-world&quot;&gt;2. Hello World&lt;/h1&gt;
+&lt;h2 id=&quot;21-프로젝트-생성&quot;&gt;2.1. 프로젝트 생성&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cargo new (프로젝트 이름) --bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;프로젝트 이름으로 된 폴더가 생기며, 안에 Rust의 Hello, world를 출력하는 코드파일과 cargo 프로젝트 속성 파일이 생김&lt;/p&gt;
+&lt;h2 id=&quot;22-컴파일&quot;&gt;2.2. 컴파일&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cargo run
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;3-rust-nightly-install&quot;&gt;3. Rust nightly install&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust&quot;&gt;https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;31-toolchain-설치&quot;&gt;3.1. toolchain 설치&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup toolchain install nightly
+info: syncing channel updates for 'nightly-x86_64-apple-darwin'
+376.4 KiB / 376.4 KiB (100 %) 188.2 KiB/s in  2s ETA:  0s
+info: latest update on 2019-06-07, rust version 1.37.0-nightly (5eeb567a2 2019-06-06)
+info: downloading component 'rustc'
+ 81.9 MiB /  81.9 MiB (100 %)  11.2 MiB/s in  8s ETA:  0s
+info: downloading component 'rust-std'
+ 56.1 MiB /  56.1 MiB (100 %)   9.8 MiB/s in  5s ETA:  0s
+info: downloading component 'cargo'
+info: downloading component 'rust-docs'
+ 11.2 MiB /  11.2 MiB (100 %)   9.5 MiB/s in  1s ETA:  0s
+info: installing component 'rustc'
+ 81.9 MiB /  81.9 MiB (100 %)  12.5 MiB/s in  6s ETA:  0s
+info: installing component 'rust-std'
+ 56.1 MiB /  56.1 MiB (100 %)  14.7 MiB/s in  3s ETA:  0s
+info: installing component 'cargo'
+info: installing component 'rust-docs'
+ 11.2 MiB /  11.2 MiB (100 %)   2.1 MiB/s in  5s ETA:  0s
+
+  nightly-x86_64-apple-darwin installed - rustc 1.37.0-nightly (5eeb567a2 2019-06-06)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;32-테스트-실행&quot;&gt;3.2. 테스트 실행&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup run nightly rustc --version
+rustc 1.37.0-nightly (5eeb567a2 2019-06-06)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;33-nightly로-디폴트-변경&quot;&gt;3.3. nightly로 디폴트 변경&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup default nightly
+info: using existing install for 'nightly-x86_64-apple-darwin'
+info: default toolchain set to 'nightly-x86_64-apple-darwin'
+
+  nightly-x86_64-apple-darwin unchanged - rustc 1.37.0-nightly (5eeb567a2 2019-06-06)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.rust-lang.org/tools/install&quot;&gt;https://www.rust-lang.org/tools/&lt;/a&gt;
+&lt;a href=&quot;https://doc.rust-lang.org/book/title-page.html&quot;&gt;https://doc.rust-lang.org/book/title-page.html&lt;/a&gt;
+&lt;a href=&quot;http://sarojaba.github.io/rust-doc-korean/doc/tutorial.html&quot;&gt;http://sarojaba.github.io/rust-doc-korean/doc/tutorial.html&lt;/a&gt;
+&lt;a href=&quot;https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust&quot;&gt;https://github.com/rust-lang/rustup.rs/blob/master/README.md#working-with-nightly-rust&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Rust" /><summary type="html">1. Rustup 설치 rustup: a command line tool for managing Rust versions and associated tools https://www.rust-lang.org/tools/</summary></entry><entry><title type="html">mysql 명령어</title><link href="http://localhost:4000/mysql/2019/06/04/mysql-command/" rel="alternate" type="text/html" title="mysql 명령어" /><published>2019-06-04T00:00:00+09:00</published><updated>2019-06-04T00:00:00+09:00</updated><id>http://localhost:4000/mysql/2019/06/04/mysql-command</id><content type="html" xml:base="http://localhost:4000/mysql/2019/06/04/mysql-command/">&lt;h1 id=&quot;login&quot;&gt;Login&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mysql -u root -p
+Enter password:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;database-보기&quot;&gt;Database 보기&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MariaDB [(none)]&amp;gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| test               |
++--------------------+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;user-추가&quot;&gt;User 추가&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MariaDB [(none)]&amp;gt; create user '사용자'@'localhost' identified by '비밀번호';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;DB 권한 부여하기&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MariaDB [(none)]&amp;gt; grant all privileges on *.* to '사용자'@'localhost';
+MariaDB [(none)]&amp;gt; grant all privileges on DB이름.* to '사용자'@'localhost';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;모든 DB에 접근 가능하도록 하려면 &lt;em&gt;.&lt;/em&gt;, 특정 DB에만 접근 가능하도록 하려면 DB이름으로 지정해주면 된다.&lt;/p&gt;
+
+&lt;h1 id=&quot;사용자-계정-삭제&quot;&gt;사용자 계정 삭제&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MariaDB [(none)]&amp;gt; drop user '사용자'@'localhost';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;외부에서-접속-가능한-사용자&quot;&gt;외부에서 접속 가능한 사용자&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MariaDB [(none)]&amp;gt; create user '사용자'@'%' identified by '비밀번호'; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;’%’ 의 의미는 외부에서의 접근을 허용&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="MySQL" /><summary type="html">Login $ mysql -u root -p Enter password:</summary></entry><entry><title type="html">macOS 에서 mysql 실행 시 Can’t read dir of ‘/usr/local/etc/my.cnf.d’ 해결</title><link href="http://localhost:4000/mysql/2019/06/04/mac-mysql-can't-read-dir-of-usr-local-etc-my.cnf.d/" rel="alternate" type="text/html" title="macOS 에서 mysql 실행 시 Can't read dir of '/usr/local/etc/my.cnf.d' 해결" /><published>2019-06-04T00:00:00+09:00</published><updated>2019-06-04T00:00:00+09:00</updated><id>http://localhost:4000/mysql/2019/06/04/mac-mysql-can't-read-dir-of--usr-local-etc-my.cnf.d</id><content type="html" xml:base="http://localhost:4000/mysql/2019/06/04/mac-mysql-can't-read-dir-of-usr-local-etc-my.cnf.d/">&lt;h2 id=&quot;error&quot;&gt;Error&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mysql.server start
+
+/usr/local/Cellar/mariadb/10.3.13_1/bin/my_print_defaults: Can't read dir of '/usr/local/etc/my.cnf.d' (Errcode: 2 &quot;No such file or directory&quot;)
+Fatal error in defaults handling. Program aborted
+Starting MariaDB
+./usr/local/Cellar/mariadb/10.3.13_1/bin/my_print_defaults: Can't read dir of '/usr/local/etc/my.cnf.d' (Errcode: 2 &quot;No such file or directory&quot;)
+Fatal error in defaults handling. Program aborted
+/usr/local/Cellar/mariadb/10.3.13_1/bin/my_print_defaults: Can't read dir of '/usr/local/etc/my.cnf.d' (Errcode: 2 &quot;No such file or directory&quot;)
+Fatal error in defaults handling. Program aborted
+190604 10:28:40 mysqld_safe Logging to '/usr/local/var/mysql/macbook-2.local.err'.
+190604 10:28:40 mysqld_safe Starting mysqld daemon with databases from /usr/local/var/mysql
+/usr/local/bin/mysql.server: line 264: kill: (5900) - No such process
+ ERROR!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;✗ mkdir /usr/local/etc/my.cnf.d
+
+✗ mysql.server start
+
+Starting MariaDB
+.190604 10:29:02 mysqld_safe Logging to '/usr/local/var/mysql/macbook-2.local.err'.
+190604 10:29:02 mysqld_safe Starting mysqld daemon with databases from /usr/local/var/mysql
+ SUCCESS!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Homebrew/legacy-homebrew/issues/31760&quot;&gt;https://github.com/Homebrew/legacy-homebrew/issues/31760&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="mac" /><category term="MySQL" /><category term="error" /><summary type="html">Error ``` $ mysql.server start</summary></entry><entry><title type="html">Python Anaconda environment.yml error 해결</title><link href="http://localhost:4000/python/2019/06/03/python-anaconda-environment-error/" rel="alternate" type="text/html" title="Python Anaconda environment.yml error 해결" /><published>2019-06-03T00:00:00+09:00</published><updated>2019-06-03T00:00:00+09:00</updated><id>http://localhost:4000/python/2019/06/03/python-anaconda-environment-error</id><content type="html" xml:base="http://localhost:4000/python/2019/06/03/python-anaconda-environment-error/">&lt;h2 id=&quot;error-1&quot;&gt;Error 1&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ conda env create -f environment.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+Invalid requirement: 'libcxxabi=4.0.1'
+= is not a valid operator. Did you mean == ?
+
+CondaValueError: pip returned an error
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;원래는 이 명령을 통해 jekyll이 내장하고 있는 서버를 동작시키고 이를 로컬 PC(localhost:4000)에서 확인 가능한데, 에러&lt;/p&gt;
+
+&lt;h2 id=&quot;처리&quot;&gt;처리&lt;/h2&gt;
+&lt;p&gt;프로젝트 폴더 environment.yml 에서 pip 밑에&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;libcxx=4.0.1&lt;/li&gt;
+  &lt;li&gt;libcxxabi=4.0.1&lt;/li&gt;
+  &lt;li&gt;libgfortran=3.0.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;를 아래로 수정&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;libcxx==4.0.1&lt;/li&gt;
+  &lt;li&gt;libcxxabi==4.0.1&lt;/li&gt;
+  &lt;li&gt;libgfortran==3.0.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;error-2&quot;&gt;Error 2&lt;/h2&gt;
+&lt;p&gt;위 내용대로 수정 후 업데이트&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ conda env update -f environment.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Could not find a version that satisfies the requirement libcxx==4.0.1 (from -r /Volumes/data_mb2/project/Server/condaenv.m4ug0hfc.requirements.txt (line 7)) (from versions: )
+No matching distribution found for libcxx==4.0.1 (from -r /Volumes/data_mb2/project/Server/condaenv.m4ug0hfc.requirements.txt (line 7))
+
+CondaValueError: pip returned an error
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;프로젝트 폴더 environment.yml 에서 pip 밑에&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;libcxx=4.0.1&lt;/li&gt;
+  &lt;li&gt;libcxxabi=4.0.1&lt;/li&gt;
+  &lt;li&gt;libgfortran=3.0.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;모두 삭제&lt;/p&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ContinuumIO/anaconda-issues/issues/10183&quot;&gt;https://github.com/ContinuumIO/anaconda-issues/issues/10183&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Python" /><category term="Anaconda" /><category term="error" /><summary type="html">Error 1 $ conda env create -f environment.yml ``` Preparing transaction: done Verifying transaction: done Executing transaction: done Invalid requirement: ‘libcxxabi=4.0.1’ = is not a valid operator. Did you mean == ?</summary></entry><entry><title type="html">Jekyll Github page 오류 해결</title><link href="http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error/" rel="alternate" type="text/html" title="Jekyll Github page 오류 해결" /><published>2019-05-23T00:00:00+09:00</published><updated>2019-05-23T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error/">&lt;h2 id=&quot;error&quot;&gt;Error&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;원래는 이 명령을 통해 jekyll이 내장하고 있는 서버를 동작시키고 이를 로컬 PC(localhost:4000)에서 확인 가능한데, 에러 발생&lt;/p&gt;
@@ -217,7 +270,7 @@ Server running... press ctrl-c to stop.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/&quot;&gt;https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="github page" /><category term="error" /><summary type="html">Error $ jekyll serve 원래는 이 명령을 통해 jekyll이 내장하고 있는 서버를 동작시키고 이를 로컬 PC(localhost:4000)에서 확인 가능한데, 에러 발생</summary></entry><entry><title type="html">(mac) 단축키</title><link href="http://localhost:4000/mac/2019/05/22/mac-shortcuts/" rel="alternate" type="text/html" title="(mac) 단축키" /><published>2019-05-22T00:00:00+09:00</published><updated>2019-05-22T00:00:00+09:00</updated><id>http://localhost:4000/mac/2019/05/22/mac-shortcuts</id><content type="html" xml:base="http://localhost:4000/mac/2019/05/22/mac-shortcuts/">&lt;h2 id=&quot;finder&quot;&gt;Finder&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/&quot;&gt;https://aisiunme.github.io/jekyll/2018/07/25/troubleshooting-in-jekyll-serve/&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Github Page" /><category term="error" /><summary type="html">Error $ jekyll serve 원래는 이 명령을 통해 jekyll이 내장하고 있는 서버를 동작시키고 이를 로컬 PC(localhost:4000)에서 확인 가능한데, 에러 발생</summary></entry><entry><title type="html">(mac) 단축키</title><link href="http://localhost:4000/mac/2019/05/22/mac-shortcuts/" rel="alternate" type="text/html" title="(mac) 단축키" /><published>2019-05-22T00:00:00+09:00</published><updated>2019-05-22T00:00:00+09:00</updated><id>http://localhost:4000/mac/2019/05/22/mac-shortcuts</id><content type="html" xml:base="http://localhost:4000/mac/2019/05/22/mac-shortcuts/">&lt;h2 id=&quot;finder&quot;&gt;Finder&lt;/h2&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -542,7 +595,7 @@ chrome: http://localhost:8890/#/
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://flutter.dev/docs/get-started/install/macos&quot;&gt;https://flutter.dev/docs/get-started/install/macos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Go" /><category term="Vue.js" /><category term="Quasar" /><summary type="html">Homebrew update $ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; xcode command line tool 없으면 설치</summary></entry><entry><title type="html">MacOS에서 Flutter 설치하기</title><link href="http://localhost:4000/flutter/2019/04/03/flutter_install/" rel="alternate" type="text/html" title="MacOS에서 Flutter 설치하기" /><published>2019-04-03T00:00:00+09:00</published><updated>2019-04-03T00:00:00+09:00</updated><id>http://localhost:4000/flutter/2019/04/03/flutter_install</id><content type="html" xml:base="http://localhost:4000/flutter/2019/04/03/flutter_install/">&lt;h1 id=&quot;minimum-requirements&quot;&gt;Minimum requirements&lt;/h1&gt;
+&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Go" /><category term="Vue.js" /><category term="Quasar" /><summary type="html">Homebrew update $ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; xcode command line tool 없으면 설치</summary></entry><entry><title type="html">(macOS) Flutter 설치하기</title><link href="http://localhost:4000/flutter/2019/04/03/flutter-install/" rel="alternate" type="text/html" title="(macOS) Flutter 설치하기" /><published>2019-04-03T00:00:00+09:00</published><updated>2019-04-03T00:00:00+09:00</updated><id>http://localhost:4000/flutter/2019/04/03/flutter-install</id><content type="html" xml:base="http://localhost:4000/flutter/2019/04/03/flutter-install/">&lt;h1 id=&quot;minimum-requirements&quot;&gt;Minimum requirements&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;Operating Systems: macOS (64-bit)&lt;/li&gt;
   &lt;li&gt;Disk Space: 700 MB (does not include disk space for IDE/tools).&lt;/li&gt;
@@ -735,314 +788,4 @@ APP 실행 중 아래 대로 변경해보자&lt;/p&gt;
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://flutter.dev/docs/get-started/install/macos&quot;&gt;https://flutter.dev/docs/get-started/install/macos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="flutter" /><category term="install" /><summary type="html">Minimum requirements Operating Systems: macOS (64-bit) Disk Space: 700 MB (does not include disk space for IDE/tools). Tools: Flutter depends on these command-line tools being available in your environment. bash curl git 2.x mkdir rm unzip which</summary></entry><entry><title type="html">Git 명령어</title><link href="http://localhost:4000/github/2019/03/31/git-command/" rel="alternate" type="text/html" title="Git 명령어" /><published>2019-03-31T00:00:00+09:00</published><updated>2019-03-31T00:00:00+09:00</updated><id>http://localhost:4000/github/2019/03/31/git-command</id><content type="html" xml:base="http://localhost:4000/github/2019/03/31/git-command/">&lt;h1 id=&quot;새로운-git-저장소-만들기&quot;&gt;새로운 Git 저장소 만들기&lt;/h1&gt;
-&lt;p&gt;원하는 작업 폴더 새로 만들고 폴더 안으로 이동해서 새로운 git 저장소 만들기&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd 작업디렉토리
-$ git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;저장소-받아오기&quot;&gt;저장소 받아오기&lt;/h1&gt;
-&lt;h2 id=&quot;로컬-저장소-복제&quot;&gt;로컬 저장소 복제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone /로컬/저장소/경로
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;원격-서버-저장소-복제&quot;&gt;원격 서버 저장소 복제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone 사용자명@호스트:/원격/저장소/경로
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;변경-파일-index에-추가&quot;&gt;변경 파일 Index에 추가&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add *
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add -A
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;변경-내용-확정-commit--head에-반영&quot;&gt;변경 내용 확정 (Commit) = Head에 반영&lt;/h1&gt;
-&lt;p&gt;변경 파일들을 로컬 저장소에 등록하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt; 명령어 사용 &lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt;은 message&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m &quot;이번 확정본에 대한 설명&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;변경-내용-발행-push&quot;&gt;변경 내용 발행 (Push)&lt;/h1&gt;
-&lt;p&gt;만약 기존 원격 서버 저장소 복제한 것이 아니라면 원격 서버 주소를 git에 등록
-이제 origin을 사용하면 원격 저장소에 접근 가능해진다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin https://~~~.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;변경 내용 원격 서버에 올리기 (master brunch)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;다른 brunch로 발행하려면 이름만 변경&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;brunch&quot;&gt;brunch&lt;/h1&gt;
-&lt;h2 id=&quot;feature_x-이름의-가지-만들고-갈아타기&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;feature_x&lt;/code&gt; 이름의 가지 만들고 갈아타기&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -b feature_x
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;master로-돌아오기&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;로 돌아오기&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;brunch-삭제&quot;&gt;brunch 삭제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch -d feature_x
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;새로-만든-brunch-원격-저장소에-전송하기-전까지는-다른-사람-접근-불가&quot;&gt;새로 만든 brunch 원격 저장소에 전송하기 전까지는 다른 사람 접근 불가&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;pull&quot;&gt;pull&lt;/h1&gt;
-&lt;p&gt;로컬 저장소를 원격 저장소에 맞춰 갱신
-원격 저장소의 변경 내용이 로컬 작업 디렉토리에 받아지고(fetch), 병합(merge)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git pull
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;다른 가지에 있는 변경 내용을 현재 가지(예를 들면, master 가지)에 병합하려면 아래 명령 실행&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git merge &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;충돌 나면 충돌 부분 수정해서 해결&lt;/p&gt;
-
-&lt;p&gt;충돌을 해결했다면, 아래 명령으로 git에게 아까의 파일을 병합하라고 명령&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;변경 내용을 병합하기 전에, 어떻게 바뀌었는지 비교 가능&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git diff &amp;lt;원래 brunch&amp;gt; &amp;lt;비교 대상 brunch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rogerdudler.github.io/git-guide/index.ko.html&quot;&gt;https://rogerdudler.github.io/git-guide/index.ko.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="github" /><summary type="html">새로운 Git 저장소 만들기 원하는 작업 폴더 새로 만들고 폴더 안으로 이동해서 새로운 git 저장소 만들기 $ cd 작업디렉토리 $ git init</summary></entry><entry><title type="html">Git remote repository 변경</title><link href="http://localhost:4000/github/2019/03/31/change-git-respository/" rel="alternate" type="text/html" title="Git remote repository 변경" /><published>2019-03-31T00:00:00+09:00</published><updated>2019-03-31T00:00:00+09:00</updated><id>http://localhost:4000/github/2019/03/31/change-git-respository</id><content type="html" xml:base="http://localhost:4000/github/2019/03/31/change-git-respository/">&lt;h1 id=&quot;기존-리포지토리-깔끔하게-pull--push&quot;&gt;기존 리포지토리 깔끔하게 pull / push&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull
-git add .
-git commit -m &quot;clean push&quot;
-git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;기존-리포지토리-remote-제거&quot;&gt;기존 리포지토리 remote 제거&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote remove origin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;새-리포지토리-remote-추가&quot;&gt;새 리포지토리 remote 추가&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin https://github.com/playauto/리포지토리명 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/480/4681b67d2a906db8c6c1321cc678f05f&quot;&gt;https://gist.github.com/480/4681b67d2a906db8c6c1321cc678f05f&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="github" /><summary type="html">기존 리포지토리 깔끔하게 pull / push git pull git add . git commit -m &quot;clean push&quot; git push 기존 리포지토리 remote 제거 git remote remove origin</summary></entry><entry><title type="html">한 대의 컴퓨터에서 여러 개의 github 계정 사용하기</title><link href="http://localhost:4000/github/2019/03/31/using-multiple-accounts-in-git/" rel="alternate" type="text/html" title="한 대의 컴퓨터에서 여러 개의 github 계정 사용하기" /><published>2019-03-31T00:00:00+09:00</published><updated>2019-03-31T00:00:00+09:00</updated><id>http://localhost:4000/github/2019/03/31/using-multiple-accounts-in-git</id><content type="html" xml:base="http://localhost:4000/github/2019/03/31/using-multiple-accounts-in-git/">&lt;h1 id=&quot;1-새로운-ssh-키-생성&quot;&gt;1. 새로운 SSH 키 생성&lt;/h1&gt;
-&lt;p&gt;SSH 키들은 기본적으로 사용자의 ~/.ssh 디렉토리에 저장됨
-먼저 기존의 키들을 확인&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/.ssh
-$ ls
-id_rsa.pub    id_rsa
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;.pub 이 붙은 파일과 그렇지 않은 파일을 볼 수 있는데, .pub 이 붙은 것이 공개키이고 다른 것은 개인키&lt;/p&gt;
-
-&lt;p&gt;새로운 SSH 키를 만들기
-기존에 생성된 SSH 키가 없거나, .ssh 디렉토리가 없어도 다음 명령으로 만들 수 있다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &quot;username@gmail.com&quot; // 새 계정의 이메일 주소
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;새로운 키를 저장할 경로를 묻는데 이 때, 기존의 키를 덮어쓰지 않도록 조심
-id_second 라는 이름으로 SSH 키를 생성&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ Enter file in which to save the key (/Users/YOURNAME/.ssh/id_rsa):/Users/YOURNAME/.ssh/id_rsa_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;암호를 두 번 입력하라고 하는데 엔터를 쳐서 넘어가면 새로운 키가 생성된 것을 확인 가능&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls
-id_rsa.pub    id_rsa_second.pub   id_rsa    id_rsa_second   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;id_rsa_second.pub 의 내용을 복사해서 다음 단계에서 사용&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat id_rsa_second.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBvlgEqRqaVp/zOoxtAnKdMr6/y9SaP0Y3MGG4648N+MLD6yy+JjOYE3HnLNDWsOhsOXkjr7phVHYBqVd6QtpHZrgw5PXOEo1V00Es+HGcHU0sONLWK/OWtV7598eULXnQfNjPlND/09BW+D5IXI8plNRcjfaD4dRxtSOtolZ5jxxxT4gpR5v17Axm3ut4ukS+6f6GHNYZ4QcZJtlaps+eN0Ol/juEYy47r3l5CPIc9sxyQGE4o5Mm4LhLk769yVQGgGcR21Aj0DuEVN0HyeEZcAbqFqze9ZY5kdtYcI2L4B23X781nlX6zfpeVL9iU9pxkw/UGLUx2bcSGHOfrvhX username@gmail.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;2-ssh-키-설정&quot;&gt;2. SSH 키 설정&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;github&lt;/a&gt; 사이트에서 두 번쨰 계정 생성하고 로그인&lt;/p&gt;
-
-&lt;p&gt;오른쪽 위 아이콘 클릭
-Settings -&amp;gt; SSH Keys -&amp;gt; Nes SSH key 클릭&lt;/p&gt;
-
-&lt;p&gt;Title : 구별 가능한 간단한 이름
-Key : 복사해둔 키&lt;/p&gt;
-
-&lt;p&gt;Add SSH key 버튼 눌러서 완료&lt;/p&gt;
-
-&lt;p&gt;터미널에서 생성한 키를 SSH에 추가&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-add ~/.ssh/id_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;3-config-파일-만들기&quot;&gt;3. Config 파일 만들기&lt;/h1&gt;
-&lt;p&gt;로컬 저장소에서 github으로 푸시할 때 어떤 키 참조할 것인지 결정하도록 config 만들기&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd .ssh
-$ vim config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;config 파일에 다음 내용 입력&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Default account
-Host github.com
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa
-# Second account
-Host github.com-second
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;4-새-계정으로-push&quot;&gt;4. 새 계정으로 Push&lt;/h1&gt;
-&lt;p&gt;지금까지의 작업이 잘 되었는지 확인
-먼저 github 사이트에서 새 repository 를 만든다. 그리고 로컬에서 원하는 위치에 새 폴더를 만들고 다음 명령을 입력&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init
-$ git commit -am &quot;first commit&quot;
-$ git remote add origin git@github.com-second:YOURNAME/REPOSITORY.git
-$ git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;여기서 YOURNAME 에는 github 계정의 이름, REPOSITORY 에는 새로 만든 repository의 이름을 입력
-유의해야 할 점은, config 파일에서 Host github.com-second 라고 입력했으므로 원격저장소 설정시 git@github.com 대신 git@github.com-second 를 입력해야 한다는 점
-이것은 clone 시에도 마찬가지&lt;/p&gt;
-
-&lt;p&gt;만약 기존의 계정으로 작업하려면 원래하던 방법으로 git@github.com으로 하면 된다.&lt;/p&gt;
-
-&lt;p&gt;추가적으로, 새 계정으로 작업하는 폴더에서 다음 명령으로 commit 시 사용될 이름과 이메일 주소를 변경할 수 있다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git config user.name &quot;YOURNAME&quot;
-$ git config user.email &quot;YOUREMAIL&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;note--만약-잘-사용하다가-갑자기-git-access-denied-라는-메세지가-뜨면-아래-명령을-입력한-뒤-다시-시도&quot;&gt;NOTE : 만약 잘 사용하다가 갑자기 git access denied 라는 메세지가 뜨면 아래 명령을 입력한 뒤 다시 시도&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-add ~/.ssh/id_rsa_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://aweekj.github.io/using-multiple-accounts-in-git/&quot;&gt;https://aweekj.github.io/using-multiple-accounts-in-git/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574&quot;&gt;How to Work with GitHub and Multiple Accounts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v1/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot;&gt;Git 서버 - SSH 공개키 만들기&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="github" /><summary type="html">1. 새로운 SSH 키 생성 SSH 키들은 기본적으로 사용자의 ~/.ssh 디렉토리에 저장됨 먼저 기존의 키들을 확인</summary></entry><entry><title type="html">Jekyll 테마 변경</title><link href="http://localhost:4000/jekyll/2019/03/28/jekyll-theme-change/" rel="alternate" type="text/html" title="Jekyll 테마 변경" /><published>2019-03-28T00:00:00+09:00</published><updated>2019-03-28T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/2019/03/28/jekyll-theme-change</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/03/28/jekyll-theme-change/">&lt;h1 id=&quot;gem-based-테마-구조&quot;&gt;Gem-based 테마 구조&lt;/h1&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;assets&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;gem-based-테마-설치&quot;&gt;Gem-based 테마 설치&lt;/h1&gt;
-&lt;h2 id=&quot;gemfile-에-다음-줄-추가&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; 에 다음 줄 추가&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &quot;minimaldmistakes-jekyll&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;terminal에서-bundler실행&quot;&gt;Terminal에서 Bundler실행&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mioscode.github.io$ bundle
-The dependency tzinfo-data (&amp;gt;= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
-Using concurrent-ruby 1.1.5
-Following files may not be writable, so sudo is needed:
-/Library/Ruby/Gems/2.3.0
-/Library/Ruby/Gems/2.3.0/build_info
-/Library/Ruby/Gems/2.3.0/cache
-/Library/Ruby/Gems/2.3.0/doc
-/Library/Ruby/Gems/2.3.0/extensions
-/Library/Ruby/Gems/2.3.0/gems
-/Library/Ruby/Gems/2.3.0/specifications
-Using i18n 0.9.5
-Using minitest 5.8.5
-Using thread_safe 0.3.6
-Using tzinfo 1.2.5
-Using activesupport 4.2.10
-Using public_suffix 3.0.3
-Using addressable 2.5.2
-Using bundler 2.0.1
-Using coffee-script-source 1.11.1
-Using execjs 2.7.0
-Using coffee-script 2.4.1
-Using colorator 1.1.0
-Using ruby-enum 0.7.2
-Using commonmarker 0.17.13
-Using dnsruby 1.61.2
-Using eventmachine 1.2.7
-Using http_parser.rb 0.6.0
-Using em-websocket 0.5.1
-Using ffi 1.10.0
-Using ethon 0.12.0
-Using multipart-post 2.0.0
-Using faraday 0.15.4
-Using forwardable-extended 2.6.0
-Using gemoji 3.0.0
-Using sawyer 0.8.1
-Using octokit 4.13.0
-Using typhoeus 1.3.1
-Using github-pages-health-check 1.16.1
-Using rb-fsevent 0.10.3
-Using rb-inotify 0.10.0
-Using sass-listen 4.0.0
-Using sass 3.7.3
-Using jekyll-sass-converter 1.5.2
-Using ruby_dep 1.5.0
-Using listen 3.1.5
-Using jekyll-watch 2.2.1
-Using kramdown 1.17.0
-Using liquid 4.0.0
-Using mercenary 0.3.6
-Using pathutil 0.16.2
-Using rouge 2.2.1
-Using safe_yaml 1.0.5
-Using jekyll 3.7.4
-Using jekyll-avatar 0.6.0
-Using jekyll-coffeescript 1.1.1
-Using jekyll-commonmark 1.3.1
-Using jekyll-commonmark-ghpages 0.1.5
-Using jekyll-default-layout 0.1.4
-Using jekyll-feed 0.11.0
-Using jekyll-gist 1.5.0
-Using jekyll-github-metadata 2.12.1
-Using mini_portile2 2.4.0
-Using nokogiri 1.10.2
-Using html-pipeline 2.10.0
-Using jekyll-mentions 1.4.1
-Using jekyll-optional-front-matter 0.3.0
-Using jekyll-paginate 1.1.0
-Using jekyll-readme-index 0.2.0
-Using jekyll-redirect-from 0.14.0
-Using jekyll-relative-links 0.6.0
-Using rubyzip 1.2.2
-Using jekyll-remote-theme 0.3.1
-Using jekyll-seo-tag 2.5.0
-Using jekyll-sitemap 1.2.0
-Using jekyll-swiss 0.4.0
-Using jekyll-theme-architect 0.1.1
-Using jekyll-theme-cayman 0.1.1
-Using jekyll-theme-dinky 0.1.1
-Using jekyll-theme-hacker 0.1.1
-Using jekyll-theme-leap-day 0.1.1
-Using jekyll-theme-merlot 0.1.1
-Using jekyll-theme-midnight 0.1.1
-Using jekyll-theme-minimal 0.1.1
-Using jekyll-theme-modernist 0.1.1
-Using jekyll-theme-primer 0.5.3
-Using jekyll-theme-slate 0.1.1
-Using jekyll-theme-tactile 0.1.1
-Using jekyll-theme-time-machine 0.1.1
-Using jekyll-titles-from-headings 0.5.1
-Using jemoji 0.10.2
-Using minima 2.5.0
-Using unicode-display_width 1.5.0
-Using terminal-table 1.8.0
-Using github-pages 197
-Bundle complete! 3 Gemfile dependencies, 85 gems now installed.
-Use `bundle info [gemname]` to see where a bundled gem is installed.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;_configyml-에-테마-셋팅&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 에 테마 셋팅&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;theme: minimal-mistakes-jekyll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="jekyll" /><category term="github" /><summary type="html">Gem-based 테마 구조 assets, _layouts, _includes, _sass</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Flutter" /><category term="install" /><summary type="html">Minimum requirements Operating Systems: macOS (64-bit) Disk Space: 700 MB (does not include disk space for IDE/tools). Tools: Flutter depends on these command-line tools being available in your environment. bash curl git 2.x mkdir rm unzip which</summary></entry></feed>
