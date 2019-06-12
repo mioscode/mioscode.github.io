@@ -11,7 +11,9 @@ comments: true
 # 1. Jekyll Admin 플러그인 추가
 1. ```Gemfile``` 파일 오픈해서 아래와 같이 추가
 
-```gem 'jekyll-admin', group: :jekyll_plugins```
+```
+gem 'jekyll-admin', group: :jekyll_plugins
+```
 
 2. 루트 디렉토리에서 ```bundle install``` 실행
 
