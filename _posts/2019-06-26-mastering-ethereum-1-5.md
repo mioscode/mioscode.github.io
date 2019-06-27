@@ -1,5 +1,5 @@
 ---
-title: "Ethereum-1"
+title: "마스터링 이더리움 1장~5장"
 categories:
   -  Ethereum
 tags:
@@ -81,4 +81,58 @@ comments: true
 - py-evm, written in Python
 - Mantis, written in Scala
 - Harmony, written in Java
-<center><img src="https://mioscode.github.io/assets/images/ethereum_client.png" width="50%"></center>
+
+# 4장. 암호학
+## 공개키 암호화
+- 이전 자료 대체
+- 
+## 이더리움 주소
+> Keccak-256 단방향 해시 함수를 사용하는 공개키 또는 컨트랙트에서 파생한 고유 식별자(unique identifier)
+
+private key k
+```
+k=f8f8a2f43c8376......
+```
+public key K(x, y 좌표가 연결되고 16진수로 표현됨)
+```
+K=6e145ccef...
+```
+Keccak-256을 사용해서 공개키의 해시를 계산
+```
+Keccak256(K)=2a5bc342....
+```
+마지막 20바이트(최하위 바이트)만 이더리움 주소로 사용
+```
+001d3flef827552ae1114027bd3ecf1f086a0f9
+```
+접두어 0x로 표시되어 16진수로 인코딩
+```
+0x001d3flef827552ae1114027bd3ecf1f086a0f9
+```
+
+# 5장. 지갑
+> - 넓은 의미
+> 이더리움 주요 사용자 인터페이스를 제공하는 소프트웨어 애플리케이션
+> - 좁은 의미(개발자 시각)
+> 사용자의 키를 보괂고 관리하기 위해 사용되는 시스템을 의미하며 모든 지갑은 키 관리 구성요소를 갖고 있다. (그 자체로 전부인 지갑, 브라우저 일부, DApp의 일부 등)
+
+## 개요
+### 지갑 설계 고려사항
+편의성, 프라이버시 사이 균형 
+||편리함|불편함|
+|---|---|---|
+|프라이버시 좋음|BEST|모든 트랜잭션에 새로운 키 사용|
+|프라이버시 나쁨|하나의 개인키와 주소를 가지고 이를 재사용해서 모든 것을 처리||
+
+## 지갑 형태
+지갑이 포함하는 키가 서로 관련이 있느냐 없느냐에 따라 구분
+### 1. 비결정적 지갑(nondeterministic wallet)
+> JBOK(Just a Bunch Of Keys, 그냥 열쇠뭉치)
+- 첫 번째 이더리움 지갑(이더리움 사전 판매용으로 생성)은 각 지갑 파일에 부작위로 추출된 단일 개인키를 저장함
+
+### 2. 결정적 지갑(deterministic wallet)
+> 모든 키가 seed라고 하는 단일 마스터 키로부터 파생
+> 모든 키는 서로 관련이 있고 원래의 시드를 갖고 있다면 다시 키를 파생시킬 수 있다
+> 여러 가지 키 파생(key derivation)방식이 있는데 가장 많이 사용하는 방식은 트리 같은 구조(**HD 지갑**)
+
+#### HD지갑(

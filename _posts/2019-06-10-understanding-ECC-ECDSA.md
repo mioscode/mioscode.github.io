@@ -1,5 +1,5 @@
 ---
-title: "ECDSA"
+title: "ECC, ECDSA 이해하기 (ft. 수학)"
 categories:
   -  math
 tags:
