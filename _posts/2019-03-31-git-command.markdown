@@ -6,26 +6,25 @@ tags:
   - Github
 comments: true
 ---
-
-# 새로운 Git 저장소 만들기
+# 1. 새로운 Git 저장소 만들기
 원하는 작업 폴더 새로 만들고 폴더 안으로 이동해서 새로운 git 저장소 만들기
 ```
 $ cd 작업디렉토리
 $ git init
 ```
 
-# 저장소 받아오기
-## 로컬 저장소 복제
+# 2. 저장소 받아오기
+## 2.1. 로컬 저장소 복제
 ```
 $ git clone /로컬/저장소/경로
 ```
 
-## 원격 서버 저장소 복제
+## 2.2. 원격 서버 저장소 복제
 ```
 $ git clone 사용자명@호스트:/원격/저장소/경로
 ```
 
-# 변경 파일 Index에 추가
+# 3. 변경 파일 Index에 추가
 ```
 $ git add <파일 이름>
 ```
@@ -38,13 +37,13 @@ $ git add .
 ```
 $ git add -A
 ```
-# 변경 내용 확정 (Commit) = Head에 반영
+# 4. 변경 내용 확정 (Commit) = Head에 반영
 변경 파일들을 로컬 저장소에 등록하기 위해 `git commit` 명령어 사용 `-m`은 message
 ```
 $ git commit -m "이번 확정본에 대한 설명"
 ```
 
-# 변경 내용 발행 (Push)
+# 5. 변경 내용 발행 (Push)
 만약 기존 원격 서버 저장소 복제한 것이 아니라면 원격 서버 주소를 git에 등록
 이제 origin을 사용하면 원격 저장소에 접근 가능해진다
 ```
@@ -61,28 +60,28 @@ $ git push origin master
 $ git push origin <brunch 이름>
 ```
 
-# brunch
-## `feature_x` 이름의 가지 만들고 갈아타기
+# 6. brunch 관리
+## 6.1. `feature_x` 이름의 가지 만들고 갈아타기
 ```
 $ git checkout -b feature_x
 ```
 
-## `master`로 돌아오기
+## 6.2. `master`로 돌아오기
 ```
 $ git checkout master
 ```
 
-## brunch 삭제
+## 6.3. brunch 삭제
 ```
 $ git branch -d feature_x
 ```
 
-## 새로 만든 brunch 원격 저장소에 전송하기 전까지는 다른 사람 접근 불가
+## 6.4. 새로 만든 brunch 원격 저장소에 전송하기 전까지는 다른 사람 접근 불가
 ```
 $ git push origin <brunch 이름>
 ```
 
-# pull
+# 7. pull
 로컬 저장소를 원격 저장소에 맞춰 갱신
 원격 저장소의 변경 내용이 로컬 작업 디렉토리에 받아지고(fetch), 병합(merge)
 ```
@@ -105,6 +104,7 @@ $ git add <파일 이름>
 ```
 $ git diff <원래 brunch> <비교 대상 brunch>
 ```
+
 
 # Reference
 - [https://rogerdudler.github.io/git-guide/index.ko.html](https://rogerdudler.github.io/git-guide/index.ko.html)
