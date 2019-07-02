@@ -76,7 +76,14 @@ $ git checkout master
 $ git branch -d feature_x
 ```
 
-## 6.4. 새로 만든 brunch 원격 저장소에 전송하기 전까지는 다른 사람 접근 불가
+## 6.4 brunch 목록 보기
+```
+$ git branch
+  issue1
+* master
+```
+
+## 6.5. 새로 만든 brunch 원격 저장소에 전송하기 전까지는 다른 사람 접근 불가
 ```
 $ git push origin <brunch 이름>
 ```
