@@ -61,31 +61,36 @@ $ git push origin <brunch 이름>
 ```
 
 # 6. brunch 관리
-## 6.1. `feature_x` 이름의 가지 만들고 갈아타기
+## 6.1. 로컬에서 branch 만들고 갈아타기
 ```
-$ git checkout -b feature_x
+$ git checkout -b <brunch 이름>
 ```
 
-## 6.2. `master`로 돌아오기
+## 6.2. 로컬에서 `master`로 돌아오기
 ```
 $ git checkout master
 ```
 
-## 6.3. brunch 삭제
+## 6.3. 로컬 branch 삭제
 ```
-$ git branch -d feature_x
+$ git branch -d <brunch 이름>
 ```
 
-## 6.4 brunch 목록 보기
+## 6.4 로컬 branch 목록 보기
 ```
 $ git branch
   issue1
 * master
 ```
 
-## 6.5. 새로 만든 brunch 원격 저장소에 전송하기 전까지는 다른 사람 접근 불가
+## 6.5. 새로 만든 로컬 branch를 리모트 저장소에 전송하기 전까지는 다른 사람 접근 불가
 ```
 $ git push origin <brunch 이름>
+```
+
+## 6.6. 리모트 branch 삭제
+```
+$ git push origin --delete <brunch 이름>
 ```
 
 # 7. pull
