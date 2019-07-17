@@ -157,6 +157,7 @@ y_i&\gets& y_{i-2}-y_{i-1}\times q_{i-1}
 ||||$a\ mob\ b$||
 
 **(예제) $15x+6y=3$을 만족시키는 $x,y$ 찾기**
+
 ||$x_i$|$y_i$|$r_i$|$q_i$|
 |:-:|:-:|:-:|:-:|:-:|
 |$i=0$|$1$|$0$|$a=15$||
@@ -270,6 +271,7 @@ $$y^2 = x^3 + ax + b$$
 - 타원곡선에서 직각이 아니도록 그은 모든 직선은 곡선과 항상 3번 교차
 
 ## 연산
+
 ||표현|예|연산|
 |--|--|--|--|
 |스칼라(scalar)|소문자|p, n, a, b|덧셈, 곱셈, 역원|
@@ -278,24 +280,34 @@ $$y^2 = x^3 + ax + b$$
 ### 점(point) 
 #### 덧셈법칙
 (일반적인 좌표의 덧셈이 아니라 타원곡선 위에서의 덧셈 정의)
+
 곡선위의 점 $P, Q$를 정해 직선으로 연결한 뒤 연장선 상에서 지나는 또 다른 점($-R$)을 찾고 이를 $X$축에 그대로 대칭시키면 곡선 위의 $R$ 좌표가 등장한다.
+
 $$P+Q=R$$
 
 </center><img src="https://mioscode.github.io/assets/images/ecc_addition.png" width="100%"></center>
 
 1. 서로 다른 두점 $P+Q$
+
 $$\begin{matrix}\lambda=(y_2-y_1)/(x_2-x_1)\\ x_3=\lambda^2-x_1-x_2\\ y_3=\lambda(x_1-x_3)-y_1 \end{matrix}$$
+
 2. 같은 점 $P$
+
 $$\begin{matrix}\lambda=(3x_1^2+a)/(2y_1)\\ x_3=\lambda^2-x_1-x_2\\ y_3=\lambda(x_1-x_3)-y_1 \end{matrix}$$
+
 3. 수학적으로 이런 경우 교점이 무한대 있다고 말한다. 그리고 그점을 $O$이라고 정의하고 무한원점(point at infinity)혹은 영점(zero point)라고 부른다. 이것이 바로 이 군의 덧셈에 대한 항등원이다. 
+
 #### 곱셈법칙
 타원곡선 덧셉에 대한 정의로(같은 점) 스칼라 곱셈 연산도 표현 가능하다.
+
 $$kP=P+P+P+...$$
 
 <center><img src="https://blog.cloudflare.com/content/images/image02.gif" width="50%"></center>
 
 1. P에서 접선을 그려 이를 지나는 또 다른 점을 찾고, 그 대칭인 2P를 찾는다. (P+P=2P)
+
 2. 2P와 P를 교차하는 연장선을 그어서 이를 지나는 또 다른 점을 찾고, 대칭인 3P를 찾는다. (2P+P=3P)
+
 3. 반복
 > 덧셈을 할 때 R 의 대칭점을 취해야하는 이유를 이미 추측 할 수 있다. 
 > 그렇지 않으면 동일한 점을 여러 번 더할때 항상 동일한 선과 동일한 세 교차점이 나타난다.
@@ -359,6 +371,7 @@ $$y^2\ mod\ p=(x^3+7)\ mod\ p$$
 $$p=2^{256}-2^{32}-2^9-2^8-2^7-2^6-2^4-1$$
 
 ## Domain Parameters(secp256k1)
+
 ||값|설명|
 |--|--|--|
 |p|FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFE FFFFFC2F |modulo prime number|
@@ -397,17 +410,20 @@ $$Q(x,y)=d\times G(x_0, y_0)$$
 $G$는 이미 알려져있고, $Q$는 Public Key 생성 후 공개되지만, 이 두 값으로 $d$를 유추해 내기 굉장히 어렵다(ECDLP,Elliptic Curve Discrete Logarithm Problem).
 직접 대입 방식 말고는 아직까지 해답이 없다.
 
-> $Qa=dA*G=3*[4,5]=[13,22]$
+$Qa=dA*G=3*[4,5]=[13,22]$
 
 ## (3) Sign
 - 파일의 해시(파일 고유 번호)와 함께 개인키를 방정식에 넣으면 서명됨
 - 서명은 각각 20바이트의 $r$과 $s$ 두값으로 나뉨 $(r,s)$
+
 ### $r$
 1. 먼저 임의의 값인 '$k$(20 bytes)'를 생성하고 점의 곱셈을 사용하여 $P=k\times G$를 계산한다.
 2. 점 $P$의 $x$값이 '$r$'을 나타낸다(20 bytes).
+
 ### $s$
 1. $s$를 계산하려면 메시지의 SHA1 해시를 만들어야한다. 이 값은 매우 큰 정수로 간주되는 20 bytes 값을 제공하며 '$z$'라고 한다.
 2. 다음 등식을 사용하여 $s$ 를 계산할 수 있다.
+
 $$s=k^{-1}(z+dA\times r)\ mod\ P$$
 
 ## (4) 검증
@@ -420,6 +436,7 @@ $$P=s^{-1}\times z \times G+s^{-1}\times r \times Qa$$
 
 ### 검증식 증명
 검증식이 서명식으로 전개되는 것을 증명한다.
+
 $P=s^{-1}\times z \times G+s^{-1}\times r \times Qa$
 $(Qa=dA\times G)$
 $P=s^{-1}\times z \times G+s^{-1}\times r \times dA\times G$
@@ -429,6 +446,7 @@ $s=k^{-1}(z+dA\times r)$
 
 ### (5) Public Key Recover (Ethereum)
 For $j$ from $0$ to $h$ do the following.
+
 1. Let $x = r + jn$.
 2. Convert the integer $x$ to an octet string $X$ of length $mlen$ using the conversion routine specified in Section 2.3.7, where $mlen = \lceil(log_{2} p)/8e\rceil$ or $mlen = \lceil m/8e\rceil$.
 3. Convert the octet string 0216kX to an elliptic curve point R using the conversion routine specified in Section 2.3.4. If this conversion routine outputs “invalid”, then do another iteration of Step 1.
@@ -436,7 +454,9 @@ For $j$ from $0$ to $h$ do the following.
 5. Compute e from M using Steps 2 and 3 of ECDSA signature verification.
 6. For k from 1 to 2 do the following.
 	1. Compute a candidate public key as:
+
 	$$Q=r^{-1}(sR-eG)$$
+
 	2. Verify that $Q$ is the authentic public key. (For example, verify the signature of a certification authority in a certificate which has been truncated by the omission of $Q$ from the certificate.) If $Q$ is authenticated, stop and output $Q$.
 	3. Change $R$ to $-R$.
 
