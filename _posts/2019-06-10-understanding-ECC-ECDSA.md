@@ -56,6 +56,7 @@ $$\begin{matrix}
 
 ## Modular 역원
 $b^{-1}$은 모듈러 group 중에서 $b$와 곱하고 모듈러를 취했을 때 $1$이되는 값이다.
+
 $$(b\times b^{-1})\ mod\ m \equiv 1$$
 
 $m$과 서로소인 수($m$과 공통 소인수가 없는 수)만 모듈러 역원($mod\ m$)을 가진다.
@@ -72,21 +73,29 @@ $m$과 서로소인 수($m$과 공통 소인수가 없는 수)만 모듈러 역�
 <center><img src="https://mioscode.github.io/assets/images/fermat_little_theorem.png" width="50%"></center>
 
 패턴을 찾으면, $a\equiv 0$이 아니면 $a^2\equiv 1\ (mod\ 3), a^4\equiv 1\ (mod\ 5), a^6\equiv 1\ (mod\ 7)$
+
 소수 $p$와 서로소인 정수 $a$에 대해 다음과 같은 식이 존재한다.
+
 $$a^{p-1}\equiv 1\quad (mod\ p) $$
+
 $$a^p\equiv a\ mod\ p$$
 
 식을 전개하면,
+
 $$a^{p-1}=a\times a^{p-2}\equiv 1 \ (mod\ p)$$
-$a의$ 역원을 한번에 구할 수 있다.
-단, $m$은 소수여야하고 $a$는 $m$과 서로소라는 가정은 충족되어야 한다.
+
+$a의$ 역원을 한번에 구할 수 있다. ($a^{p-2}$)
+
+단, $m$은 소수여야하고 $a$는 $m$과 서로소라는 가정이 충족되어야 한다.
 
 다시 구하려던 식을 정리해보자.
+
 $$\begin{matrix} 
 (a\div b)\ mod\ m &=& (a\times b^{-1})\ mod\ m\\
 &=&((a\ mod\ m)\times(b^{-1}\ mod\ m))\ mod\ m\\
 &=&((a\ mod\ m)\times(b^{m-2}\ mod\ m))\ mod\ m
 \end{matrix}$$
+
 #### 소스코드 
 재귀
 ```C++
@@ -115,18 +124,25 @@ long long mod_inverse(long long a, long long mod){
     return ret;
 }
 ```
+
 ### 확장 유클리드 알고리즘
 페르마의 소정리는 $m$이 소수라는 제약조건이 있다.
+
 확장 유클리드 호제법은 $m$이 소수가 아니어도 $a$와 $m$이 서로소라는 조건만 만족하면 곱셈에 대한 역원을 구할 수 있다.
 
 확장 유클리드 알고리즘(Extended Euclidian Algorithm)은 유클리드 호제법을 확장한 것이다.
 $a$와 $b$에 대해서 아래 식을 만족하는 정수 $x, y$짝을 찾아낼 수 있다.
+
 $$ax+by=gcd(a,b)$$
 
 #### 계산방법
+
 **(초기조건)**
+
 $$x_0=1, x_1=0, y_0=0, y_1=1, r_0=a, r_1=b$$
+
 **(진행)**
+
 $$\begin{matrix}
 q_i&\gets& |r_{i-1}/r_i|\ (i\ge 1)\\
 r_i&\gets& r_{i-2}-r_{i-1}\times q_{i-1}\ (i\ge 2)\\
@@ -147,7 +163,9 @@ y_i&\gets& y_{i-2}-y_{i-1}\times q_{i-1}
 |$i=1$|$0$|$1$|$b=6$|$\lfloor 15/6\rfloor=2$|
 |$i=2$|$1-0\times 2=1$|$0-1\times 2=-2$|$15\ mod\ 6=3$|$\lfloor 6/3\rfloor=2$|
 |$i=3$|||$6\ mod\ 3=0$||
+
 $r_i$이 $0$이 되는 순간 나머지가 $0$이 되는, 즉 식이 나누어 떨어지는 $x, y$를 찾았다는 의미이다.
+
 즉, $x_{i-1}$와 $y_{i-1}$이 우리가 구하고자하는 답이다.
 
 검산해보면,
