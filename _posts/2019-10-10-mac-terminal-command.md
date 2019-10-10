@@ -1,5 +1,5 @@
 ---
-title: "(mac) termianl 명령어"
+title: "(mac) terminal 명령어"
 categories:
   - termianl
 tags:
@@ -8,7 +8,7 @@ tags:
   - command
 comments: true
 ---
-# (mac) termianl 명령어
+# (mac) terminal 명령어
 
 |명령어|내용|옵션, 기타|
 |-|-|-|
