@@ -400,7 +400,7 @@ RSA와 달리 Private Key를 먼저 정한다.
 
 > $y^2=x^3-2x+15$
 > $G=[4,5]$
-> $dA=3$
+> $d_A=3$
 
 ## (2) Public Key (Q)
 타원곡선의 publlic key는 generation point인 시작점 $G$가 private key에 해당하는 숫자, $d$만큼 타원곡선 상의 덧셈 연산을 실행해 곡선에 안착한 좌표, $Q$에 해당한다
@@ -410,7 +410,7 @@ $$Q(x,y)=d\times G(x_0, y_0)$$
 $G$는 이미 알려져있고, $Q$는 Public Key 생성 후 공개되지만, 이 두 값으로 $d$를 유추해 내기 굉장히 어렵다(ECDLP,Elliptic Curve Discrete Logarithm Problem).
 직접 대입 방식 말고는 아직까지 해답이 없다.
 
-$Qa=dA*G=3*[4,5]=[13,22]$
+> $Q_A=d_A*G=3*[4,5]=[13,22]$
 
 ## (3) Sign
 - 파일의 해시(파일 고유 번호)와 함께 개인키를 방정식에 넣으면 서명됨
