@@ -1,4 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-14T16:31:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">(MySQL Workbench) MySQL Dump ERROR</title><link href="http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/" rel="alternate" type="text/html" title="(MySQL Workbench) MySQL Dump ERROR" /><published>2019-11-12T00:00:00+09:00</published><updated>2019-11-12T00:00:00+09:00</updated><id>http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error</id><content type="html" xml:base="http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/">&lt;h1 id=&quot;mysql-workbench---mysql-dump-error&quot;&gt;MySQL Workbench - MySQL Dump ERROR&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-14T18:12:27+09:00</updated><id>http://localhost:4000/</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">딥러닝(1) - 개요, 퍼셉트론</title><link href="http://localhost:4000/deep%20learning/2019/11/14/DL(1)/" rel="alternate" type="text/html" title="딥러닝(1) - 개요, 퍼셉트론" /><published>2019-11-14T00:00:00+09:00</published><updated>2019-11-14T00:00:00+09:00</updated><id>http://localhost:4000/deep%20learning/2019/11/14/DL(1)</id><content type="html" xml:base="http://localhost:4000/deep%20learning/2019/11/14/DL(1)/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#1-ai-dl-ml--neural-network&quot; id=&quot;markdown-toc-1-ai-dl-ml--neural-network&quot;&gt;1. AI, DL, ML … Neural Network&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#인공지능ai의-역사&quot; id=&quot;markdown-toc-인공지능ai의-역사&quot;&gt;인공지능(AI)의 역사&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#deep-learning-machine-learning&quot; id=&quot;markdown-toc-deep-learning-machine-learning&quot;&gt;Deep Learning (Machine Learning)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-perceptron&quot; id=&quot;markdown-toc-2-perceptron&quot;&gt;2. Perceptron&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#개념&quot; id=&quot;markdown-toc-개념&quot;&gt;개념&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#학습방법&quot; id=&quot;markdown-toc-학습방법&quot;&gt;학습방법&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#선형분류&quot; id=&quot;markdown-toc-선형분류&quot;&gt;선형분류&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#퍼셉트론-한계점&quot; id=&quot;markdown-toc-퍼셉트론-한계점&quot;&gt;퍼셉트론 한계점&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#xor&quot; id=&quot;markdown-toc-xor&quot;&gt;XOR&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#다층-퍼셉트론을-통한-한계-극복&quot; id=&quot;markdown-toc-다층-퍼셉트론을-통한-한계-극복&quot;&gt;다층 퍼셉트론을 통한 한계 극복&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#neural-network&quot; id=&quot;markdown-toc-neural-network&quot;&gt;Neural Network&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#개념-1&quot; id=&quot;markdown-toc-개념-1&quot;&gt;개념&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#activation-function&quot; id=&quot;markdown-toc-activation-function&quot;&gt;Activation Function&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#계단-함수-step-function&quot; id=&quot;markdown-toc-계단-함수-step-function&quot;&gt;계단 함수 (Step Function)&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#시그모이드-함수-sigmoid-function&quot; id=&quot;markdown-toc-시그모이드-함수-sigmoid-function&quot;&gt;시그모이드 함수 (Sigmoid Function)&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#오차-역전파-error-backpropagatin&quot; id=&quot;markdown-toc-오차-역전파-error-backpropagatin&quot;&gt;오차 역전파 (Error Backpropagatin)&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#reference&quot; id=&quot;markdown-toc-reference&quot;&gt;Reference&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;1-ai-dl-ml--neural-network&quot;&gt;1. AI, DL, ML … Neural Network&lt;/h1&gt;
+&lt;h2 id=&quot;인공지능ai의-역사&quot;&gt;인공지능(AI)의 역사&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1943년: 최초 신경망 모델 제안&lt;/li&gt;
+  &lt;li&gt;1950년: 앨런 튜링이 튜링 테스트 제안&lt;/li&gt;
+  &lt;li&gt;(첫 번째 AI 붐) 1950년대 후반 ~ 1970년대 전반
+    &lt;ul&gt;
+      &lt;li&gt;1956년 : 미국 다트머스의 학회에서 AI 이란 용어 처음 사용&lt;/li&gt;
+      &lt;li&gt;1957년 : 코넬 항공 연구소 프랑크 로젠이 Perceptron 고안&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;(두 번째 AI 붐) 1980년대: 주로 컴퓨터가 자율적으로 배우고 결정하는 종류가 아닌 인간으로부터 지식을 얻음&lt;/li&gt;
+  &lt;li&gt;1990년대: 세계 체스 챔피언을 물리 친 AI&lt;/li&gt;
+  &lt;li&gt;(세 번째 AI 붐) 2010년대: 딥 러닝 (머신 러닝)이라는 새로운 기술이 각광&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/history.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;deep-learning-machine-learning&quot;&gt;Deep Learning (Machine Learning)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;딥 러닝은 최신 인공 신경망(Artificial neural network) 기술로 인간 두뇌의 메커니즘을 시뮬레이션&lt;/li&gt;
+  &lt;li&gt;인간의 뇌는 정보를 전달하기 위해 뉴런(neuron)과 뉴런들을 연결하는 시냅스(synapse)로 구성&lt;/li&gt;
+  &lt;li&gt;인공 신경망(또는 단순히 신경망이라고 함)은 이러한 뉴런과 시냅스를 모델링&lt;/li&gt;
+  &lt;li&gt;이 모델은 두 번째 AI 붐 중에 적극적으로 연구되었지만 레이어 매우 작았고, 이후 기술 발전으로 인해 대규모 네트워크로 확장되어 컴퓨터가 심층 학습을 실행할 수 있게됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/neural_network.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+
+&lt;h1 id=&quot;2-perceptron&quot;&gt;2. Perceptron&lt;/h1&gt;
+
+&lt;h2 id=&quot;개념&quot;&gt;개념&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;1957년에 코넬 항공 연구소(Cornell Aeronautical Lab)의 프랑크 로젠블라트(Frank Rosenblatt)에 의해 고안&lt;/li&gt;
+  &lt;li&gt;1957년, Rosenblatt이 뉴런(neuron)을 모방 하여 고안&lt;/li&gt;
+  &lt;li&gt;뉴런: 특정 자극(impulse) 이 있다면 그 자극이 어느 역치(threshold) 이상이여야 반응(activation)
+    &lt;ul&gt;
+      &lt;li&gt;활동전위(action potential)가 축삭(axon)을 따라 내려가면서 세포막 안팎의 극성이 변화 -&amp;gt; 다른 뉴런에서 온 신호에 반응하여 막이 역치(threshold) 전위에 도달하면 Na+ 및 K+ 개폐 이온 채널이 여닫힘 -&amp;gt; 활동전위가 시작될 때 Na+ 채널이 열리고 Na+가 축삭 안으로 들어와 탈분극(Depolarization), 재분극은 K+ 채널이 열리고 K+가 축삭 밖으로 나갈 때 일어남 -&amp;gt; 채널의 개폐로 세포 안팎 극성이 변화 -&amp;gt; 신경 자극은 한 방향으로만 이동하여 축삭 말단(axon ending)에서 다른 뉴런으로 신호를 전달&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/action_potential.gif&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+    &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/action_potential.png&quot; width=&quot;80%&quot; /&gt;&lt;/center&gt;
+  	(출처: 위키)
+  &lt;/li&gt;
+  &lt;li&gt;퍼셉트론: 입력(input) 신호의 총합이 정해진 임계값($\theta$) 넘었을 때 $1$을 출력(output), 넘지 못하면 $0$ 또는 $-1$ 출력&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;각 입력신호에 고유한 weight 부여되며 기계학습은 이 weight(입력을 조절하니 매개변수로도 볼 수 있음)의 값을 정하는 작업
+&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/Perceptron_3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;학습방법&quot;&gt;학습방법&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;인간이 임의로 weight 설정하고 데이터 입력&lt;/li&gt;
+  &lt;li&gt;머신이 학습 데이터를 퍼셉트론 모형에 입력하며 분류가 잘못됐을 때 weight를 개선해 나간다
+&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/machine-learning-with-applications-in-categorization-popularity-and-sequence-labeling-75-638.jpg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;선형분류&quot;&gt;선형분류&lt;/h2&gt;
+&lt;p&gt;학습이 반복될수록 선 기울기 달라지고 weight 조정됨
+&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/500px-Perceptron_example.svg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;퍼셉트론-한계점&quot;&gt;퍼셉트론 한계점&lt;/h2&gt;
+
+&lt;h3 id=&quot;xor&quot;&gt;XOR&lt;/h3&gt;
+
+&lt;p&gt;x1과 x2 중 어느 한쪽이 1일 때만 1을 출력&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;x1&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;x2&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;y&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;선형 분류 불가능
+&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/xor2.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;다층-퍼셉트론을-통한-한계-극복&quot;&gt;다층 퍼셉트론을 통한 한계 극복&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/Perceptron_XOR.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;neural-network&quot;&gt;Neural Network&lt;/h1&gt;
+
+&lt;h2 id=&quot;개념-1&quot;&gt;개념&lt;/h2&gt;
+&lt;p&gt;Input(입력층), Hidden(은닉층), Output(출력층)
+&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/300px-Colored_neural_network.svg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;activation-function&quot;&gt;Activation Function&lt;/h2&gt;
+
+&lt;p&gt;출력 값 결정하게 하는 역할, 변환기
+AND, OR, NAND, XOR Gate 다음 단계&lt;/p&gt;
+
+&lt;h3 id=&quot;계단-함수-step-function&quot;&gt;계단 함수 (Step Function)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/download.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;시그모이드-함수-sigmoid-function&quot;&gt;시그모이드 함수 (Sigmoid Function)&lt;/h3&gt;
+
+&lt;p&gt;극단적인 계단 함수 대체하여 사용&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/sigmoid.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;오차-역전파-error-backpropagatin&quot;&gt;오차 역전파 (Error Backpropagatin)&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;순전파(Forwardpropagation) : 순차적으로 Input -&amp;gt; Output 가중치를 업데이트하면서 활성화 함수를 통해서 결과값을 가져오는 것&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;역전파 : 결과 값을 통해서 다시 역으로 input 방향으로 오차를 다시 보내며 가중치를 재업데이트 하는 것이다. 물론 결과에 영향을 많이 미친 노드(뉴런)에 더 많은 오차를 돌려줄 것이다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/H1KsG.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;한번 역전파를 실행하는 것을 1 epoch 주기라고함&lt;/li&gt;
+  &lt;li&gt;epoch를 늘릴 수록 가중치가 계속 업데이트(학습)되면서 점점 오차가 줄어나가는 방법&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/997C7A3359EEF5CA1F.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;https://journal.jp.fujitsu.com/en/2016/02/09/01/
+https://sacko.tistory.com/10?category=632408
+https://www.neuraldesigner.com/blog/perceptron-the-main-component-of-neural-networks&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Perceptron" /><category term="Deep Learning" /><summary type="html"></summary></entry><entry><title type="html">(MySQL Workbench) MySQL Dump ERROR</title><link href="http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/" rel="alternate" type="text/html" title="(MySQL Workbench) MySQL Dump ERROR" /><published>2019-11-12T00:00:00+09:00</published><updated>2019-11-12T00:00:00+09:00</updated><id>http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error</id><content type="html" xml:base="http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/">&lt;h1 id=&quot;mysql-workbench---mysql-dump-error&quot;&gt;MySQL Workbench - MySQL Dump ERROR&lt;/h1&gt;
 &lt;h2 id=&quot;내용&quot;&gt;내용&lt;/h2&gt;
 &lt;p&gt;MySQL Workbench에서 Data Export 시,
 Unknown table ‘column_statistics’ in information_schema (1109) Error 나오면서 실패&lt;/p&gt;
@@ -759,22 +937,4 @@ origin	ssh://future@localhost:10022/home/git/myproj.git (push)
 여러 가지 키 파생(key derivation)방식이 있는데 가장 많이 사용하는 방식은 트리 같은 구조(&lt;strong&gt;HD 지갑&lt;/strong&gt;)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;hd지갑&quot;&gt;HD지갑(&lt;/h4&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Ethereum" /><category term="Blockchian" /><summary type="html">1장. 이더리움이란 무엇인가? 이더리움?</summary></entry><entry><title type="html">Jekyll Admin 실행</title><link href="http://localhost:4000/jekyll/2019/06/11/jekyll-admin/" rel="alternate" type="text/html" title="Jekyll Admin 실행" /><published>2019-06-11T00:00:00+09:00</published><updated>2019-06-11T00:00:00+09:00</updated><id>http://localhost:4000/jekyll/2019/06/11/jekyll-admin</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/06/11/jekyll-admin/">&lt;h1 id=&quot;1-jekyll-admin-플러그인-추가&quot;&gt;1. Jekyll Admin 플러그인 추가&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; 파일 오픈해서 아래와 같이 추가&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem 'jekyll-admin', group: :jekyll_plugins
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;루트 디렉토리에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; 실행&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;http://localhost:4000/admin 접속 시 관리자 보임&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll-admin/blob/master/README.md&quot;&gt;https://github.com/jekyll/jekyll-admin/blob/master/README.md&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Jekyll" /><category term="Github" /><summary type="html">1. Jekyll Admin 플러그인 추가 Gemfile 파일 오픈해서 아래와 같이 추가</summary></entry></feed>
+&lt;h4 id=&quot;hd지갑&quot;&gt;HD지갑(&lt;/h4&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Ethereum" /><category term="Blockchian" /><summary type="html">1장. 이더리움이란 무엇인가? 이더리움?</summary></entry></feed>
