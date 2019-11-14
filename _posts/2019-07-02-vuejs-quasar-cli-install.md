@@ -55,14 +55,15 @@ $ quasar create <ProjectName>
 | |_| | |_| | (_| \__ \ (_| | |   
  \__\_\\__,_|\__,_|___/\__,_|_|   
 
-? Project name (internal usage for dev) project_name
-? Project product name (official name; must start with a letter if you will build mobile apps) Project App
+? Project name (internal usage for dev) custody_vue_client
+? Project product name (must start with letter if building mobile apps) Quasar App
 ? Project description A Quasar Framework app
-? Author admin <admin@test.com>
-? Check the features needed for your project: (Press <space> to select, <a> to toggle all, <i> to invert selection)ESLint,
- Vuex, Axios, Vue-i18n, IE11 support
-? Pick an ESLint preset Standard
-? Cordova id (disregard if not building mobile apps) org.cordova.quasar.app
+? Author somee.han <somee.han@aiotholdings.com>
+? Pick your favorite CSS preprocessor: (can be changed later) Sass
+? Pick a Quasar components & directives import strategy: (can be changed later) Auto import
+? Check the features needed for your project: ESLint, Vuex, Axios, Vue-i18n, IE11 support
+? Pick an ESLint preset: Standard
+? Cordova/Capacitor id (disregard if not building mobile apps) com.aiotholdings.custody.mobild.app
 ? Should we run `npm install` for you after the project has been created? (recommended) NPM
 
 ...

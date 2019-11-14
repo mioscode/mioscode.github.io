@@ -9,14 +9,15 @@ tags:
 comments: true
 ---
 
-## Homebrew 
+# Setting
+## 1. Homebrew 
 update
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 - xcode command line tool 없으면 설치
 
-## node.js/npm 최신 버전 설치 
+## 2. node.js/npm 최신 버전 설치 
 nodejs.org
 설치 확인
 ```
@@ -26,23 +27,25 @@ $ node -v
 v10.15.3
 ```
 
-## golang 최신 버전 설치 
+## 3. golang 최신 버전 설치 
 golang.org
 
 
-## GitHub Desktop 설치 
+## 4. GitHub Desktop 설치 
 github.com
 
-## mariaDB 설치 
+## 5. mariaDB 설치 
 ```
 $ brew install mariadb 
 ```
-## Quasar 설치
+
+## 6. Quasar 설치
 vue-cli 설치
 ```
 $ npm install -g vue-cli # or @vue/cli @vue/cli-init // recommended
 ```
-quasar-cli 설치
+
+### 6.1. quasar-cli 설치
 ```
 $ npm uninstall -g quasar-cli
 removed 1111 packages in 9.432s
@@ -61,35 +64,40 @@ serve         Create an ad-hoc (production-ready) server on App distributables
 help          Displays this message
 ```
 
-cordova 설치
+### 6.2. Cordova 설치
 ```
 $ npm install -g cordova
 /usr/local/bin/cordova -> /usr/local/lib/node_modules/cordova/bin/cordova
 + cordova@9.0.0
 ```
 
-Quasar CLI가 전역 적으로 설치되면 이제 새로운 프로젝트를 생성 가능
+### Quasar CLI가 전역 적으로 설치되면 이제 새로운 프로젝트를 생성 가능
 ```
 $ quasar init <folder-name>
 ```
 
-개발 시작
-```
-# Developing a SPA
-$ quasar dev
-# ...or
-$ quasar dev -m spa
+# 개발 시작
 
-# Developing for SSR
+## Developing a SPA
+```
+$ quasar dev
+```
+
+## ...or
+```
+$ quasar dev -m spa
+```
+
+## Developing for SSR
 $ quasar dev -m ssr
 
-# Developing a PWA
+## Developing a PWA
 $ quasar dev -m pwa
 
-# Developing a Mobile App (through Cordova)
+## Developing a Mobile App (through Cordova)
 $ quasar dev -m cordova -T [android|ios]
 
-# Developing an Electron App
+## Developing an Electron App
 $ quasar dev -m electron
 ```
 
