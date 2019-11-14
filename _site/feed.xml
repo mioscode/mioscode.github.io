@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-14T18:12:27+09:00</updated><id>http://localhost:4000/</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">딥러닝(1) - 개요, 퍼셉트론</title><link href="http://localhost:4000/deep%20learning/2019/11/14/DL(1)/" rel="alternate" type="text/html" title="딥러닝(1) - 개요, 퍼셉트론" /><published>2019-11-14T00:00:00+09:00</published><updated>2019-11-14T00:00:00+09:00</updated><id>http://localhost:4000/deep%20learning/2019/11/14/DL(1)</id><content type="html" xml:base="http://localhost:4000/deep%20learning/2019/11/14/DL(1)/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-14T18:18:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MIOS Code</title><subtitle>MIOS Codes and Thinks</subtitle><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><entry><title type="html">딥러닝(1) - 개요, 퍼셉트론</title><link href="http://localhost:4000/deep%20learning/2019/11/14/DL(1)/" rel="alternate" type="text/html" title="딥러닝(1) - 개요, 퍼셉트론" /><published>2019-11-14T00:00:00+09:00</published><updated>2019-11-14T00:00:00+09:00</updated><id>http://localhost:4000/deep%20learning/2019/11/14/DL(1)</id><content type="html" xml:base="http://localhost:4000/deep%20learning/2019/11/14/DL(1)/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#1-ai-dl-ml--neural-network&quot; id=&quot;markdown-toc-1-ai-dl-ml--neural-network&quot;&gt;1. AI, DL, ML … Neural Network&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#인공지능ai의-역사&quot; id=&quot;markdown-toc-인공지능ai의-역사&quot;&gt;인공지능(AI)의 역사&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#deep-learning-machine-learning&quot; id=&quot;markdown-toc-deep-learning-machine-learning&quot;&gt;Deep Learning (Machine Learning)&lt;/a&gt;&lt;/li&gt;
@@ -181,7 +181,7 @@ https://www.neuraldesigner.com/blog/perceptron-the-main-component-of-neural-netw
 &lt;p&gt;MySQL Workbench에서 Data Export 시,
 Unknown table ‘column_statistics’ in information_schema (1109) Error 나오면서 실패&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mysql -V
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mysql -V
 mysql  Ver 15.1 Distrib 10.3.13-MariaDB, for osx10.14 (x86_64) using readline 5.1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -198,157 +198,157 @@ mysql  Ver 15.1 Distrib 10.3.13-MariaDB, for osx10.14 (x86_64) using readline 5.
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;man &amp;lt;명령어&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;man &amp;lt;명령어&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;명령어 도움말 보기&lt;/td&gt;
       &lt;td&gt;종료-&amp;gt;q&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;디렉토리 변경 (change directory) (window: &lt;code class=&quot;highlighter-rouge&quot;&gt;dir&lt;/code&gt;)&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~&lt;/code&gt; 또는 &lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~/&lt;/code&gt; 사용자의 홈 디렉토리로 이동&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~&amp;lt;userid&amp;gt;&lt;/code&gt; userid의 홈 디렉토리로 이동&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd -&lt;/code&gt; 바로 앞에 작업한 디렉토리로 이동&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd &amp;lt;디렉토리명&amp;gt;&lt;/code&gt; 지정한 directory로 이동&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd /&lt;/code&gt; 최상위 root directory로 이동&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ..&lt;/code&gt; 현재 작업 directory의 parent directory로 이동&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;디렉토리 변경 (change directory) (window: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dir&lt;/code&gt;)&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ~&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ~/&lt;/code&gt; 사용자의 홈 디렉토리로 이동&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ~&amp;lt;userid&amp;gt;&lt;/code&gt; userid의 홈 디렉토리로 이동&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd -&lt;/code&gt; 바로 앞에 작업한 디렉토리로 이동&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd &amp;lt;디렉토리명&amp;gt;&lt;/code&gt; 지정한 directory로 이동&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd /&lt;/code&gt; 최상위 root directory로 이동&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ..&lt;/code&gt; 현재 작업 directory의 parent directory로 이동&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ls &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;현재 경로 하위 파일/디렉토리 나열 (list of directory) &lt;br /&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; 디렉토리 내의 모든파일(.으로 시작되는 파일 포함)을 출력&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-i&lt;/code&gt; 파일의 아이노드(inode)번호를 출력&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-h&lt;/code&gt; 파일의 크기를 쉬운 단위로 표시(k: 킬로바이트, m: 메가바이트)&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-l&lt;/code&gt; 파일의 다양한 정보를 함께 출력(소유자 정보, 권한 정보, 크기, 날짜)&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt; 파일을 쉼표로 구분하여 가로로 출력&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-s&lt;/code&gt; kb 단위의파일크기를 출력&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; 파일을 최근에 생성된 시간순으로 출력&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-F&lt;/code&gt; 파일의 형태와 함께 출력한다(&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; 실행파일, &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt; 심볼릭링크, &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; 디렉토리)&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-R&lt;/code&gt; 서브 디렉토리의 내용을 포함하여 출력(즉 하위 디렉토리 내용을 모두 출력)&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-S&lt;/code&gt; 파일을 크기순으로 출력&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--help&lt;/code&gt; 도움말 출력&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-a&lt;/code&gt; 디렉토리 내의 모든파일(.으로 시작되는 파일 포함)을 출력&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-i&lt;/code&gt; 파일의 아이노드(inode)번호를 출력&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-h&lt;/code&gt; 파일의 크기를 쉬운 단위로 표시(k: 킬로바이트, m: 메가바이트)&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-l&lt;/code&gt; 파일의 다양한 정보를 함께 출력(소유자 정보, 권한 정보, 크기, 날짜)&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; 파일을 쉼표로 구분하여 가로로 출력&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-s&lt;/code&gt; kb 단위의파일크기를 출력&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; 파일을 최근에 생성된 시간순으로 출력&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-F&lt;/code&gt; 파일의 형태와 함께 출력한다(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; 실행파일, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@&lt;/code&gt; 심볼릭링크, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; 디렉토리)&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-R&lt;/code&gt; 서브 디렉토리의 내용을 포함하여 출력(즉 하위 디렉토리 내용을 모두 출력)&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-S&lt;/code&gt; 파일을 크기순으로 출력&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--help&lt;/code&gt; 도움말 출력&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;관리자 권한으로 실행&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo su root&lt;/code&gt; 루트로 로그인&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo su root&lt;/code&gt; 루트로 로그인&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;전체 경로 확인&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;find &amp;lt;옵션&amp;gt; &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find &amp;lt;옵션&amp;gt; &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;파일을 이름, 수정날짜, 소유주, 허가 등을 기준으로 하여 검색&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-name &amp;lt;파일명&amp;gt;&lt;/code&gt; 파일명과 일치하는 파일을 찾기&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;. -name &amp;lt;파일명&amp;gt;&lt;/code&gt;현재 디렉토리에서 해당 파일 찾기&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-print&lt;/code&gt; 현재의 경로 이름을 표시&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-name &amp;lt;파일명&amp;gt;&lt;/code&gt; 파일명과 일치하는 파일을 찾기&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;. -name &amp;lt;파일명&amp;gt;&lt;/code&gt;현재 디렉토리에서 해당 파일 찾기&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-print&lt;/code&gt; 현재의 경로 이름을 표시&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;grep &amp;lt;옵션&amp;gt; &amp;lt;패턴&amp;gt; &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep &amp;lt;옵션&amp;gt; &amp;lt;패턴&amp;gt; &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;파일 안 내용 찾기&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-c&lt;/code&gt; 파일 내에서 패턴과 일치하는 줄의 총수를 구한다.&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-h&lt;/code&gt; 여러 개의 파일을 검색할 때, 출력에 파일명이 나타나는 것을 방지한다.&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-i&lt;/code&gt; 대, 소문자를 구별하지 않는다&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-n&lt;/code&gt; 일치하는 줄의 줄 번호도 같이 출력한다&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-v&lt;/code&gt; 패턴과 일치하지 않는 줄만 출력한다&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-c&lt;/code&gt; 파일 내에서 패턴과 일치하는 줄의 총수를 구한다.&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-h&lt;/code&gt; 여러 개의 파일을 검색할 때, 출력에 파일명이 나타나는 것을 방지한다.&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-i&lt;/code&gt; 대, 소문자를 구별하지 않는다&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-n&lt;/code&gt; 일치하는 줄의 줄 번호도 같이 출력한다&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-v&lt;/code&gt; 패턴과 일치하지 않는 줄만 출력한다&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;history&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;history&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;히스토리 보기&lt;/td&gt;
-      &lt;td&gt;종료-&amp;gt;q&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;history \ grep &amp;lt;검색어&amp;gt;&lt;/code&gt; 히스토리 안 내용찾기&lt;/td&gt;
+      &lt;td&gt;종료-&amp;gt;q&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;history \ grep &amp;lt;검색어&amp;gt;&lt;/code&gt; 히스토리 안 내용찾기&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clear&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;화면 클리어 (window: &lt;code class=&quot;highlighter-rouge&quot;&gt;clr&lt;/code&gt;)&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;화면 클리어 (window: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clr&lt;/code&gt;)&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ipconfig&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipconfig&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;ip 보기&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netstat -nat | grep TIME_WAIT | wc -l&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netstat -nat | grep TIME_WAIT | wc -l&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;네트워크&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ps &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ps &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;현재 자신이 실행한 프로세스 목록을 출력&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lsof -i :&amp;lt;port번호&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lsof -i :&amp;lt;port번호&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;특정 포트 사용중인 프로세스 출력&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lsof -i -P | grep -i &quot;listen&quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lsof -i -P | grep -i &quot;listen&quot;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;사용중인 프로세스 중 열린(listen) 포트 확인&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kill &amp;lt;-signalID&amp;gt; &amp;lt;PID&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kill &amp;lt;-signalID&amp;gt; &amp;lt;PID&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;프로세스 kill&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-signalID&lt;/code&gt; 프로세서에게 보낼 시그널을 지정한다. 시그널은 번호로 지정될 도 있고 시그널 이름으로 지정될 수도 있다.(&lt;code class=&quot;highlighter-rouge&quot;&gt;-9&lt;/code&gt;)&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-l&lt;/code&gt; 시그널 종류를 나열한다. 시그널의 종류는 시그널 번호 순서대로 이름으로 나열된다.&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-signalID&lt;/code&gt; 프로세서에게 보낼 시그널을 지정한다. 시그널은 번호로 지정될 도 있고 시그널 이름으로 지정될 수도 있다.(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-9&lt;/code&gt;)&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-l&lt;/code&gt; 시그널 종류를 나열한다. 시그널의 종류는 시그널 번호 순서대로 이름으로 나열된다.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jobs &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jobs &amp;lt;옵션&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;현재 진행중인 작업들을 출력&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-l&lt;/code&gt; 현재 작업하고 있는 디렉토리와 프로세스 그룹 ID를 출력&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-l&lt;/code&gt; 현재 작업하고 있는 디렉토리와 프로세스 그룹 ID를 출력&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir &amp;lt;옵션&amp;gt; &amp;lt;디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir &amp;lt;옵션&amp;gt; &amp;lt;디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;새로운 디렉토리 만들기 (make directory)&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt; 만들고자하는 디렉토리의 상위 디렉토리가 없는 경우 상위 디렉토리까지 같이 생성&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p&lt;/code&gt; 만들고자하는 디렉토리의 상위 디렉토리가 없는 경우 상위 디렉토리까지 같이 생성&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rmdir &amp;lt;옵션&amp;gt; &amp;lt;디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rmdir &amp;lt;옵션&amp;gt; &amp;lt;디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;디렉토리 삭제 (remove directory)&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt; 제거된 디렉토리에 대한 메시지가 표시됨&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-s&lt;/code&gt; 제거된 디렉토리에 대한 메시지가 표시되지 않음(Default)&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p&lt;/code&gt; 제거된 디렉토리에 대한 메시지가 표시됨&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-s&lt;/code&gt; 제거된 디렉토리에 대한 메시지가 표시되지 않음(Default)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;touch &amp;lt;파일명.확장자&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch &amp;lt;파일명.확장자&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;파일 생성&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rm &amp;lt;옵션&amp;gt; &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;파일 삭제, 삭제하고자 하는 디렉토리에 파일이나 부 디렉토리가 없어야만 삭제가 가능 (window: &lt;code class=&quot;highlighter-rouge&quot;&gt;del&lt;/code&gt;)&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; 디렉토리 안의 파일을 삭제할 때 사용자에게 확인을 요구하지 않음&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-r&lt;/code&gt; 인수 list 에서 지정한 디렉토리 혹은 그 아래의 subdirectory를 삭제&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-rf&lt;/code&gt; 디렉토리 안에 파일, 디렉토리 등 모든 내용물들도 같이 삭제&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-i&lt;/code&gt; whrite permission 이 없는 파일의 삭제를 위해 대화식으로 확인&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt; 디렉토리 dir-name과 비어있는 부모 디렉토리를 사용자가 제거할 수 있으며, 전체 경로명이 삭제 되거나 어떤 이유로 인해 경로명의 일부가 남은것과 무관하게 표준출력에 메세지가 출력됨&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-s -p&lt;/code&gt; 선택항목 지정시 표준오류에 출력되는 메시지를 삭제&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm &amp;lt;옵션&amp;gt; &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;파일 삭제, 삭제하고자 하는 디렉토리에 파일이나 부 디렉토리가 없어야만 삭제가 가능 (window: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;del&lt;/code&gt;)&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-f&lt;/code&gt; 디렉토리 안의 파일을 삭제할 때 사용자에게 확인을 요구하지 않음&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-r&lt;/code&gt; 인수 list 에서 지정한 디렉토리 혹은 그 아래의 subdirectory를 삭제&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-rf&lt;/code&gt; 디렉토리 안에 파일, 디렉토리 등 모든 내용물들도 같이 삭제&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-i&lt;/code&gt; whrite permission 이 없는 파일의 삭제를 위해 대화식으로 확인&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p&lt;/code&gt; 디렉토리 dir-name과 비어있는 부모 디렉토리를 사용자가 제거할 수 있으며, 전체 경로명이 삭제 되거나 어떤 이유로 인해 경로명의 일부가 남은것과 무관하게 표준출력에 메세지가 출력됨&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-s -p&lt;/code&gt; 선택항목 지정시 표준오류에 출력되는 메시지를 삭제&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cp &amp;lt;옵션&amp;gt; &amp;lt;원본파일명&amp;gt; &amp;lt;목적파일명/디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;복사 (copy) (window: &lt;code class=&quot;highlighter-rouge&quot;&gt;copy&lt;/code&gt;)&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-i&lt;/code&gt; 파일 복사시 동일 파일명이 있을시에 사용자에게 덮어 쓸 것인지를 물어봄&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; 동일파일명 발생시에도 모두 강제적으로 복사함&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-p&lt;/code&gt; 원본 파일의 시간 및 소유 권한 보존&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-r&lt;/code&gt; 포함된 자식 디렉토리까지 모두 복사&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cp &amp;lt;옵션&amp;gt; &amp;lt;원본파일명&amp;gt; &amp;lt;목적파일명/디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;복사 (copy) (window: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;copy&lt;/code&gt;)&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-i&lt;/code&gt; 파일 복사시 동일 파일명이 있을시에 사용자에게 덮어 쓸 것인지를 물어봄&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-f&lt;/code&gt; 동일파일명 발생시에도 모두 강제적으로 복사함&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p&lt;/code&gt; 원본 파일의 시간 및 소유 권한 보존&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-r&lt;/code&gt; 포함된 자식 디렉토리까지 모두 복사&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mv &amp;lt;옵션&amp;gt; &amp;lt;원본파일명&amp;gt; &amp;lt;새로운파일명/이동할디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mv &amp;lt;옵션&amp;gt; &amp;lt;원본파일명&amp;gt; &amp;lt;새로운파일명/이동할디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;파일의 위치를 바꾸거나(경로) 이름을 바꾸는데(존재하지 않는 파일명) 사용&lt;br /&gt;한번에 여러 개의 파일 이동도 가능(마지막만 이동할 디렉토리면됨)&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; 대상 파일이 존재할 대 새로운 파일로 대체&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-i&lt;/code&gt; 대상파일이 있을 때 확인 후 작업, 같은 이름의 파일이 이미 존재하여서 그것을 덮어쓰기를 하지 않으려면 사용&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-f&lt;/code&gt; 파일의 이동 과정을 보여준다.&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-f&lt;/code&gt; 대상 파일이 존재할 대 새로운 파일로 대체&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-i&lt;/code&gt; 대상파일이 있을 때 확인 후 작업, 같은 이름의 파일이 이미 존재하여서 그것을 덮어쓰기를 하지 않으려면 사용&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-f&lt;/code&gt; 파일의 이동 과정을 보여준다.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;텍스트 파일 열기&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vi &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi &amp;lt;파일명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;vim 편집기 실행&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ln -s &amp;lt;타겟 경로&amp;gt; &amp;lt;심볼릭 링크 경로&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ln -s &amp;lt;타겟 경로&amp;gt; &amp;lt;심볼릭 링크 경로&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;심볼릭 링크 걸기&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chmod &amp;lt;옵션&amp;gt; &amp;lt;파일명/디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod &amp;lt;옵션&amp;gt; &amp;lt;파일명/디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;파일 권한 변경&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-R&lt;/code&gt; 서브디렉토리까지 모든 파일의 권한 변경&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;777&lt;/code&gt; 모든 권리&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;755&lt;/code&gt; 읽기만&lt;br /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;700&lt;/code&gt; 오너만 조작 가능&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-R&lt;/code&gt; 서브디렉토리까지 모든 파일의 권한 변경&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;777&lt;/code&gt; 모든 권리&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;755&lt;/code&gt; 읽기만&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;700&lt;/code&gt; 오너만 조작 가능&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chown &amp;lt;옵션&amp;gt; &amp;lt;파일명/디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chown &amp;lt;옵션&amp;gt; &amp;lt;파일명/디렉토리명&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;파일 소유자 변경&lt;/td&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-R&lt;/code&gt; 서브디렉토리까지 모든 파일의 권한 변경&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-R&lt;/code&gt; 서브디렉토리까지 모든 파일의 권한 변경&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;zip &amp;lt;압축파일명.zip&amp;gt; &amp;lt;파일 또는 폴더&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zip &amp;lt;압축파일명.zip&amp;gt; &amp;lt;파일 또는 폴더&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;파일 또는 폴더를 zip으로 압축&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;unzip &amp;lt;압축파일명.zip&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unzip &amp;lt;압축파일명.zip&amp;gt;&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;압축 풀기&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;diff&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diff&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;두개의 파일이 일치되도록 변경시키기 위한 정보를 제공 man (differential file comparator)&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;whoami&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;whoami&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;현재 사용자&lt;/td&gt;
       &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
@@ -357,19 +357,19 @@ mysql  Ver 15.1 Distrib 10.3.13-MariaDB, for osx10.14 (x86_64) using readline 5.
 
 &lt;p&gt;https://macinjune.com/all-posts/mac/terminal/terminal-mv-command%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%ED%8C%8C%EC%9D%BC-%EC%98%AE%EA%B8%B0%EA%B8%B0/
 https://slayer95.tistory.com/entry/Tip%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D%8C&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="mac" /><category term="termianl" /><category term="command" /><summary type="html">(mac) terminal 명령어</summary></entry><entry><title type="html">(Python) jupyter notebook 실행</title><link href="http://localhost:4000/python/2019/09/04/python-jupyter-run/" rel="alternate" type="text/html" title="(Python) jupyter notebook 실행" /><published>2019-09-04T00:00:00+09:00</published><updated>2019-09-04T00:00:00+09:00</updated><id>http://localhost:4000/python/2019/09/04/python-jupyter-run</id><content type="html" xml:base="http://localhost:4000/python/2019/09/04/python-jupyter-run/">&lt;h1 id=&quot;jupyter-notebook-실행&quot;&gt;jupyter notebook 실행&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /Users/&amp;lt;사용자계정&amp;gt;/anaconda/python.app -m notebook
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /Users/&amp;lt;사용자계정&amp;gt;/anaconda/python.app -m notebook
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;notebook-저장-경로-변경해서-저장&quot;&gt;notebook 저장 경로 변경해서 저장&lt;/h1&gt;
 &lt;p&gt;주피터 노트북은 기본적으로 C:\Users&amp;lt;사용자계정&amp;gt; 폴더에 노트북 파일을 저장
 노트북 파일 저장 경로를 바꾸려면 –notebook-dir 옵션에 폴더를 지정&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /Users/&amp;lt;사용자계정&amp;gt;/anaconda/python.app -m notebook --notebook-dir &amp;lt;경로&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /Users/&amp;lt;사용자계정&amp;gt;/anaconda/python.app -m notebook --notebook-dir &amp;lt;경로&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://dojang.io/mod/page/view.php?id=2457&quot;&gt;https://dojang.io/mod/page/view.php?id=2457&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Python" /><category term="jupyter" /><category term="notebook" /><summary type="html">jupyter notebook 실행 $ cd /Users/&amp;lt;사용자계정&amp;gt;/anaconda/python.app -m notebook</summary></entry><entry><title type="html">(mac) terminal에서 port 실행 중인 PID kill</title><link href="http://localhost:4000/terminal/2019/09/02/kill-process-using-port/" rel="alternate" type="text/html" title="(mac) terminal에서 port 실행 중인 PID kill" /><published>2019-09-02T00:00:00+09:00</published><updated>2019-09-02T00:00:00+09:00</updated><id>http://localhost:4000/terminal/2019/09/02/kill-process-using-port</id><content type="html" xml:base="http://localhost:4000/terminal/2019/09/02/kill-process-using-port/">&lt;h1 id=&quot;error&quot;&gt;Error&lt;/h1&gt;
 &lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ./server.py
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ./server.py
 Traceback (most recent call last):
   File &quot;./server.py&quot;, line 7, in &amp;lt;module&amp;gt;
     s.bind((host, port))        # Bind to the port
@@ -377,7 +377,7 @@ OSError: [Errno 98] Address already in use
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;go&quot;&gt;Go&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ./server
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ./server
 2019/09/02 20:12:33 InitDB1
 2019/09/02 20:12:33 InitDB2
 2019/09/02 20:12:33 Check JWT1
@@ -396,29 +396,29 @@ ____________________________________O/_______
 
 &lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
 &lt;h2 id=&quot;오류에서-언급한-포트-사용중인-프로세스-확인&quot;&gt;오류에서 언급한 포트 사용중인 프로세스 확인&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ lsof -i :&amp;lt;port 번호&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ lsof -i :&amp;lt;port 번호&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ lsof -i :32101
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ lsof -i :32101
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;프로세스-강제-종료&quot;&gt;프로세스 강제 종료&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ kill -9 &amp;lt;process id&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ kill -9 &amp;lt;process id&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
 &lt;p&gt;https://stackoverflow.com/questions/17780291/python-socket-error-errno-98-address-already-in-use&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="mac" /><category term="terminal" /><summary type="html">Error Python $ ./server.py Traceback (most recent call last): File &quot;./server.py&quot;, line 7, in &amp;lt;module&amp;gt; s.bind((host, port)) # Bind to the port OSError: [Errno 98] Address already in use</summary></entry><entry><title type="html">Git 명령어</title><link href="http://localhost:4000/github/2019/09/02/git-command/" rel="alternate" type="text/html" title="Git 명령어" /><published>2019-09-02T00:00:00+09:00</published><updated>2019-09-02T00:00:00+09:00</updated><id>http://localhost:4000/github/2019/09/02/git-command</id><content type="html" xml:base="http://localhost:4000/github/2019/09/02/git-command/">&lt;h1 id=&quot;create&quot;&gt;Create&lt;/h1&gt;
 &lt;p&gt;원하는 작업 폴더 새로 만들고 폴더 안으로 이동해서 새로운 git 저장소 만들기&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd 작업디렉토리
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd 작업디렉토리
 $ git init
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;clone&quot;&gt;Clone&lt;/h1&gt;
 &lt;h2 id=&quot;local-저장소-복제&quot;&gt;(local) 저장소 복제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone /로컬/저장소/경로
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone /로컬/저장소/경로
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;remote-저장소-복제&quot;&gt;(remote) 저장소 복제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone 사용자명@호스트:/원격/저장소/경로
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone 사용자명@호스트:/원격/저장소/경로
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h1 id=&quot;변경-사항-제거&quot;&gt;변경 사항 제거&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -430,41 +430,41 @@ Type 3. Unstaged UnTracked files a.k.a UnTracked files : 새 파일. 항상 무�
 
 &lt;h2 id=&quot;무인-추적-파일-만-제거-type-2&quot;&gt;무인 추적 파일 만 제거 (Type 2)&lt;/h2&gt;
 &lt;h3 id=&quot;all&quot;&gt;All&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout . 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout . 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;특정-파일&quot;&gt;특정 파일&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -- &amp;lt;filename&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -- &amp;lt;filename&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;ex) src/hello.c 의 변경을 취소하는 경우&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -- src/hello.c
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -- src/hello.c
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;unstaged-untracked-파일-만-제거-type-3&quot;&gt;Unstaged UnTracked 파일 만 제거 (Type 3)&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clean -f 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clean -f 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;단계별-추적-및-비-스테이지-추적-파일을-제거-type-1-type-2&quot;&gt;단계별 추적 및 비 스테이지 추적 파일을 제거 (Type 1, Type 2)&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git reset --hard
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git reset --hard
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;모든-변경-사항을-제거-type-1-type-2-type-3&quot;&gt;모든 변경 사항을 제거 (Type 1, Type 2, Type 3)&lt;/h2&gt;
 &lt;p&gt;모든 수정 사항을 버리므로 주의&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git stash -u
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git stash -u
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;commit&quot;&gt;Commit&lt;/h1&gt;
 &lt;h2 id=&quot;변경-파일-index에-추가&quot;&gt;변경 파일 Index에 추가&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add *
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add *
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add .
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add .
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add -A
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add -A
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&quot;변경-내용-확정-commit--head에-반영&quot;&gt;변경 내용 확정 (Commit) = Head에 반영&lt;/h2&gt;
-&lt;p&gt;변경 파일들을 로컬 저장소에 등록하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt; 명령어 사용 &lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt;은 message&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m &quot;이번 확정본에 대한 설명&quot;
+&lt;p&gt;변경 파일들을 로컬 저장소에 등록하기 위해 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit&lt;/code&gt; 명령어 사용 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt;은 message&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m &quot;이번 확정본에 대한 설명&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;push&quot;&gt;Push&lt;/h1&gt;
@@ -472,7 +472,7 @@ Type 3. Unstaged UnTracked files a.k.a UnTracked files : 새 파일. 항상 무�
 
 &lt;h2 id=&quot;remote-서버-주소를-git에-등록&quot;&gt;remote 서버 주소를 git에 등록&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin https://~~~.git
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin https://~~~.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;이제 origin을 사용하면 원격 저장소에 접근 가능해진다&lt;/p&gt;
@@ -480,36 +480,36 @@ Type 3. Unstaged UnTracked files a.k.a UnTracked files : 새 파일. 항상 무�
 &lt;h2 id=&quot;변경-내용-remote-서버에-올리기&quot;&gt;변경 내용 remote 서버에 올리기&lt;/h2&gt;
 &lt;p&gt;새로 만든 로컬 branch를 리모트 저장소에 전송하기 전까지는 다른 사람 접근 불가&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin &amp;lt;branch 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin &amp;lt;branch 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;branch-관리&quot;&gt;Branch 관리&lt;/h1&gt;
 &lt;h2 id=&quot;local-branch-새로-만들고-변경&quot;&gt;(local) branch 새로 만들고 변경&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -b &amp;lt;branch 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -b &amp;lt;branch 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;local-기존-branch-변경&quot;&gt;(local) 기존 branch 변경&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;local-branch-삭제&quot;&gt;(local) branch 삭제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch -d &amp;lt;branch 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch -d &amp;lt;branch 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;local-branch-목록-보기&quot;&gt;(local) branch 목록 보기&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;remote-branch-목록-보기&quot;&gt;(remote) branch 목록 보기&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch -r
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch -r
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;remote-branch-삭제&quot;&gt;(remote) branch 삭제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin --delete &amp;lt;branch 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin --delete &amp;lt;branch 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;remote-새로운-branch-복제&quot;&gt;(remote) 새로운 branch 복제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -t origin/&amp;lt;branch 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -t origin/&amp;lt;branch 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;pull&quot;&gt;Pull&lt;/h1&gt;
@@ -517,30 +517,30 @@ Type 3. Unstaged UnTracked files a.k.a UnTracked files : 새 파일. 항상 무�
 원격 저장소의 변경 내용이 로컬 작업 디렉토리에 받아지고(fetch), 병합(merge)&lt;/p&gt;
 
 &lt;h2 id=&quot;remote-fetch&quot;&gt;(remote) fetch&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote update
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote update
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;remote-local-pull&quot;&gt;(remote-&amp;gt;local) pull&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git pull origin &amp;lt;brunch 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git pull origin &amp;lt;brunch 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;status&quot;&gt;Status&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git status
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git status
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;merge&quot;&gt;Merge&lt;/h1&gt;
 &lt;p&gt;다른 가지에 있는 변경 내용을 현재 가지(예를 들면, master 가지)에 병합하려면 아래 명령 실행&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git merge &amp;lt;brunch 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git merge &amp;lt;brunch 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;충돌 나면 충돌 부분 수정해서 해결&lt;/p&gt;
 
 &lt;p&gt;충돌을 해결했다면, 아래 명령으로 git에게 아까의 파일을 병합하라고 명령&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;변경 내용을 병합하기 전에, 어떻게 바뀌었는지 비교 가능&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git diff &amp;lt;원래 brunch&amp;gt; &amp;lt;비교 대상 brunch&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git diff &amp;lt;원래 brunch&amp;gt; &amp;lt;비교 대상 brunch&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
@@ -548,16 +548,16 @@ Type 3. Unstaged UnTracked files a.k.a UnTracked files : 새 파일. 항상 무�
   &lt;li&gt;&lt;a href=&quot;https://rogerdudler.github.io/git-guide/index.ko.html&quot;&gt;https://rogerdudler.github.io/git-guide/index.ko.html&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://codeday.me/ko/qa/20190306/4868.html&quot;&gt;https://codeday.me/ko/qa/20190306/4868.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Github" /><summary type="html">Create 원하는 작업 폴더 새로 만들고 폴더 안으로 이동해서 새로운 git 저장소 만들기 $ cd 작업디렉토리 $ git init</summary></entry><entry><title type="html">(Rust) 설치 및 실행 + nightly 버전</title><link href="http://localhost:4000/rust/2019/07/09/rust-install-build/" rel="alternate" type="text/html" title="(Rust) 설치 및 실행 + nightly 버전" /><published>2019-07-09T00:00:00+09:00</published><updated>2019-07-09T00:00:00+09:00</updated><id>http://localhost:4000/rust/2019/07/09/rust-install-build</id><content type="html" xml:base="http://localhost:4000/rust/2019/07/09/rust-install-build/">&lt;h1 id=&quot;rust-설치&quot;&gt;Rust 설치&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl https://sh.rustup.rs -sSf | sh
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl https://sh.rustup.rs -sSf | sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;설치-확인&quot;&gt;설치 확인&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustc --version
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustc --version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;nightly-rust&quot;&gt;nightly Rust&lt;/h1&gt;
 &lt;h2 id=&quot;설치&quot;&gt;설치&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup toolchain install nightly
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup toolchain install nightly
 info: syncing channel updates for 'nightly-x86_64-apple-darwin'
 info: latest update on 2019-07-09, rust version 1.38.0-nightly (78ca1bda3 2019-07-08)
 info: downloading component 'rustc'
@@ -580,12 +580,12 @@ info: installing component 'rust-docs'
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;실행&quot;&gt;실행&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup run nightly rustc --version
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup run nightly rustc --version
 rustc 1.38.0-nightly (78ca1bda3 2019-07-08)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;디폴트-설정&quot;&gt;디폴트 설정&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup default nightly
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup default nightly
 info: using existing install for 'nightly-x86_64-apple-darwin'
 info: default toolchain set to 'nightly-x86_64-apple-darwin'
 
@@ -593,19 +593,19 @@ info: default toolchain set to 'nightly-x86_64-apple-darwin'
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;참고-업데이트&quot;&gt;(참고) 업데이트&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup update
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ rustup update
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;build&quot;&gt;Build&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd &amp;lt;프로젝트 폴더&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd &amp;lt;프로젝트 폴더&amp;gt;
 $ cargo build --release
     Finished release [optimized] target(s) in 0.30s
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;error&quot;&gt;Error&lt;/h1&gt;
 &lt;h2 id=&quot;내용&quot;&gt;내용&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cargo build --release
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cargo build --release
    Compiling rocket v0.4.1
 error[E0432]: unresolved import `std::boxed::FnBox`
  --&amp;gt; /Users/somi.han/.cargo/registry/src/github.com-1ecc6299db9ec823/rocket-0.4.1/src/fairing/ad_hoc.rs:2:5
@@ -622,7 +622,7 @@ To learn more, run the command again with --verbose.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;해결&quot;&gt;해결&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cargo --version
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cargo --version
 cargo 1.37.0-nightly (4c1fa54d1 2019-06-24)
 $ cargo update
 $ cargo build --release
@@ -634,7 +634,7 @@ $ cargo build --release
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/rust-lang/rustup.rs#working-with-nightly-rust&quot;&gt;https://github.com/rust-lang/rustup.rs#working-with-nightly-rust&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Rust" /><category term="nightly" /><summary type="html">Rust 설치 $ curl https://sh.rustup.rs -sSf | sh</summary></entry><entry><title type="html">(Vue.js) Quasar 1.0 CLI 설치하기</title><link href="http://localhost:4000/quasar/2019/07/02/vuejs-quasar-cli-install/" rel="alternate" type="text/html" title="(Vue.js) Quasar 1.0 CLI 설치하기" /><published>2019-07-02T00:00:00+09:00</published><updated>2019-07-02T00:00:00+09:00</updated><id>http://localhost:4000/quasar/2019/07/02/vuejs-quasar-cli-install</id><content type="html" xml:base="http://localhost:4000/quasar/2019/07/02/vuejs-quasar-cli-install/">&lt;h1 id=&quot;0-환경&quot;&gt;0. 환경&lt;/h1&gt;
 &lt;p&gt;node &amp;gt;= 8, npm &amp;gt;= 5 설치되어있는지 확인한다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm version    
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm version    
 { npm: '6.4.1',
   ares: '1.15.0',
   cldr: '33.1',
@@ -651,23 +651,23 @@ $ cargo build --release
   v8: '6.8.275.32-node.51',
   zlib: '1.2.11' }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ node -v
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ node -v
 v10.15.3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;1-quasar-cli-설치&quot;&gt;1. Quasar CLI 설치&lt;/h1&gt;
 &lt;p&gt;Uninstall quasar-cli if you have it from &amp;lt;1.0 versions&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm uninstall -g quasar-cli
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm uninstall -g quasar-cli
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Node.js &amp;gt;= 8.9.0 is required.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install -g @quasar/cli
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install -g @quasar/cli
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;v1.0 + CLI는 v1.0 이전 프로젝트 폴더와도 호환되므로 이전 프로젝트가 더 이상 실행되지 않는다고 걱정할 필요 없다.
 Quasar 프로젝트 폴더를 생성하기 위해 vue cli를  더 이상 설치하지 않아도 된다.&lt;/p&gt;
 
 &lt;h1 id=&quot;2-quasar-프로젝트-생성&quot;&gt;2. Quasar 프로젝트 생성&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ quasar create &amp;lt;ProjectName&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ quasar create &amp;lt;ProjectName&amp;gt;
   ___                             
  / _ \ _   _  __ _ ___  __ _ _ __ 
 | | | | | | |/ _` / __|/ _` | '__|
@@ -710,7 +710,7 @@ Enjoy! - Quasar Team
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;3-실행&quot;&gt;3. 실행&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ProjectName
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ProjectName
 $ quasar dev
 ...
  app:dev-server Opening default browser at http://localhost:8080/ +11s
@@ -719,27 +719,27 @@ $ quasar dev
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://quasar.dev/quasar-cli/installation&quot;&gt;https://quasar.dev/quasar-cli/installation&lt;/a&gt;
 &lt;a href=&quot;https://godffs.tistory.com/3268&quot;&gt;https://godffs.tistory.com/3268&lt;/a&gt;&lt;/p&gt;</content><author><name>MIOS</name><email>ijanamilot@gmail.com</email></author><category term="Vue.js" /><category term="Quasar" /><summary type="html">0. 환경 node &amp;gt;= 8, npm &amp;gt;= 5 설치되어있는지 확인한다. $ npm version { npm: '6.4.1', ares: '1.15.0', cldr: '33.1', http_parser: '2.8.0', icu: '62.1', modules: '64', napi: '3', nghttp2: '1.34.0', node: '10.15.3', openssl: '1.1.0j', tz: '2018e', unicode: '11.0', uv: '1.23.2', v8: '6.8.275.32-node.51', zlib: '1.2.11' } $ node -v v10.15.3</summary></entry><entry><title type="html">(Git) 원격저장소 url 변경</title><link href="http://localhost:4000/github/2019/06/27/git-url-change/" rel="alternate" type="text/html" title="(Git) 원격저장소 url 변경" /><published>2019-06-27T00:00:00+09:00</published><updated>2019-06-27T00:00:00+09:00</updated><id>http://localhost:4000/github/2019/06/27/git-url-change</id><content type="html" xml:base="http://localhost:4000/github/2019/06/27/git-url-change/">&lt;h1 id=&quot;1-우선-git-이-있는-프로젝트로-이동&quot;&gt;1. 우선 .git 이 있는 프로젝트로 이동&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd myproj
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd myproj
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;2-원격-url을-확인하려면&quot;&gt;2. 원격 URL을 확인하려면&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote -v
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote -v
 origin	ssh://future@imot1/home/git/myproj.git (fetch)
 origin	ssh://future@imot1/home/git/myproj.git (push)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;3-이제-다음과-같은-명령으로-변경할-수-있다&quot;&gt;3. 이제 다음과 같은 명령으로 변경할 수 있다.&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote set-url origin ssh://future@localhost:10022/home/git/myproj.git
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote set-url origin ssh://future@localhost:10022/home/git/myproj.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;4-다시-확인해-보면&quot;&gt;4. 다시 확인해 보면&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote -v
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote -v
 origin	ssh://future@localhost:10022/home/git/myproj.git (fetch)
 origin	ssh://future@localhost:10022/home/git/myproj.git (push)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;이제는-기존과-동일하게-동작&quot;&gt;이제는 기존과 동일하게 동작&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin master
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
@@ -869,19 +869,19 @@ origin	ssh://future@localhost:10022/home/git/myproj.git (push)
 &lt;/ul&gt;
 
 &lt;p&gt;private key k&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;k=f8f8a2f43c8376......
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;k=f8f8a2f43c8376......
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;public key K(x, y 좌표가 연결되고 16진수로 표현됨)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;K=6e145ccef...
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;K=6e145ccef...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Keccak-256을 사용해서 공개키의 해시를 계산&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Keccak256(K)=2a5bc342....
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Keccak256(K)=2a5bc342....
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;마지막 20바이트(최하위 바이트)만 이더리움 주소로 사용&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;001d3flef827552ae1114027bd3ecf1f086a0f9
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;001d3flef827552ae1114027bd3ecf1f086a0f9
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;접두어 0x로 표시되어 16진수로 인코딩&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0x001d3flef827552ae1114027bd3ecf1f086a0f9
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0x001d3flef827552ae1114027bd3ecf1f086a0f9
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;5장-지갑&quot;&gt;5장. 지갑&lt;/h1&gt;
