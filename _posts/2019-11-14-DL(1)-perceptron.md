@@ -1,5 +1,5 @@
 ---
-title: "딥러닝(1) - 개요, 퍼셉트론"
+title: "딥러닝(1) - 퍼셉트론"
 categories:
   - Deep Learning
 tags:
@@ -7,8 +7,8 @@ tags:
   - Deep Learning
 comments: true
 ---
-# 1. AI, DL, ML ... Neural Network
-## 인공지능(AI)의 역사
+# 1. 들어가기 전에
+## 1.1. AI의 역사
 - 1943년: 최초 신경망 모델 제안
 - 1950년: 앨런 튜링이 튜링 테스트 제안
 - (첫 번째 AI 붐) 1950년대 후반 ~ 1970년대 전반
@@ -19,7 +19,32 @@ comments: true
 - (세 번째 AI 붐) 2010년대: 딥 러닝 (머신 러닝)이라는 새로운 기술이 각광
 <center><img src="https://mioscode.github.io/assets/images/dl1/history.jpg" width="50%"></center>
 
-## Deep Learning (Machine Learning)
+## 1.2. AI, ML, DL
+- AI(Artificial Intelligence): 사고나 학습 등 인간이 가진 지적 능력을 컴퓨터를 통해 구현하는 기술
+- ML(Machine Learning): 컴퓨터가 스스로 학습하여 인공지능의 성능을 향상시키는 기술
+- DL(Deep Learning): 인간의 뉴런과 비슷한 인공신경망 방식으로 정보를 처리하는 기술
+<center><img src="https://mioscode.github.io/assets/images/dl1/ai_ml_dl.png" width="50%"></center>
+
+## 1.3. Machine Learning
+1. 먼저 그림과 같이 컴퓨터에게 문제와 답을 알려줍니다.
+2. 이후, 관련 문제를 내면 컴퓨터가 정답을 알아 맞추게 됩니다.
+> 이것이 가능한 이유는 컴퓨터가 데이터(문제) 답(label)으로 학습하며 직접 프로그램(알고리즘)을 작성하기 때문
+<center><img src="https://mioscode.github.io/assets/images/dl1/ml.png" width="50%"></center>
+
+### 종류
+#### 1) 지도학습 (Supervised Learning)
+훈련데이터와 정답을 가지며, 데이터를 분류/예측하는 함수를 만들어내는 기계학습 방법
+- 분류: KNN(K-Nearest Neighbors), 나이브 베이즈, 결정트리, 서포트 벡터머신, 아프리오 알고리즘
+- 회귀: 선형회귀(Linear Regression), 신경망
+
+#### 2) 비지도학습 (Unsupervised/Predictive Learning)
+정답없이 훈련데이터만 가지고 데이터로부터 숨겨진 패턴을 탐색하는 기계학습의 방법
+- 클러스터링: 연관규칙(apriori), k-means
+
+#### 3) 강화학습 (Reinforcement Learning)
+어떤 환경에서 정의된 에이전트가 현재 상태를 인식하여 선택 가능한 행동들 중 보상을 최대화하는 행동 혹은 행동 순서를 선택하는 방법
+
+## 1.4. Deep Learning
 - 딥 러닝은 최신 인공 신경망(Artificial neural network) 기술로 인간 두뇌의 메커니즘을 시뮬레이션
 - 인간의 뇌는 정보를 전달하기 위해 뉴런(neuron)과 뉴런들을 연결하는 시냅스(synapse)로 구성
 - 인공 신경망(또는 단순히 신경망이라고 함)은 이러한 뉴런과 시냅스를 모델링
@@ -43,7 +68,8 @@ comments: true
 
 - 입력(input) 신호의 총합이 정해진 임계값($\theta$) 넘었을 때 $1$을 출력(output), 넘지 못하면 $0$ 또는 $-1$ 출력
 - 각 입력신호에 고유한 weight 부여되며 기계학습은 이 weight(입력을 조절하니 매개변수로도 볼 수 있음)의 값을 정하는 작업
-<center><img src="https://mioscode.github.io/assets/images/dl1/perceptron.png" width="50%"></center>
+
+<center><img src="https://mioscode.github.io/assets/images/dl1/perceptron_1.png" width="50%"></center>
 <center><img src="https://mioscode.github.io/assets/images/dl1/perceptron_2.png" width="50%"></center>
 <center><img src="https://mioscode.github.io/assets/images/dl1/perceptron_3.png" width="50%"></center>
 <center><img src="https://mioscode.github.io/assets/images/dl1/perceptron_4.png" width="50%"></center>
@@ -72,37 +98,107 @@ b+w_1x_1+w_2x_2 \geqq 0 \Rightarrow 1
 
 ## 2.5. 퍼셉트론의 한계점
 - AND와 OR과 같은 선형 데이터는 분류 가능하지만, XOR과 같은 형태의 비선형 데이터는 분류가 불가능하다
-  - AND 함수: x1과 x2 중 모두(and) 1일때 1을 출력
-    |x1|x2|y|
+  - AND 게이트: x1과 x2 중 모두(and) 1일때 1을 출력
+    |$x_1$|$x_2$|$y$|
     |:-:|:-:|:-:|
     |0|0|0|
     |0|1|0|
     |1|0|0|
     |1|1|1|
-  - OR 함수: x1과 x2 중 하나만(or) 1이면 1을 출력
-    |x1|x2|y|
+    ```python
+    def AND(x1, x2):
+      x = np.array([x1,x2])
+      w = np.array([0.5,0.5])
+      theta = 0.7
+      if np.sum(w*x) <= theta:
+          return 0
+      else:
+          return 1
+
+    inputData = np.array([[0,0],[1,0],[0,1],[1,1]])
+
+    for x in inputData:
+        print(x[0],", ",x[1]," ==> ",AND(x[0],x[1]), sep = '')
+    ```
+  - OR 게이트: x1과 x2 중 하나만(or) 1이면 1을 출력
+    |$x_1$|$x_2$|$y$|
     |:-:|:-:|:-:|
     |0|0|0|
     |0|1|1|
     |1|0|1|
     |1|1|1|
-  - XOR 함수: x1과 x2 중 어느 한쪽이 1일 때만 1을 출력 (둘다 1이면 0 출력)
-    |x1|x2|y|
+    ```python
+    def OR(x1,x2):
+      x = np.array([x1,x2])
+      w = np.array([0.5,0.5])
+      theta = 0
+      if np.sum(w*x) <= theta:
+          return 0
+      else:
+          return 1
+    inputData = np.array([[0,0],[1,0],[0,1],[1,1]])
+
+    for x in inputData:
+        print(x[0],", ",x[1]," ==> ",OR(x[0],x[1]), sep = '')
+    ```
+  - NAND 게이트: x1과 x2 중 하나만(or) 0이면 1을 출력
+    |$x_1$|$x_2$|$y$|
+    |:-:|:-:|:-:|
+    |0|0|1|
+    |0|1|1|
+    |1|0|1|
+    |1|1|0|
+    ```python
+    def NAND(x1,x2):
+      x = np.array([x1,x2])
+      w = np.array([-0.5,-0.5])
+      theta = -0.7
+      if np.sum(w*x) <= theta:
+          return 0
+      else:
+          return 1
+    inputData = np.array([[0,0],[1,0],[0,1],[1,1]])
+
+    for x in inputData:
+        print(x[0],", ",x[1]," ==> ",OR(x[0],x[1]), sep = '')
+    ```
+  - XOR 게이트: x1과 x2 중 어느 한쪽이 1일 때만 1을 출력 (둘다 1이면 0 출력)
+    |$x_1$|$x_2$|$y$|
     |:-:|:-:|:-:|
     |0|0|0|
     |0|1|1|
     |1|0|1|
     |1|1|0|
-<center><img src="https://mioscode.github.io/assets/images/dl1/xor.gif" width="50%"></center>
+    <center><img src="https://mioscode.github.io/assets/images/dl1/xor.gif" width="50%"></center>
 
 - 한계점이 밝혀지면서 한동안 소외 받았고, 퍼셉트론을 제시한 로젠블랫은 자살 같은 사고로 세상을 떠났고 시간이 흐른 뒤에야 그의 업적이 재조명 받았다. 
 
 ## 2.6. 다층 퍼셉트론을 통한 한계 극복
+- 단층 퍼셉트론: AND, OR, NAND 게이트와 같이 입력층에 가중치를 곱해 바로 출력되는 퍼셉트론 
+  <center><img src="https://mioscode.github.io/assets/images/dl1/perceptron.png" width="50%"></center>
 
-![](/Users/somi.han/Documents/Deep%20Learning/Perceptron_XOR.jpg)
+- 다층 퍼셉트론: 퍼셉트론을 층으로 쌓은 것으로,입력층과 출력층 사이 은닉층이 존재하는 것
+  <center><img src="https://mioscode.github.io/assets/images/dl1/multi_perceptron.png" width="50%"></center>
 
+- 위와 같은 다층 퍼셉트론(AND, OR, NAND를 조합)으로 XOR 게이트를 구현할 수 있음
+  <center><img src="https://mioscode.github.io/assets/images/dl1/XOR_1.png" width="50%"></center>
+  <center><img src="https://mioscode.github.io/assets/images/dl1/gate.png" width="50%"></center>
 
+  |$x_1$|$x_2$|$s_1$|$s_2$|$y$|
+  |:-:|:-:|:-:|:-:|:-:|
+  |0|0|1|0|0|
+  |0|1|1|1|1|
+  |1|0|1|1|1|
+  |1|1|0|1|0|
 
+```python
+def XOR(x1, x2):
+  return AND(NAND(x1,x2), OR(x1,x2))
+
+inputData = np.array([[0,0],[1,0],[0,1],[1,1]])
+for x in inputData:
+  print(x[0],", ",x[1]," ==> ",XOR(x[0],x[1]), sep = '')
+```
 
 ## Reference
 https://journal.jp.fujitsu.com/en/2016/02/09/01/
