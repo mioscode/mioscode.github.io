@@ -1,10 +1,10 @@
 ---
 title: "(mac) terminal 명령어"
 categories:
-  - termianl
+  - terminal
 tags:
   - mac
-  - termianl
+  - terminal
   - command
 comments: true
 ---

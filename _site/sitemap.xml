@@ -1,149 +1,404 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/chatter/2018-09-04-asics-gel-kayano-25/</loc>
-<lastmod>2018-09-04T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/chatter/what-is-this-place-chatter/</loc>
-<lastmod>2019-11-14T19:46:22+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jekyll/2019/03/26/github-pages-blog-used-jekyll/</loc>
-<lastmod>2019-03-26T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jekyll/2019/03/28/jekyll-theme-change/</loc>
-<lastmod>2019-03-28T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/github/2019/03/31/git-command/</loc>
-<lastmod>2019-03-31T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/github/2019/03/31/using-multiple-accounts-in-git/</loc>
-<lastmod>2019-03-31T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/flutter/2019/04/03/flutter-install/</loc>
-<lastmod>2019-04-03T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/quasar/2019/04/11/Go-Vue.js-Quasar-dev-setting/</loc>
-<lastmod>2019-04-11T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/ermaster/2019/04/15/ERMaster-plugin-in-Eclipse/</loc>
-<lastmod>2019-04-15T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mac/2019/05/22/mac-shortcuts/</loc>
-<lastmod>2019-05-22T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error/</loc>
-<lastmod>2019-05-23T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/python/2019/06/03/python-anaconda-environment-error/</loc>
-<lastmod>2019-06-03T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mysql/2019/06/04/mac-mysql-can't-read-dir-of-usr-local-etc-my.cnf.d/</loc>
-<lastmod>2019-06-04T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mysql/2019/06/04/mysql-command/</loc>
-<lastmod>2019-06-04T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/rust/2019/06/05/rust-install/</loc>
-<lastmod>2019-06-05T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/math/2019/06/10/understanding-ECC-ECDSA/</loc>
-<lastmod>2019-06-10T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jekyll/2019/06/11/jekyll-admin/</loc>
-<lastmod>2019-06-11T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/ethereum/2019/06/26/mastering-ethereum-1-5/</loc>
-<lastmod>2019-06-26T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/github/2019/06/27/git-url-change/</loc>
-<lastmod>2019-06-27T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/quasar/2019/07/02/vuejs-quasar-cli-install/</loc>
-<lastmod>2019-07-02T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/rust/2019/07/09/rust-install-build/</loc>
-<lastmod>2019-07-09T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/github/2019/09/02/git-command/</loc>
-<lastmod>2019-09-02T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/terminal/2019/09/02/kill-process-using-port/</loc>
-<lastmod>2019-09-02T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/python/2019/09/04/python-jupyter-run/</loc>
-<lastmod>2019-09-04T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/termianl/2019/10/10/mac-terminal-command/</loc>
-<lastmod>2019-10-10T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/</loc>
-<lastmod>2019-11-12T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/mysql%20workbench/2019/11/14/DL(1)-perceptron/</loc>
-<lastmod>2019-11-14T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/about/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/categories/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/categories/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/chatter/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/sitemap/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/tags/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/tags/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/page2/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/page3/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/google7bd0383a82efb34b.html</loc>
-<lastmod>2019-07-10T00:21:58+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/navera255b9522294a9f27a016df8457eb5b1.html</loc>
-<lastmod>2019-07-10T00:21:58+09:00</lastmod>
-</url>
+  
+    <url>
+      <loc>http://localhost:4000/deep%20learning/2019/11/14/DL(1)-perceptron/</loc>
+      
+        <lastmod>2019-11-14T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/</loc>
+      
+        <lastmod>2019-11-12T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/terminal/2019/10/10/mac-terminal-command/</loc>
+      
+        <lastmod>2019-10-10T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/python/2019/09/04/python-jupyter-run/</loc>
+      
+        <lastmod>2019-09-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/terminal/2019/09/02/kill-process-using-port/</loc>
+      
+        <lastmod>2019-09-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/github/2019/09/02/git-command/</loc>
+      
+        <lastmod>2019-09-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/rust/2019/07/09/rust-install-build/</loc>
+      
+        <lastmod>2019-07-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/quasar/2019/07/02/vuejs-quasar-cli-install/</loc>
+      
+        <lastmod>2019-07-02T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/github/2019/06/27/git-url-change/</loc>
+      
+        <lastmod>2019-06-27T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/ethereum/2019/06/26/mastering-ethereum-1-5/</loc>
+      
+        <lastmod>2019-06-26T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/jekyll/2019/06/11/jekyll-admin/</loc>
+      
+        <lastmod>2019-06-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/math/2019/06/10/understanding-ECC-ECDSA/</loc>
+      
+        <lastmod>2019-06-10T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/rust/2019/06/05/rust-install/</loc>
+      
+        <lastmod>2019-06-05T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/mysql/2019/06/04/mysql-command/</loc>
+      
+        <lastmod>2019-06-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/mysql/2019/06/04/mac-mysql-can't-read-dir-of-usr-local-etc-my.cnf.d/</loc>
+      
+        <lastmod>2019-06-04T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/python/2019/06/03/python-anaconda-environment-error/</loc>
+      
+        <lastmod>2019-06-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/jekyll/2019/05/23/jekyll-github-page-error/</loc>
+      
+        <lastmod>2019-05-23T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/mac/2019/05/22/mac-shortcuts/</loc>
+      
+        <lastmod>2019-05-22T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/ermaster/2019/04/15/ERMaster-plugin-in-Eclipse/</loc>
+      
+        <lastmod>2019-04-15T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/quasar/2019/04/11/Go-Vue.js-Quasar-dev-setting/</loc>
+      
+        <lastmod>2019-04-11T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/flutter/2019/04/03/flutter-install/</loc>
+      
+        <lastmod>2019-04-03T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/github/2019/03/31/using-multiple-accounts-in-git/</loc>
+      
+        <lastmod>2019-03-31T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/github/2019/03/31/git-command/</loc>
+      
+        <lastmod>2019-03-31T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/jekyll/2019/03/28/jekyll-theme-change/</loc>
+      
+        <lastmod>2019-03-28T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/jekyll/2019/03/26/github-pages-blog-used-jekyll/</loc>
+      
+        <lastmod>2019-03-26T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
 </urlset>

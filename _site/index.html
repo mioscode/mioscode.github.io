@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
@@ -9,16 +9,46 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>MIOS Code</title>
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+
+<title>MIOS Code</title>
+
+
+
+
 <meta name="description" content="MIOS Codes and Thinks">
 
 
+
+
+<meta name="author" content="MIOS">
+
+<meta name="naver-site-verification" content="b82306681a7f295c96378798aef6849495be33fd"/>
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="MIOS Code">
 <meta property="og:title" content="MIOS Code">
-<meta property="og:url" content="http://localhost:4000/">
+
+
+  <link rel="canonical" href="http://localhost:4000/">
+  <meta property="og:url" content="http://localhost:4000/">
+
+
+<meta property="og:description" content="MIOS Codes and Thinks">
+
+
+
+
 
 
 
@@ -36,7 +66,9 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+
+
+
 
 
 
@@ -48,11 +80,11 @@
 
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "MIOS",
-      "url": "http://localhost:4000",
-      "sameAs": null
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "MIOS",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
     }
   </script>
 
@@ -62,10 +94,10 @@
 
 
 
-<!-- end _includes/seo.html -->
+<!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MIOS Code Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="MIOS Code Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -77,8 +109,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -97,18 +128,10 @@
 
 
     <!-- start custom head snippets -->
-<!-- google adsense -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4389360314884678",
-    enable_page_level_ads: true
-  });
-</script>
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-<!-- end custom head snippets -->
 
-    
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         TeX: {
@@ -144,27 +167,17 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">MIOS Code</a>
+        <a class="site-title" href="http://localhost:4000/">MIOS Code</a>
         <ul class="visible-links">
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/about/" >프로필</a>
+              <a href="http://localhost:4000/archive/" >Archive</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/categories/" >카테고리별</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="http://localhost:4000/tags/" >태그별</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="http://localhost:4000/chatter/" >잡담</a>
+              <a href="http://localhost:4000/tags/" >Tag</a>
             </li>
           
         </ul>
@@ -175,7 +188,7 @@
           </svg>
         </button>
         
-        <button class="greedy-nav__toggle hidden" type="button">
+        <button class="greedy-nav__toggle" type="button">
           <span class="visually-hidden">토글 메뉴</span>
           <div class="navicon"></div>
         </button>
@@ -194,7 +207,6 @@
   
   <div class="sidebar sticky">
   
-
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -226,7 +238,7 @@
         <li>
           <a href="mailto:ijanamilot@gmail.com">
             <meta itemprop="email" content="ijanamilot@gmail.com" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> 이메일
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
           </a>
         </li>
       
@@ -296,11 +308,11 @@
 
   
   </div>
-  
+
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title"></h1>
+      <h1 class="page__title"></h1>
     
     <h3 class="archive__subtitle">최근 포스트</h3>
 
@@ -314,13 +326,19 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/mysql%20workbench/2019/11/14/DL(1)-perceptron/" rel="permalink">(DL) MySQL Dump ERROR
+        <a href="http://localhost:4000/deep%20learning/2019/11/14/DL(1)-perceptron/" rel="permalink">딥러닝(1) - 개요, 퍼셉트론
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
+    <p class="archive__item-excerpt" itemprop="description">1. AI, DL, ML … Neural Network
+인공지능(AI)의 역사
+
+  1943년: 최초 신경망 모델 제안
+  1950년: 앨런 튜링이 튜링 테스트 제안
+  (첫 번째 AI 붐) 1950년대 후반 ~ 1970년대 전반
+    
+      1956년 : 미국 다트머스의 ...</p>
   </article>
 </div>
 
@@ -333,7 +351,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/" rel="permalink">(MySQL Workbench) MySQL Dump ERROR
+        <a href="http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/" rel="permalink">(MySQL Workbench) MySQL Dump ERROR
 </a>
       
     </h2>
@@ -356,7 +374,7 @@ Unknown table ‘column_statistics’ in information_schema (1109) Error 나오�
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/termianl/2019/10/10/mac-terminal-command/" rel="permalink">(mac) terminal 명령어
+        <a href="http://localhost:4000/terminal/2019/10/10/mac-terminal-command/" rel="permalink">(mac) terminal 명령어
 </a>
       
     </h2>
@@ -376,7 +394,7 @@ Unknown table ‘column_statistics’ in information_schema (1109) Error 나오�
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/python/2019/09/04/python-jupyter-run/" rel="permalink">(Python) jupyter notebook 실행
+        <a href="http://localhost:4000/python/2019/09/04/python-jupyter-run/" rel="permalink">(Python) jupyter notebook 실행
 </a>
       
     </h2>
@@ -398,7 +416,7 @@ $ cd /Users/&lt;사용자계정&gt;/anaconda/python.app -m notebook
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/terminal/2019/09/02/kill-process-using-port/" rel="permalink">(mac) terminal에서 port 실행 중인 PID kill
+        <a href="http://localhost:4000/terminal/2019/09/02/kill-process-using-port/" rel="permalink">(mac) terminal에서 port 실행 중인 PID kill
 </a>
       
     </h2>
@@ -421,7 +439,7 @@ Traceback (most recent call last):
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/github/2019/09/02/git-command/" rel="permalink">Git 명령어
+        <a href="http://localhost:4000/github/2019/09/02/git-command/" rel="permalink">Git 명령어
 </a>
       
     </h2>
@@ -445,7 +463,7 @@ $ git init
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/rust/2019/07/09/rust-install-build/" rel="permalink">(Rust) 설치 및 실행 + nightly 버전
+        <a href="http://localhost:4000/rust/2019/07/09/rust-install-build/" rel="permalink">(Rust) 설치 및 실행 + nightly 버전
 </a>
       
     </h2>
@@ -467,7 +485,7 @@ $ curl https://sh.rustup.rs -sSf | sh
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/quasar/2019/07/02/vuejs-quasar-cli-install/" rel="permalink">(Vue.js) Quasar 1.0 CLI 설치하기
+        <a href="http://localhost:4000/quasar/2019/07/02/vuejs-quasar-cli-install/" rel="permalink">(Vue.js) Quasar 1.0 CLI 설치하기
 </a>
       
     </h2>
@@ -493,7 +511,7 @@ $ npm version
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/github/2019/06/27/git-url-change/" rel="permalink">(Git) 원격저장소 url 변경
+        <a href="http://localhost:4000/github/2019/06/27/git-url-change/" rel="permalink">(Git) 원격저장소 url 변경
 </a>
       
     </h2>
@@ -515,7 +533,7 @@ $ cd myproj
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/ethereum/2019/06/26/mastering-ethereum-1-5/" rel="permalink">마스터링 이더리움 1장~5장
+        <a href="http://localhost:4000/ethereum/2019/06/26/mastering-ethereum-1-5/" rel="permalink">마스터링 이더리움 1장~5장
 </a>
       
     </h2>
@@ -554,7 +572,7 @@ $ cd myproj
         
         
         
-        <li><a href="/page2/">2</a></li>
+        <li><a href="http://localhost:4000/page2/">2</a></li>
       
     
 
@@ -562,12 +580,12 @@ $ cd myproj
     
 
     
-      <li><a href="/page3/">3</a></li>
+      <li><a href="http://localhost:4000/page3/">3</a></li>
     
 
     
     
-      <li><a href="/page2/">다음</a></li>
+      <li><a href="http://localhost:4000/page2/">다음</a></li>
     
   </ul>
 </nav>
@@ -580,25 +598,17 @@ $ cd myproj
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <div id="results" class="results"></div>
+</div>
       </div>
     
 
     <div class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- google ads in footer -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4389360314884678"
-     data-ad-slot="9059782705"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
@@ -612,7 +622,7 @@ $ cd myproj
     
     
     
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
   </ul>
 </div>
 
@@ -622,15 +632,18 @@ $ cd myproj
     </div>
 
     
-  <script src="/assets/js/main.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
 
 
+  
+  
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
 
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
+
 
 
 
