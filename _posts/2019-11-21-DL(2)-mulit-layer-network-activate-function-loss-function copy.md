@@ -201,4 +201,6 @@ $$\mathcal{L} (y_i-\tilde{y}_i) = - \sum_{i=1}^N y_i \log \hat{y_i}$$
 
 
 # Reference
-- [[https://subinium.github.io/Keras-1/]]
+- <https://subinium.github.io/Keras-1/>
+- <https://sacko.tistory.com/17?category=632408>
+- <https://sacko.tistory.com/37?category=632408>

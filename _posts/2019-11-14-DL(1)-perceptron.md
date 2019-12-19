@@ -122,7 +122,9 @@ b+w_1x_1+w_2x_2 \geqq 0 \Rightarrow 1
       x = np.array([x1,x2])
       w = np.array([0.5,0.5])
       theta = 0.7
-      if np.sum(w*x) <= theta:
+    #   print(x1, x2)
+    #   print(w*x)
+      if np.sum(w*x) <= theta: # array의 곱셈의 합
           return 0
       else:
           return 1
@@ -143,6 +145,7 @@ b+w_1x_1+w_2x_2 \geqq 0 \Rightarrow 1
 
     ```python
     def OR(x1,x2):
+      x = np.array([x1,x2])
       w = np.array([0.5,0.5])
       theta = 0
       if np.sum(w*x) <= theta:
@@ -175,7 +178,7 @@ b+w_1x_1+w_2x_2 \geqq 0 \Rightarrow 1
     inputData = np.array([[0,0],[1,0],[0,1],[1,1]])
 
     for x in inputData:
-        print(x[0],", ",x[1]," ==> ",OR(x[0],x[1]), sep = '')
+        print(x[0],", ",x[1]," ==> ",NAND(x[0],x[1]), sep = '')
     ```
   - XOR 게이트: x1과 x2 중 어느 한쪽이 1일 때만 1을 출력 (둘다 1이면 0 출력)
 
@@ -218,8 +221,8 @@ for x in inputData:
 ```
 
 # Reference
-- https://journal.jp.fujitsu.com/en/2016/02/09/01/
-- https://sacko.tistory.com/10?category=632408
-- https://www.neuraldesigner.com/blog/perceptron-the-main-component-of-neural-networks
-- https://github.com/chaitjo/Perceptron
-- http://ecee.colorado.edu/~ecen4831/lectures/NNet3.html
+- <https://journal.jp.fujitsu.com/en/2016/02/09/01/>
+- <https://sacko.tistory.com/10?category=632408>
+- <https://www.neuraldesigner.com/blog/perceptron-the-main-component-of-neural-networks>
+- <https://github.com/chaitjo/Perceptron>
+- <http://ecee.colorado.edu/~ecen4831/lectures/NNet3.html>
