@@ -4,7 +4,7 @@ categories:
   - Flutter
 tags:
   - Flutter
-  - Splash
+  - splash
 comments: true
 ---
 
