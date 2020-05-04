@@ -1,0 +1,649 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Somi Han</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4a9604d9-874d-440d-a1b3-b2a89f40af71" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🇰🇷</span></div><h1 class="page-title">Somi Han</h1></header><div class="page-body"><h1 id="1161adee-8801-4ea9-a303-7957dc7d4582" class="">Profile</h1><hr id="825cffe7-dc61-498c-9705-b4f51d18c4a2"/><ul id="ad101b64-3056-4f1c-ba79-7742af5444d3" class="bulleted-list"><li>Blog : <a href="https://vhrehfdl.github.io/">https://vhrehfdl.github.io/</a></li></ul><ul id="26ccc95f-9e6b-4dd1-93a9-7b2b5e2cd760" class="bulleted-list"><li>Github : <a href="https://github.com/vhrehfdl">https://github.com/vhrehfdl</a></li></ul><ul id="d058f508-306c-49e1-b366-8348d777f170" class="bulleted-list"><li>Email : <a href="mailto:vhrehfdl@gmail.com">vhrehfdl@gmail.com</a></li></ul><ul id="22f7e848-eac2-4015-989c-f03523889034" class="bulleted-list"><li>CV : <a href="http://junghoon.info">junghoon.info</a></li></ul><ul id="13f345dc-9062-4276-8649-e815e6a427fb" class="bulleted-list"><li>Last Update : 30 March 2020</li></ul><p id="c5182a0a-a9a8-416d-b08c-9e5cd671b774" class="">
+</p><p id="54bcd9a5-fb4c-4995-96c6-74745e26da02" class="">
+</p><h1 id="deb4df2e-57c7-43d1-89af-bde7a7f541f3" class="">Education</h1><hr id="4feaa4fb-6af4-4ba4-a5df-75f774b69354"/><ul id="33a03b41-e5dc-4891-9b4e-0cf1257cbc05" class="bulleted-list"><li><strong> Sungkyunkwan University</strong><ul id="78844b57-bd4a-4fb4-b02b-47a559810ffc" class="bulleted-list"><li>M.S candidate in Computer Science- Spring 2019 – Spring 2021 (predicted)</li></ul></li></ul><p id="1e0fa521-47bb-41cd-8b6d-58526dd27023" class="">
+</p><ul id="989e291d-4e65-4717-b9d5-640cd551c247" class="bulleted-list"><li><strong> Kyonggi University</strong><ul id="366292ef-0363-4683-a856-c12839f6c917" class="bulleted-list"><li> B.S. in Application Statistics and Computer Science- Spring 2013 – Spring 2019</li></ul><p id="e115e2d6-f49b-4b50-a6a1-103165221323" class="">
+</p><p id="36b946cf-b4ed-452e-a55e-ac05180c3281" class="">
+</p></li></ul><h1 id="8e8ca476-60fc-4f64-84c5-bab004581ac4" class="">Research Paper</h1><hr id="2cd41ee4-c2b6-4d4a-bab6-69f047c4e1da"/><h3 id="c1454c89-f599-41cf-8a46-78b3bb676e71" class="">[International Conference, Workshop and Other Papers]</h3><ul id="702fd3df-eff0-48f0-aab8-39a2a768c226" class="toggle"><li><details open=""><summary><strong>&quot;Predicting Quality and Popularity of a Movie From Plot Summary and Character Description Using Contextualized Word Embeddings&quot;</strong></summary><ul id="724b0ee4-12df-42d4-a926-23ade3a36b59" class="bulleted-list"><li><strong>Jung-Hoon Lee*</strong>, Yujin-Kim, Yun-Gyung Cheong.</li></ul><ul id="cb61bb54-6f5b-4890-af3e-05f7ddd0e252" class="bulleted-list"><li>IEEE Conference On Games (CoG), 24-27 August 2020, Kindai University, Osaka, Japan</li></ul><ul id="703e0745-ede3-4216-9d83-79f0ae1f0857" class="bulleted-list"><li>Decision in Process</li></ul><p id="35ea17aa-fe89-4cd3-a95a-55663267a2fe" class="">
+</p></details></li></ul><ul id="8205f4d5-e9c1-4aaf-92c4-8aa3d2721d3a" class="toggle"><li><details open=""><summary> <strong>&quot;A Multi-modal Approach for Emotion Recognition of TV Drama Characters Using Image and Text.&quot;</strong></summary><ul id="d70254a2-8eb9-47ef-b57a-357acf067751" class="bulleted-list"><li><strong>Jung-Hoon Lee*</strong>, Hyun-Ju Kim, Yun-Gyung Cheong.</li></ul><ul id="170e5965-8caa-40c7-a8ed-d3ac13fa8dcf" class="bulleted-list"><li>CMComp Workshop February 19, 2020. Busan, Korea (In conjunction with IEEE BIGCOMP 2020)</li></ul><ul id="98011607-2a37-4125-8615-9444a860948c" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/A%20Multi-modal%20Approach%20for%20Emotion%20Recognition.pdf"><strong>[PDF FILE]</strong></a></li></ul><p id="81e1f7e0-6217-482a-a552-37e082c38277" class="">
+</p></details></li></ul><ul id="930e6265-0229-4252-967d-0b40e8f021eb" class="toggle"><li><details open=""><summary> &quot;<strong>Prediction of a Movie&#x27;s Success From Plot Summaries Using Deep Learning.&quot;</strong></summary><ul id="0b546b22-3240-4a12-be49-cc98fe2b2906" class="bulleted-list"><li>Yujin-Kim*, <strong>Jung-Hoon Lee</strong>, Yun-Gyung Cheong.</li></ul><ul id="f3ea8f96-31ce-4b80-a840-cd748bd754b9" class="bulleted-list"><li>Storytelling Workshop August 1, 2019. Florence, Italy (Co-located with ACL 2019). </li></ul><ul id="837c5a89-b338-40ff-b65e-ee504fe98e6e" class="bulleted-list"><li><a href="https://www.aclweb.org/anthology/W19-3414"><strong>[PDF FILE]</strong></a></li></ul></details></li></ul><p id="4f4aa1d4-0ec4-400c-bb8e-2ce13c5ae1e8" class="">
+</p><h3 id="7f08c365-bf5e-47dc-b734-dc17b03ac08f" class="">[Domestic Conference – Korea]</h3><ul id="4aabe9ac-6bed-47a8-aaac-d4bd1b741315" class="toggle"><li><details open=""><summary><strong>&quot;Book Recommendation System using Word2vec&quot;</strong></summary><ul id="42eff63e-46e7-4b70-a3d1-7e29b5a5407b" class="bulleted-list"><li><strong>Jung-Hoon Lee*</strong>, Yun-Gyung Cheong.</li></ul><ul id="56846933-3b90-4acd-bf8b-9e3f4a140f84" class="bulleted-list"><li>Korea Computer Congress 2019 </li></ul><ul id="3830a265-e7c3-4745-b633-03210f905711" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/Word2vec%20%EC%9E%84%EB%B2%A0%EB%94%A9%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%B1%85%20%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C.pdf"><strong>[PDF FILE]</strong></a></li></ul><p id="ed6f2017-1a42-4153-973e-7dfe7495963b" class="">
+</p></details></li></ul><ul id="72143ebc-a673-4645-b118-58693d0ac202" class="toggle"><li><details open=""><summary> <strong>&quot;Inappropriate Video Detect Using Natural Language Process&quot;</strong></summary><ul id="d351ad72-8c85-429f-8ca7-b1735caf763a" class="bulleted-list"><li><strong>Jung-Hoon Lee*</strong></li></ul><ul id="d653ebcd-2908-4675-aec4-a90c1e2b727b" class="bulleted-list"><li>Korea Information Processing Society conference, 2018 fall </li></ul><ul id="1eb197be-f5b1-442a-ae04-0c44f65efb89" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/Inappropriate%20Video%20Detect%20Using%20Natural%20Language%20Process.pdf"><strong>[PDF FILE]</strong></a></li></ul><p id="8c7c62c7-35b7-42cb-8f0a-335ed3146c33" class="">
+</p></details></li></ul><ul id="4a254a9c-d82a-4f80-891f-e72b1c83c992" class="toggle"><li><details open=""><summary><strong>&quot;Fake news detection using deep learning&quot;</strong></summary><ul id="49499fbf-dc45-4dd3-a1db-709f5bf40bb3" class="bulleted-list"><li>Dong-Ho Lee*, <strong>Jung-Hoon Lee</strong>, Yu-Ri Kim, Hyeong-Jun Kim, Seung-Myun Park, Yu-Jun Yang, Woong-Bi Shin</li></ul><ul id="a21ed1b5-ba5d-4c48-9672-51e79e340f60" class="bulleted-list"><li>Korea Information Processing Society conference, 2018 spring (best paper award – 1st place) </li></ul><ul id="432a7ab2-a240-4b82-81f1-3307be5f8080" class="bulleted-list"><li><a href="http://www.koreascience.or.kr/article/CFKO201826259815374.page"><strong>[PDF FILE]</strong></a></li></ul><p id="dfb55ef2-b196-42ac-a19b-771501013214" class="">
+</p></details></li></ul><ul id="2f62e43a-46bf-4b67-8d27-6b5f3f0a43e6" class="toggle"><li><details open=""><summary><strong>&quot;Sentimental Analysis Research Trends&quot;</strong></summary><ul id="78d26d2b-8b79-4504-8224-3c3ef882f506" class="bulleted-list"><li><strong>Jung-Hoon Lee*</strong></li></ul><ul id="55ca7e7b-d1bf-4079-8333-8db104b166fd" class="bulleted-list"><li>Korea Information Processing Society conference, 2018 spring </li></ul><ul id="64d4faee-3e81-4844-a9a6-fce8d3639e6f" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/Sentiment_Analysis.pdf"><strong>[PDF FILE]</strong></a></li></ul></details></li></ul><p id="9c09bc15-22fb-432b-9cc9-47fe19b1f382" class="">
+</p><p id="8246cff0-0845-405b-ac8b-bd906538dd55" class="">
+</p><h1 id="317ea9d7-1565-4a3b-8fed-d79ce839a0bd" class="">Award</h1><hr id="9931ae64-7cbc-42c7-b35f-a28dbd7ede55"/><ul id="97f96965-0857-49dc-af93-bbadcc61d78f" class="bulleted-list"><li>2020 KPMG 아이디어톤 2등 ( KPMG 및 Microsoft 후원 )</li></ul><ul id="31f6cd18-8d3f-4190-9a28-c4ba7fd6dd83" class="bulleted-list"><li>2019 AI : Storyteller 수상 ( 한국콘텐츠진흥원 후원 )</li></ul><ul id="69dee65e-a525-4ef5-b4e8-60e77a6b2323" class="bulleted-list"><li>2018 한국정보처리학회 Best paper – 1st place</li></ul><p id="febd0393-64fd-4ccb-9339-02efaf3e1055" class="">
+</p><p id="70888d3b-b094-4220-bd55-8c38fabc191b" class="">
+</p><h1 id="018fdd75-f8cb-4fcb-b893-f6e4077240c3" class="">Project</h1><hr id="a33eb5ef-248e-4a63-a7b8-2df8a5d3c605"/><h3 id="fb96397d-e334-4e35-9437-53ea1129b7e9" class="">Deep Learning</h3><ul id="239b49c9-f798-46c8-85e2-0510a266b018" class="toggle"><li><details open=""><summary>일기 분석 </summary><ul id="75240379-deb6-45d8-b000-86b3b698be2f" class="bulleted-list"><li><mark class="highlight-blue"><code>Web</code></mark><mark class="highlight-blue">  </mark><code>Deep Learning</code>  <mark class="highlight-teal"><code>Android</code></mark><mark class="highlight-teal">  </mark></li></ul><ul id="3ba119ae-71d5-486d-afdc-d62d3e701054" class="bulleted-list"><li>Making Sentiment Analysis Processing</li></ul><ul id="0fe08657-7c80-47b5-b7dd-ffd7776b5de3" class="bulleted-list"><li>Finding Sentence regarding daily schedule and Automatically Registering schedule</li></ul><ul id="f8536798-ba90-4b94-a02d-651dc0b12222" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/%E1%84%8B%E1%85%A2%E1%84%91%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B5%E1%84%86%E1%85%A9%E1%84%89%E1%85%A7%E1%86%AB.pdf"><mark class="highlight-blue"><strong>View more...</strong></mark></a></li></ul><ul id="bb44ffe4-b187-4814-b3f7-22e9f837e514" class="bulleted-list"><li><mark class="highlight-teal"><a href="https://youtu.be/tkcsSbpEkMU"><strong>[Demo Video]</strong></a></mark></li></ul><p id="38b9ca83-c2d6-4bc5-ab8f-1b31f6556088" class="">
+</p></details></li></ul><ul id="dff581f2-703e-4dea-9a60-a932792d7f86" class="toggle"><li><details open=""><summary>Story AI</summary><ul id="ffd11a84-224f-4b33-b0f1-2666b025bc63" class="bulleted-list"><li><mark class="highlight-blue"><code>Web</code></mark><mark class="highlight-blue">  </mark><code>Deep Learning</code> </li></ul><ul id="0f8a512b-484f-43f6-b68d-e9f0b0fd0c75" class="bulleted-list"><li>2019 AI : Storyteller 수상 ( 한국콘텐츠진흥원 후원 )</li></ul><ul id="db7a7064-128e-48d2-bf73-c86ae3319275" class="bulleted-list"><li>스토리 관련 단어를 입력했을 때 그 다음 키워드를 추천해주는 API 구현.</li></ul><ul id="371c450e-6d16-4344-8069-932d2f91cfca" class="bulleted-list"><li>드라마 데이터 28,282건을 Word2vec을 사용해 학습 후 다음 키워드 추천.</li></ul><ul id="d162a7a7-f7f1-4140-803b-e1322944ed15" class="bulleted-list"><li>실제 작가가 API를 사용해 시나리오 작성 후 5분짜리 웹드라마 제작.</li></ul><ul id="b77712d0-88fd-47da-8f8b-e008aa13ffe1" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/storyxai.pdf"><mark class="highlight-blue"><strong>View More...</strong></mark></a></li></ul><ul id="1dd88adb-c5df-4221-b206-500f69bbbe94" class="bulleted-list"><li><a href="https://youtu.be/lcGMjwGTQuk"><mark class="highlight-teal"><strong>[Drama Video]</strong></mark></a></li></ul></details></li></ul><p id="c313c170-3f0a-4469-b5fb-f5c59dcb1c47" class="">
+</p><ul id="0c2e9a58-c812-46d0-bacb-ecb741e89d17" class="toggle"><li><details open=""><summary>Data pre-processing by incorporating RPA technology</summary><ul id="7cb166d1-e774-4490-bba4-d3e918d9feab" class="bulleted-list"><li><mark class="highlight-blue"><code>Web</code></mark><mark class="highlight-blue">  </mark><code>Deep Learning</code>  <mark class="highlight-teal"><code>Android</code></mark><mark class="highlight-teal">  </mark></li></ul><ul id="2762d900-5e12-42d6-936f-d3fcef687cf5" class="bulleted-list"><li>2020 Korea KPMG Ideation Challenge, 2nd Prize</li></ul><ul id="fd08a1bb-1146-4abe-9383-c384f96e227b" class="bulleted-list"><li>Runner-up out of 20 teams for the 2020 KPMG Ideation Challenge, which aims to find a solution to time wasted in industry. </li></ul><ul id="c0ca8476-528d-4526-9677-8239c3122a85" class="bulleted-list"><li>Our team suggested decreasing lead time in data pre-processing by incorporating RPA technology.</li></ul><ul id="6d897c7a-e322-4099-bf7b-ceb24626d4b4" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/%EC%A0%84%EC%B2%98%EB%A6%AC_%EB%8B%B4%EB%8B%B9_AI_%EC%98%A4%EB%8A%98%EB%8F%84_%ED%87%B4%EC%82%AC%EA%B3%A0%ED%94%84%EB%8B%A4.pdf"><mark class="highlight-blue"><strong>View more...</strong></mark></a></li></ul><ul id="edb71f97-61bd-4c90-a03f-2f5dd11120a4" class="bulleted-list"><li><a href="https://github.com/ShimSeoungChul/kpmg-ing-final"><mark class="highlight-teal"><strong>[GitHub]</strong></mark></a></li></ul><p id="88f3ee46-d981-4b5f-9884-3daee8605c7d" class="">
+</p></details></li></ul><p id="0b53d646-a2c4-4ced-8d04-95bd74159389" class="">
+</p><h3 id="8a598fe9-c93c-420b-b480-5addcd932f1b" class="">Android &amp; Web</h3><ul id="77ca8aa6-7f2e-4148-9dac-5095e2400b0e" class="toggle"><li><details open=""><summary>Labelling Tool</summary><ul id="fe03577f-a305-4b89-a35b-601975853d27" class="bulleted-list"><li><mark class="highlight-blue"><code>Web</code></mark></li></ul><ul id="d69c13f2-76c3-40d6-a059-33910eab2566" class="bulleted-list"><li>본 프로그램은 데이터 라벨링 작업을 쉽게 도와주기 위한 Django 기반의 웹페이지입니다.</li></ul><ul id="a8df1ff4-ebf0-40cb-99b2-4e4130229aa1" class="bulleted-list"><li>기존에는 엑셀과 같은 툴을 사용해 작업했다면 본 프로그램은 클릭만으로 이미지에 라벨링 값을 부여할 수 있습니다.</li></ul><ul id="8771051b-226d-43bb-a10b-964908987cd8" class="bulleted-list"><li>본 프로그램은 Django와 sqlite3를 사용했으며 Django를 사용할 줄 모르는 사람도 사용할 수 있도록 최대한 간단하게 만들었습니다.</li></ul><ul id="13ae5e94-6966-4a28-9e2e-01ecbc52059a" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/Labelling_Tool.pdf"><mark class="highlight-blue"><strong>View more...</strong></mark></a></li></ul><ul id="87847056-c3fc-4924-a78e-f16104086f1a" class="bulleted-list"><li><a href="https://github.com/vhrehfdl/labelling_tool"><mark class="highlight-teal"><strong>[GitHub]</strong></mark></a></li></ul><p id="2a8307b4-7631-41cf-b569-5b531ed2fc6b" class="">
+</p></details></li></ul><ul id="310c9d61-45e2-4f51-b23f-f4253f9f5d37" class="toggle"><li><details open=""><summary> 장학금 탐색기</summary><ul id="ee07742c-9033-4a79-93a4-1c1884f65c3a" class="bulleted-list"><li><mark class="highlight-teal"><code>Android</code></mark><mark class="highlight-teal"> </mark><mark class="highlight-blue"><code>Crawling</code></mark><mark class="highlight-blue">  </mark></li></ul><ul id="dfdb0d39-9b51-4b2c-8b62-08732075ad3f" class="bulleted-list"><li>학생들 조건에 맞는 장학금 추천.</li></ul><ul id="6d0d2739-e5de-4635-9c9b-6f4007399f09" class="bulleted-list"><li>크롤링을 사용해 3000개의 데이터 수집.</li></ul><ul id="aeedda70-368c-4cb1-b770-4017b483d539" class="block-color-blue bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B3%E1%86%B7%20%E1%84%90%E1%85%A1%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8%E1%84%80%E1%85%B5.pdf"><strong>View more...</strong></a></li></ul><ul id="daaace82-a0de-4ee8-8287-fdf6ceab0ff7" class="block-color-teal bulleted-list"><li><a href="https://youtu.be/9zaNp2aZ43o"><strong>[Demo Video]</strong></a></li></ul><p id="928ed13c-8cab-4639-9a78-f0a830cd0405" class="">
+</p></details></li></ul><ul id="78cfa0d3-47fd-47d3-846f-1a0d96cfbfdc" class="toggle"><li><details open=""><summary> 국악음원 탐색기 </summary><ul id="fb539902-f1c5-4a0b-b0f5-851960132d74" class="bulleted-list"><li><mark class="highlight-teal"><code>Android</code></mark><mark class="highlight-teal"> </mark><mark class="highlight-blue"><code>Crawling</code></mark><mark class="highlight-blue">  </mark></li></ul><ul id="cf5dae35-89ad-4014-ab1e-84152ef1fa86" class="bulleted-list"><li>2017 예술해커톤 출품작 ( 문화체육관광부 후원 )</li></ul><ul id="7eed9c3f-0cd3-4050-80cd-f1b14e218d58" class="bulleted-list"><li>상황에 맞는 국악 추천.</li></ul><ul id="f4143526-b72c-4372-86e7-c57985190d30" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/%E1%84%80%E1%85%AE%E1%86%A8%E1%84%8B%E1%85%A1%E1%86%A8%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%8B%E1%85%AF%E1%86%AB%20%E1%84%90%E1%85%A1%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8%E1%84%80%E1%85%B5.pdf"><mark class="highlight-blue"><strong>View more...</strong></mark></a></li></ul><ul id="9cfd08cf-fa70-4944-b506-a53a590cf9e3" class="block-color-teal bulleted-list"><li><a href="https://youtu.be/vX3A6LKB4kI"><strong>[Demo Video]</strong></a></li></ul></details></li></ul><p id="3751234b-4033-48c6-954b-00227208a439" class="">
+</p><ul id="cdedaee7-5d15-44c7-847e-df5d3a84e38b" class="toggle"><li><details open=""><summary> 로고 컬렉터</summary><ul id="fd39947d-702d-4669-aea9-5f1a28868ac9" class="bulleted-list"><li><mark class="highlight-teal"><code>Android</code></mark><mark class="highlight-teal"> </mark><mark class="highlight-blue"><code>Google Vision API</code></mark><mark class="highlight-blue">  </mark></li></ul><ul id="27e95440-cea7-4f7e-b34a-1c956a02d671" class="bulleted-list"><li>Google Vision API를 사용해 로고를 수집한 후 쿠폰 지급.</li></ul><ul id="4cffc894-f9e1-4add-af25-5f7f2d11aeac" class="bulleted-list"><li><a href="https://github.com/junghoon93/cv/blob/master/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9%20%E1%84%8F%E1%85%A5%E1%86%AF%E1%84%85%E1%85%A6%E1%86%A8%E1%84%90%E1%85%A5.pdf"><mark class="highlight-blue"><strong>View more...</strong></mark></a></li></ul><ul id="b83da288-32a3-4f20-8899-7edc0f70b727" class="bulleted-list"><li><mark class="highlight-teal"><a href="https://youtu.be/YIBWeqmw-5k"><strong>[Demo Video]</strong></a></mark></li></ul><p id="6e5e08ae-0d25-404c-bd2d-a7d05cdf1d97" class="">
+</p><p id="c4bff3d8-c11b-4bf0-8d27-e370e9b97dc9" class="">
+</p></details></li></ul><h1 id="f447c8ce-96a6-43d9-9476-654c25fb2098" class="">CF</h1><hr id="37f4a955-1ccf-4973-bd2c-840e60a14258"/><ul id="d190d2da-f87b-4b39-b16d-0ca82e4fc8fb" class="toggle"><li><details open=""><summary>[책] 우리 아이 AI</summary><ul id="365c98f4-d9d6-4b1a-9a22-62ca181e31a3" class="bulleted-list"><li>박찬 , 김병석 , 전수연 , 전은경 , 홍수빈 , 진성임 , 문혜진 , 김성빈 , 정선재 , 강윤진 , 변문경 , 권해연 , 박서희 , 이정훈 지음</li></ul><ul id="140fe56c-a514-4691-bff1-b8bc728ff377" class="bulleted-list"><li>다빈치books | 2020년 03월 02일 출간</li></ul><ul id="34cee858-8ff0-4c82-b9f9-b1969e5c2327" class="bulleted-list"><li><mark class="highlight-blue"><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9791186742778&amp;orderClick=LAG&amp;Kc="><strong>Link</strong></a></mark></li></ul><p id="3a6edb95-2f77-4702-8b6d-910445d51c3d" class="">
+</p></details></li></ul><p id="3fcbbb4c-1e4c-45ae-9ea3-eae259816a5e" class="">
+</p><p id="2c229ae0-0c5e-4981-8f0e-a07ddb65759b" class="">
+</p></div></article></body></html>
