@@ -2,6 +2,166 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
+      <loc>http://localhost:4000/flutter/2020/02/13/flutter-vscode-extension/</loc>
+      
+        <lastmod>2020-02-13T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/tmux/2020/01/09/tmux/</loc>
+      
+        <lastmod>2020-01-09T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/flutter/2019/12/20/flutter-ui-introduction-of-widgets/</loc>
+      
+        <lastmod>2019-12-20T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/flutter/2019/12/20/flutter-UI-layouts/</loc>
+      
+        <lastmod>2019-12-20T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/flutter/2019/12/19/flutter-native-splash-screen/</loc>
+      
+        <lastmod>2019-12-19T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/flutter/2019/12/17/flutter-layout-concepts-codelab/</loc>
+      
+        <lastmod>2019-12-17T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/flutter/2019/12/16/flutter-web-build-error/</loc>
+      
+        <lastmod>2019-12-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/flutter/2019/12/16/flutter-androidx-migration/</loc>
+      
+        <lastmod>2019-12-16T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/deep%20learning/2019/11/24/DL(3)/</loc>
+      
+        <lastmod>2019-11-24T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/deep%20learning/2019/11/21/DL(2)-mulit-layer-network-activate-function-loss-function-copy/</loc>
+      
+        <lastmod>2019-11-21T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/deep%20learning/2019/11/14/DL(1)-perceptron/</loc>
       
         <lastmod>2019-11-14T00:00:00+09:00</lastmod>
@@ -21,6 +181,22 @@
       <loc>http://localhost:4000/mysql%20workbench/2019/11/12/mysqlworkbench-mysqldump-error/</loc>
       
         <lastmod>2019-11-12T00:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/docker/2019/10/20/go-docker-build-and-run/</loc>
+      
+        <lastmod>2019-10-20T00:00:00+09:00</lastmod>
       
 
       

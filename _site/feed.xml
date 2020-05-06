@@ -5,14 +5,1342 @@
     <description>MIOS Codes and Thinks</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Nov 2019 13:42:00 +0900</pubDate>
-    <lastBuildDate>Fri, 15 Nov 2019 13:42:00 +0900</lastBuildDate>
+    <pubDate>Wed, 06 May 2020 10:48:23 +0900</pubDate>
+    <lastBuildDate>Wed, 06 May 2020 10:48:23 +0900</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
-        <title>딥러닝(1) - 개요, 퍼셉트론</title>
-        <description>&lt;h1 id=&quot;1-ai-dl-ml--neural-network&quot;&gt;1. AI, DL, ML … Neural Network&lt;/h1&gt;
-&lt;h2 id=&quot;인공지능ai의-역사&quot;&gt;인공지능(AI)의 역사&lt;/h2&gt;
+        <title>Flutter VSCode Extension(플러그인) 추천</title>
+        <description>&lt;h1 id=&quot;1-flutter&quot;&gt;1. Flutter&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;option + control + F5 : Run, Debugger&lt;/p&gt;
+
+&lt;h1 id=&quot;2-awesome-flutter-snippets&quot;&gt;2. Awesome Flutter Snippets&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://marketplace.visualstudio.com/items?itemName=Nash.awesome-flutter-snippets
+Flutter 클래스와 메소드의 모음, Shortcut&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Shortcut&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Expanded&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;statelessW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stateless Widget&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stateless widget 생성&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;statefulW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stateful Widget&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stateful widget 생성&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;build&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Build Method&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;위젯으로 표시되는 사용자 인터페이스 부분을 설명합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;initS&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;InitState&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이 객체가 트리에 삽입 될 때 호출됩니다. 프레임 워크는 작성된 각 State 객체에 대해이 메소드를 정확히 한 번만 호출합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;dis&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Dispose&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이 객체가 트리에서 영구적으로 제거 될 때 호출됩니다. 프레임 워크는이 State 객체가 다시는 빌드되지 않을 때이 메소드를 호출합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;reassemble&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reassemble&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;디버깅 중, 예를 들어 핫 리로드와 같이 응용 프로그램이 재 조립 될 때마다 호출됩니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;didChangeD&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;didChangeDependencies&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이 State 객체의 종속성이 변경 될 때 호출됩니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;didUpdateW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;didUpdateWidget&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;위젯 구성이 변경 될 때마다 호출됩니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;customClipper&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Custom Clipper&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;custom shapes을 만드는데 사용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;customPainter&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Custom Painter&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;custom paint을 만드는데 사용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;listViewB&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ListView.Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;요청시 생성되는 스크롤 가능한 선형 배열 위젯을 만듭니다 .Null이 아닌 itemCount를 제공하면 ListView의 최대 스크롤 범위를 추정하는 기능이 향상됩니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;customScrollV&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Custom ScrollView&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;silver를 사용하여 사용자 지정 스크롤 효과를 만드는 ScrollView를 만듭니다. 기본 인수가 true이면 컨트롤러가 널이어야합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;streamBldr&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stream Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;지정된 stream과의 최신 상호 작용 snapshot을 기반으로 자체 빌드하는 새 StreamBuilder를 만듭니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;animatedBldr&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Animated Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;애니메이션 빌더를 만듭니다. child에 지정된 위젯이 빌더로 전달됩니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;statefulBldr&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stateful Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;상태가 있고 빌드를 콜백에 위임하는 위젯을 작성합니다. 위젯 트리의 특정 섹션을 다시 작성하는 데 유용합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;orientationBldr&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Orientation Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;장치의 방향을 지정하고 참조 할 수있는 빌더를 작성합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;layoutBldr&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Layout Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;프레임 워크가 레이아웃 시 빌더 함수를 호출하고 상위 위젯의 제한 조건을 제공한다는 점을 제외하면 Builder widget 과 유사합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;singleChildSV&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Single Child Scroll View&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;single child로 scroll view를 만듭니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;futureBldr&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Future Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Future Builder를 만듭니다. 이는 Future와의 최신 상호 작용 snapshot을 기반으로합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;nosm&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;No Such Method&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이 메소드는 존재하지 않는 메소드 또는 특성에 액세스 할 때 호출됩니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inheritedW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Inherited Widget&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;위젯 트리 아래로 정보를 전파하는 데 사용되는 클래스입니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;mounted&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mounted&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이 State 객체가 현재 트리에 있는지 여부&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;snk&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sink&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sink는 stream의 입력 입니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;strm&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stream&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;비동기 데이터 이벤트의 소스. stream은 모든 데이터 유형이 될 수 있습니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;subj&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Subject&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;BehaviorSubject는 broadcast StreamController이며 Stream이 아닌 Observable을 리턴합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;toStr&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To String&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이 객체의 string 표현을 리턴합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;debugP&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Debug Print&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;flutter 도구의 logs 명령 (flutter logs)을 사용하여 액세스 할 수있는 메시지를 콘솔에 인쇄합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;importM&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Material Package&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Import Material package.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;importC&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cupertino Package&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Import Cupertino package.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;mateapp&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Material App&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Create a new Material App.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cupeapp&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cupertino Package&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Create a New Cupertino App.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;tweenAnimationBuilder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Tween Animation Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;대상 값이 변경 될 때마다 위젯의 특성을 대상 값으로 애니메이션하는 Widget builder .&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;valueListenableBuilder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Value Listenable Builder&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ValueListenable과 구체적인 T 값에서 위젯을 빌드하는 빌더가 제공되면이 클래스는 자동으로 ValueListenable의 리스너로 등록하고 값이 변경 될 때 업데이트 된 값으로 빌더를 호출합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;3-flutter-files&quot;&gt;3. Flutter Files&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://marketplace.visualstudio.com/items?itemName=gornivv.vscode-flutter-files
+빠르게 Scaffold Flutter BLoC template 사용&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;lib 폴더에서 마우스 오른쪽 버튼 클릭해서 New Big Pack BloC, New Index, New BloC 등 사용&lt;/p&gt;
+
+&lt;h1 id=&quot;4-flutter-tree&quot;&gt;4. Flutter Tree&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://marketplace.visualstudio.com/items?itemName=marcelovelasquez.flutter-tree
+기본 위젯 트리를 빌드하기위한 extension&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;기본-문법&quot;&gt;기본 문법&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;OneChild&amp;gt;MultipleChild[OneChild,MultipleChild[OneChild,OneChild],OneChild&amp;gt;OneChild]&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;OneChild(
+    child: MultipleChild(
+        children: &amp;lt;Widget&amp;gt;[
+            OneChild(),
+            MultipleChild(
+                children: &amp;lt;Widget&amp;gt;[
+                    OneChild(),
+                    OneChild(),
+                ]
+            ),
+            OneChild(
+                child: OneChild(),
+            ),
+        ]
+    ),
+), 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;사용-예&quot;&gt;사용 예&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Center&amp;gt;Column[Cotainer, Expanded&amp;gt;Container, Text]&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;body: Center(
+    child: Column(
+        children: &amp;lt;Widget&amp;gt;[
+            Container(),
+            Expanded(
+                child: Container(),
+            ),
+            Text(),
+        ]
+    ),
+), 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;5-bracket-pair-colorizer-2&quot;&gt;5. Bracket Pair Colorizer 2&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+부모 scope의 괄호 사이에 선을 그어줌 (깊이 따라 색상 다르게)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;option-활성화-할-리스트&quot;&gt;Option 활성화 할 리스트&lt;/h2&gt;
+&lt;p&gt;VSCode &amp;gt; Preference &amp;gt; Settings &amp;gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;showBracketsInGutter : 코드줄 번호 왼쪽 부분에 현재 활성화된 괄호 보여줌&lt;/li&gt;
+  &lt;li&gt;showBracketsInRuler : ruler에 활성화된 괄호 보여줌&lt;/li&gt;
+  &lt;li&gt;showVerticalScopeLine : 괄호 사이 세로선 그어줌 (디폴트 설정)&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 13 Feb 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/flutter/2020/02/13/flutter-vscode-extension/</link>
+        <guid isPermaLink="true">http://localhost:4000/flutter/2020/02/13/flutter-vscode-extension/</guid>
+        
+        <category>Flutter</category>
+        
+        <category>VSCode</category>
+        
+        
+        <category>Flutter</category>
+        
+      </item>
+    
+      <item>
+        <title>Tmux 사용법</title>
+        <description>&lt;h1 id=&quot;구성요소&quot;&gt;구성요소&lt;/h1&gt;
+&lt;h2 id=&quot;session&quot;&gt;session&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;tmux 실행 단위, 여러개의 window로 구성됨
+    &lt;h2 id=&quot;window&quot;&gt;window&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;터미널 화면, session 내에서 탭처럼 사용할 수 있음
+    &lt;h2 id=&quot;pane&quot;&gt;pane&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;window 내에서 화면 분
+    &lt;h2 id=&quot;status-bar&quot;&gt;status bar&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;화면 아래 표시되는 상태&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;설치&quot;&gt;설치&lt;/h1&gt;
+&lt;h2 id=&quot;mac-homebrew&quot;&gt;Mac (homebrew)&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew install tmux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;명령어&quot;&gt;명령어&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;모든 명령어를 실행하기 전에는 &lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+b&lt;/code&gt;를 입력해야 함&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;session-관련&quot;&gt;session 관련&lt;/h2&gt;
+&lt;h3 id=&quot;tumx-진입-전&quot;&gt;tumx 진입 전&lt;/h3&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 새 세션 생성&lt;/span&gt;
+tmux new &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;session-name&amp;gt;
+        
+&lt;span class=&quot;c&quot;&gt;# 세션 목록 보기 (list-session)&lt;/span&gt;
+tmux &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+        
+&lt;span class=&quot;c&quot;&gt;# 세션 다시 시작&lt;/span&gt;
+tmux attach &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;session-number or session-name&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;tumx-진입-전-1&quot;&gt;tumx 진입 전&lt;/h3&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 세션 종료&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;tmux에서&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+        
+&lt;span class=&quot;c&quot;&gt;# 세션 이름 수정&lt;/span&gt;
+ctrl + b, &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;
+        
+&lt;span class=&quot;c&quot;&gt;# 세션 중단하기 (detached)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; ctrl + b, d
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;window-관련&quot;&gt;window 관련&lt;/h2&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 새 윈도우 생성&lt;/span&gt;
+ctrl + b, c
+
+&lt;span class=&quot;c&quot;&gt;# 세션 생성시 윈도우랑 같이 생성&lt;/span&gt;
+tmux new &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;session-name&amp;gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &amp;lt;window-name&amp;gt;
+
+&lt;span class=&quot;c&quot;&gt;# 윈도우 이름 수정&lt;/span&gt;
+ctrl + b, ,
+
+&lt;span class=&quot;c&quot;&gt;# 윈도우 종료&lt;/span&gt;
+ctrl + b, &amp;amp;
+ctrl + d
+
+&lt;span class=&quot;c&quot;&gt;# 윈도우 이동&lt;/span&gt;
+ctrl + b, 0-9 : window number
+          n : next window
+          p : prev window
+          l : last window
+          w : window selector
+          f : find by name
+
+&lt;span class=&quot;c&quot;&gt;# 윈도우 번호설정&lt;/span&gt;
+ctrl + b, :move-window &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 윈도우 번호
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;pane-관련&quot;&gt;pane 관련&lt;/h1&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 틀 나누기&lt;/span&gt;
+ctrl + b, % : 횡 분할
+ctrl + b, &lt;span class=&quot;s2&quot;&gt;&quot; : 종 분할
+
+# 틀 확대
+ctrl + b, z
+
+# 틀 이동
+ctrl + b, q : 화면에 나오는 숫자키
+ctrl + b, o : 순서대로 이동
+ctrl + b, arrow : 방향키 이동
+
+# 틀 삭제
+ctrl + b, x
+ctrl + d
+
+# 틀 사이즈 조절
+(ctrl + b, :)
+resize-pane -L 10
+            -R 10
+            -D 10
+            -U 10
+
+# 틀 레이아웃 변경
+ctrl + b, spacebar
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;기타&quot;&gt;기타&lt;/h1&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 단축키 목록&lt;/span&gt;
+ctrl + b, ?
+
+&lt;span class=&quot;c&quot;&gt;# 키 연결 및 해제 bind and unbind&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ctrl + b, :&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+bind-key &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-cnr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; key-table] key &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;arguments]
+unbind-key &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-acn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;t key-table] key
+
+&lt;span class=&quot;c&quot;&gt;# copy mode 진입&lt;/span&gt;
+ctrl + b, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 빠져나오기&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;copy mode에서&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; q or ESC
+
+&lt;span class=&quot;c&quot;&gt;# 이동&lt;/span&gt;
+arrow : 커서 이동
+pageUp, pageDown : 페이지 이동 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iTerm에서는 fn + up, down, terminal에서는 alt + up, down&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 옵션 설정 `set` and `setw`&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; &amp;lt;option-name&amp;gt; &amp;lt;option-value&amp;gt;  : set-option
+setw &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; &amp;lt;option-name&amp;gt; &amp;lt;option-value&amp;gt; : set-window-option
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;설정-tmuxconf&quot;&gt;설정 (~/.tmux.conf)&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.tmux.conf&lt;/code&gt; 파일을 생성해 시작할 때 자동으로 설정을 불러옴&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; mouse on
+
+setw &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; mode-keys vi
+
+&lt;span class=&quot;c&quot;&gt;# Use Alt-arrow keys without prefix key to switch panes&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; M-Left &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; M-Right &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; M-Up &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; M-Down &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Shift arrow to switch windows&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; S-Left  previous-window
+&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; S-Right next-window
+
+&lt;span class=&quot;c&quot;&gt;# scrollback buffer size increase&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; history-limit 100000
+
+&lt;span class=&quot;c&quot;&gt;# change window order&lt;/span&gt;
+bind-key &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; C-S-Left swap-window &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;
+bind-key &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; C-S-Right swap-window &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; +1
+
+&lt;span class=&quot;c&quot;&gt;# disable window name auto change&lt;/span&gt;
+set-option &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; allow-rename off
+
+&lt;span class=&quot;c&quot;&gt;# bar color&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; status-bg black
+&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; status-fg white
+
+&lt;span class=&quot;c&quot;&gt;# 동시 명령어 사용&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;synchronize-panes on
+&lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;synchronize-panes on
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 09 Jan 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/tmux/2020/01/09/tmux/</link>
+        <guid isPermaLink="true">http://localhost:4000/tmux/2020/01/09/tmux/</guid>
+        
+        <category>Tmux</category>
+        
+        <category>terminal</category>
+        
+        
+        <category>Tmux</category>
+        
+      </item>
+    
+      <item>
+        <title>(Flutter) UI - 1. Widgets 이란</title>
+        <description>&lt;blockquote&gt;
+  &lt;h3 id=&quot;ui-목차&quot;&gt;UI 목차&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to widgets&lt;/li&gt;
+    &lt;li&gt;Building layouts
+      &lt;ul&gt;
+        &lt;li&gt;Layouts in Flutter&lt;/li&gt;
+        &lt;li&gt;Tutorial&lt;/li&gt;
+        &lt;li&gt;Creating responsive apps&lt;/li&gt;
+        &lt;li&gt;Box constraints&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Adding interactivity&lt;/li&gt;
+    &lt;li&gt;Asserts &amp;amp; Images&lt;/li&gt;
+    &lt;li&gt;Navigation &amp;amp; routing&lt;/li&gt;
+    &lt;li&gt;Animations
+      &lt;ul&gt;
+        &lt;li&gt;Introduction&lt;/li&gt;
+        &lt;li&gt;Overviews&lt;/li&gt;
+        &lt;li&gt;Tutorial&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;introduction-to-widgets&quot;&gt;Introduction to widgets&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://flutter.dev/docs/development/ui/widgets-intro&quot;&gt;https://flutter.dev/docs/development/ui/widgets-intro&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/flutter/2019/12/20/flutter-ui-introduction-of-widgets/</link>
+        <guid isPermaLink="true">http://localhost:4000/flutter/2019/12/20/flutter-ui-introduction-of-widgets/</guid>
+        
+        <category>Flutter</category>
+        
+        <category>widget</category>
+        
+        
+        <category>Flutter</category>
+        
+      </item>
+    
+      <item>
+        <title>(Flutter) UI - 2.1. Layouts</title>
+        <description>&lt;blockquote&gt;
+  &lt;h3 id=&quot;ui-목차&quot;&gt;UI 목차&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to widgets&lt;/li&gt;
+    &lt;li&gt;Building layouts
+      &lt;ul&gt;
+        &lt;li&gt;Layouts in Flutter&lt;/li&gt;
+        &lt;li&gt;Tutorial&lt;/li&gt;
+        &lt;li&gt;Creating responsive apps&lt;/li&gt;
+        &lt;li&gt;Box constraints&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Adding interactivity&lt;/li&gt;
+    &lt;li&gt;Asserts &amp;amp; Images&lt;/li&gt;
+    &lt;li&gt;Navigation &amp;amp; routing&lt;/li&gt;
+    &lt;li&gt;Animations
+      &lt;ul&gt;
+        &lt;li&gt;Introduction&lt;/li&gt;
+        &lt;li&gt;Overviews&lt;/li&gt;
+        &lt;li&gt;Tutorial&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;layouts&quot;&gt;Layouts&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://flutter.dev/docs/development/ui/layout&quot;&gt;https://flutter.dev/docs/development/ui/layout&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;들어가기-전에&quot;&gt;들어가기 전에&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;위젯은 UI를 만들때 사용하는 클래스다&lt;/li&gt;
+  &lt;li&gt;위젯은 layout 과 UI 구성요소 모두에 사용된다&lt;/li&gt;
+  &lt;li&gt;Flutter layout 메카니즘의 핵심은 widget 이다&lt;/li&gt;
+  &lt;li&gt;Flutter에서 거의 모든 것은 widget 이다&lt;/li&gt;
+  &lt;li&gt;심지어 layout modes 도 widgets 이다&lt;/li&gt;
+  &lt;li&gt;보이는 것(images, icons, text …) 뿐 아니라 보이지 않는 것(rows, columns, grids …)도 widget이다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(예)
+&lt;img src=&quot;https://flutter.dev/assets/ui/layout/lakes-icons-visual-f9e45691d76ba85d4ea2160941f42c8a2ce1a17d41d6e6aac8f3feb89e679f99.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutter.dev/assets/ui/layout/sample-flutter-layout-46c76f6ab08f94fa4204469dbcf6548a968052af102ae5a1ae3c78bc24e0d915.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;위 예에서 Container는 그 아래 child widget을 customize할 수 있게 하는 widget class이다
+    &lt;ul&gt;
+      &lt;li&gt;padding, margins, borders, background color 등을 추가하길 원할 때 container를 사용한다&lt;/li&gt;
+      &lt;li&gt;위 예에서는 각각의 Text widet이 margins을 추가하기 위해 Container가 감싸고 있다&lt;/li&gt;
+      &lt;li&gt;또한 전체 Row(행)은  row 주위에 padding을 추가하기 위해 Container가 감싸고 있다
+….&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lay-out-a-widget&quot;&gt;Lay out a widget&lt;/h2&gt;
+&lt;h3 id=&quot;1-select-a-layout-widget&quot;&gt;1. Select a layout widget&lt;/h3&gt;
+&lt;h3 id=&quot;2-create-a-visible-widget&quot;&gt;2. Create a visible widget&lt;/h3&gt;
+&lt;h3 id=&quot;3-add-the-visible-widget-to-the-layout-widget&quot;&gt;3. Add the visible widget to the layout widget&lt;/h3&gt;
+&lt;h3 id=&quot;4-add-the-layout-widget-to-the-page&quot;&gt;4. Add the layout widget to the page&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Flutter app 자체로 하나의 widget 이다&lt;/li&gt;
+  &lt;li&gt;대부분의 widget은 &lt;code class=&quot;highlighter-rouge&quot;&gt;build()&lt;/code&gt; 메소드를 가지며, 인스턴스화하여 widget을 display 한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;material-apps&quot;&gt;Material apps&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Material app 을 위해 Scaffold widget을 사용할 수 있다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;scaffold발판-골격-비계-widget&quot;&gt;Scaffold(발판, 골격, 비계) widget&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;default banner, background color, API for adding drawers, snack bars, bottom sheets 를 제공한다&lt;/li&gt;
+  &lt;li&gt;body 속성에 직접 Center widget을 추가할 수 있다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-flutter&quot;&gt;class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter layout demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter layout demo'),
+        ),
+        body: Center(
+          child: Text('Hello World'),
+        ),
+      ),
+    );
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;non-material-apps&quot;&gt;Non-Material apps&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Non-Material app의 경우 Center widget을 app의 build () 메소드에 추가 할 수 있다
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class MyApp extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+  return Container(
+    decoration: BoxDecoration(color: Colors.white),
+    child: Center(
+      child: Text(
+        'Hello World',
+        textDirection: TextDirection.ltr,
+        style: TextStyle(
+          fontSize: 32,
+          color: Colors.black87,
+        ),
+      ),
+    ),
+  );
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lay-out-multiple-widgets-vertically-and-horizontally&quot;&gt;Lay out multiple widgets vertically and horizontally&lt;/h2&gt;
+</description>
+        <pubDate>Fri, 20 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/flutter/2019/12/20/flutter-UI-layouts/</link>
+        <guid isPermaLink="true">http://localhost:4000/flutter/2019/12/20/flutter-UI-layouts/</guid>
+        
+        <category>Flutter</category>
+        
+        <category>layout</category>
+        
+        
+        <category>Flutter</category>
+        
+      </item>
+    
+      <item>
+        <title>(Flutter) Native Android, IOS 처럼 Splash screen 적용하기</title>
+        <description>&lt;h1 id=&quot;0-why&quot;&gt;0. Why?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;공홈에서 샘플 코드 실행 시 앱 빌드 전 하얀 splash 화면 몇초간 로딩 후 main으로 넘어감&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;1-실패한-시도&quot;&gt;1. 실패한 시도&lt;/h1&gt;
+&lt;h2 id=&quot;11-maindart-에-splash-widget-추가&quot;&gt;1.1. &lt;code class=&quot;highlighter-rouge&quot;&gt;main.dart&lt;/code&gt; 에 splash widget 추가&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import 'package:flutter/material.dart';
+import 'package:project_name/ui/home.dart';
+import 'package: project_name/utils/uidata.dart';
+import 'dart:async';
+
+void main(){
+  runApp(new MaterialApp(
+    title: UIData.appName,
+    debugShowCheckedModeBanner: false,
+    showPerformanceOverlay: false,
+    theme: new ThemeData(
+        primarySwatch: Colors.blue,
+        primaryColor: Colors.black,
+        primaryIconTheme: IconThemeData(color: Colors.black),
+        primaryTextTheme: TextTheme(
+            title: TextStyle(color: Colors.black, fontFamily: &quot;Aveny&quot;)),
+        textTheme: TextTheme(title: TextStyle(color: Colors.black))),
+    home: new MyApp(),
+  ));
+}
+
+class MyApp extends StatelessWidget {
+  final materialApp = MaterialApp(
+      title: UIData.appName,
+      debugShowCheckedModeBanner: false,
+      theme: new ThemeData(
+          primarySwatch: Colors.blue,
+          primaryColor: Colors.black,
+          primaryIconTheme: IconThemeData(color: Colors.black),
+          primaryTextTheme: TextTheme(
+              title: TextStyle(color: Colors.black, fontFamily: &quot;Aveny&quot;)),
+          textTheme: TextTheme(title: TextStyle(color: Colors.black))),
+      home: new SplashScreen(),
+      //routes
+      routes: &amp;lt;String, WidgetBuilder&amp;gt; {
+
+      }
+  );
+
+  Widget build(BuildContext context) {
+    return materialApp;
+  }
+}
+
+class SplashScreen extends StatefulWidget {
+
+  @override
+  State&amp;lt;StatefulWidget&amp;gt; createState() {
+    return SplashScreenState();
+  }
+}
+
+class SplashScreenState extends State&amp;lt;SplashScreen&amp;gt; {
+
+  @override
+  void initState() {
+    super.initState();
+
+    loadData();
+  }
+
+  Future&amp;lt;Timer&amp;gt; loadData() async {
+    return new Timer(Duration(seconds: 1), onDoneLoading);
+  }
+
+  onDoneLoading() async {
+    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) =&amp;gt; new Home()));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            fit: BoxFit.cover
+        ) ,
+      ),
+      child: Center(
+        child: CircularProgressIndicator(
+          valueColor: AlwaysStoppedAnimation&amp;lt;Color&amp;gt;(Colors.redAccent),
+        ),
+      ),
+    );
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Splash 추가 되긴 했는데, 기존 흰색 splash 뒤에 추가됨&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;12-패키지-찾아서-적용해봄-splashscreen&quot;&gt;1.2. 패키지 찾아서 적용해봄 (splashscreen)&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://pub.dev/packages/splashscreen&quot;&gt;https://pub.dev/packages/splashscreen&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import 'package:flutter/material.dart';
+import 'package:splashscreen/splashscreen.dart';
+void main(){
+  runApp(new MaterialApp(
+    home: new MyApp(),
+  ));
+}
+
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() =&amp;gt; new _MyAppState();
+}
+
+class _MyAppState extends State&amp;lt;MyApp&amp;gt; {
+  @override
+  Widget build(BuildContext context) {
+    return new SplashScreen(
+      seconds: 14,
+      navigateAfterSeconds: new AfterSplash(),
+      title: new Text('Welcome In SplashScreen',
+      style: new TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 20.0
+      ),),
+      image: new Image.network('https://i.imgur.com/TyCSG9A.png'),
+      backgroundColor: Colors.white,
+      styleTextUnderTheLoader: new TextStyle(),
+      photoSize: 100.0,
+      onClick: ()=&amp;gt;print(&quot;Flutter Egypt&quot;),
+      loaderColor: Colors.red
+    );
+  }
+}
+
+class AfterSplash extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar(
+      title: new Text(&quot;Welcome In SplashScreen Package&quot;),
+      automaticallyImplyLeading: false
+      ),
+      body: new Center(
+        child: new Text(&quot;Done!&quot;,
+        style: new TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 30.0
+        ),),
+
+      ),
+    );
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Flutter 보다 Native splash가 먼저 도는 것으로 예상됨&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;2-해결-flutter_native_splash-패키지&quot;&gt;2. 해결 (flutter_native_splash 패키지)&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pub.dev/packages/flutter_native_splash&quot;&gt;flutter_native_splash 0.1.9 패키지 적용&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;20-dependency-가져오기&quot;&gt;2.0. Dependency 가져오기&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pubspec.yaml&lt;/code&gt; 파일 내 &lt;code class=&quot;highlighter-rouge&quot;&gt;dev_dependencies&lt;/code&gt; 에 추가&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dev_dependencies:
+  flutter_native_splash: ^0.1.9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;우측 상단 &lt;code class=&quot;highlighter-rouge&quot;&gt;Package Get&lt;/code&gt; 버튼 누르거나 명령어 실행&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flutter pub get
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;21-splash-screen-설정&quot;&gt;2.1. Splash screen 설정&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pubspec.yaml&lt;/code&gt; 파일 하단(&lt;code class=&quot;highlighter-rouge&quot;&gt;flutter:&lt;/code&gt; 아래) 설정을 추가&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flutter:
+  assets:
+   - assets/images/logo.png
+   - assets/images/icon.png
+   - assets/images/splash.png
+
+  fonts:
+    - family: Billabong
+      fonts:
+        - asset: assets/fonts/Billabong.ttf
+    - family: Aveny
+      fonts:
+        - asset: assets/fonts/AvenyTRegular.otf
+          style: normal
+        - asset: assets/fonts/AvenyTMedium.otf
+          style: italic
+    - family: Dongkang
+      fonts:
+        - asset: assets/fonts/JSDongkang-Bold.otf
+          style: normal
+        - asset: assets/fonts/JSDongkang-Regular.otf
+          style: italic
+
+flutter_native_splash:
+  image: assets/images/splash.png
+  color: &quot;42a5f5&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;설정 기타 옵션은 공식 페이지 참고&lt;/p&gt;
+
+&lt;p&gt;2.2. Package 실행&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flutter pub pub run flutter_native_splash:create
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 19 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/flutter/2019/12/19/flutter-native-splash-screen/</link>
+        <guid isPermaLink="true">http://localhost:4000/flutter/2019/12/19/flutter-native-splash-screen/</guid>
+        
+        <category>Flutter</category>
+        
+        <category>splash</category>
+        
+        
+        <category>Flutter</category>
+        
+      </item>
+    
+      <item>
+        <title>(Flutter Codelabs) Layout 컨셉</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Flutter는 UI가 XML 파일 등이 아닌 Code로 작성되므로 다른 프레임 워크와 다르다&lt;/li&gt;
+  &lt;li&gt;widget은 Flutter UI의 기본 구성 블록&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;row-and-column-classes&quot;&gt;Row and Column classes&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Row(행) Column(열)은 위젯 포함, 배치하는 클래스&lt;/li&gt;
+  &lt;li&gt;Row, Column 내부 위젯 = Children, Row, Column = Parents&lt;/li&gt;
+  &lt;li&gt;Row는 위젯을 가로로 배치하고 Column은 위젯을 세로로 배치&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;axis-size-and-alignment&quot;&gt;Axis size and alignment&lt;/h2&gt;
+&lt;h3 id=&quot;mainaxissize-property&quot;&gt;mainAxisSize property&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Row의 main axis는 horizontal(수평선), Column의 main axis는 vertical(수직선)&lt;/li&gt;
+  &lt;li&gt;mainAxisSize property는 main axis에서 행과 열이 차지할 수있는 공간을 결정함 (2가지 값 가능)
+    &lt;ul&gt;
+      &lt;li&gt;MainAxisSize.max : default value, 행과 열이 main axis 모든 공간 차지, children(widgets) 합이 main axis보다 작아도 추가 공간 가짐&lt;/li&gt;
+      &lt;li&gt;MainAxisSize.min : 행과 열은 main axis에서 children(widgets)를 위한 공간만 차지, chidren은 여분의 공간과 주축의 중앙에 배치&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;flexible-widget&quot;&gt;Flexible widget&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;행과 열은 먼저 고정 된 크기의 위젯을 배치하며 이 후에 스스로 크기를 조정할 수 없기 때문에 inflexible로 간주&lt;/li&gt;
+  &lt;li&gt;플렉서블 위젯은 위젯을 래핑하므로 위젯의 크기를 조정할 수 있음
+    &lt;ul&gt;
+      &lt;li&gt;FlexFit.loose&lt;/li&gt;
+      &lt;li&gt;FlexFit.tight
+        &lt;h2 id=&quot;expanded-widget&quot;&gt;Expanded widget&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Tue, 17 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/flutter/2019/12/17/flutter-layout-concepts-codelab/</link>
+        <guid isPermaLink="true">http://localhost:4000/flutter/2019/12/17/flutter-layout-concepts-codelab/</guid>
+        
+        <category>Flutter</category>
+        
+        <category>ERROR</category>
+        
+        <category>Web</category>
+        
+        
+        <category>Flutter</category>
+        
+      </item>
+    
+      <item>
+        <title>(Flutter) Web build Error 해결</title>
+        <description>&lt;h1 id=&quot;error&quot;&gt;Error&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This application is not configured to build on the web.
+To add web support to a project, run `flutter create .`.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;flutter create . &lt;/code&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &quot;Flutter-Instagram-UI-Clone&quot; is not a valid Dart package name.
+
+ From the [Pubspec format description](https://www.dartlang.org/tools/pub/pubspec.html):
+
+ **DO** use `lowercase_with_underscores` for package names.
+
+ Package names should be all lowercase, with underscores to separate words,
+ `just_like_this`.  Use only basic Latin letters and Arabic digits: [a-z0-9_].
+ Also, make sure the name is a valid Dart 	identifier -- that it doesn't start
+ with digits and isn't a reserved word.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;package 이름 &lt;strong&gt;소문자+언더바&lt;/strong&gt;로 수정 후 rebuild&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 16 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/flutter/2019/12/16/flutter-web-build-error/</link>
+        <guid isPermaLink="true">http://localhost:4000/flutter/2019/12/16/flutter-web-build-error/</guid>
+        
+        <category>Flutter</category>
+        
+        <category>ERROR</category>
+        
+        <category>Web</category>
+        
+        
+        <category>Flutter</category>
+        
+      </item>
+    
+      <item>
+        <title>(Flutter) AndroidX migration Error 해결</title>
+        <description>&lt;h1 id=&quot;error&quot;&gt;Error&lt;/h1&gt;
+&lt;p&gt;Flutter Android build 시 에러&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Launching lib/main.dart on Android SDK built for x86 in debug mode...
+[!] Your app isn't using AndroidX.
+    To avoid potential build failures, you can quickly migrate your app by following the steps on https://goo.gl/CP92wY.
+Running Gradle task 'assembleDebug'...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://goo.gl/CP92wY&quot;&gt;AndroidX Migration&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Android Studio 3.2 이상 필요함 &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;https://developer.android.com/studio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Android Studio 를 실행하고 &lt;strong&gt;Open an existing Android Studio Project&lt;/strong&gt; 선택&lt;/li&gt;
+  &lt;li&gt;(Flutter 프로젝트 루트 디렉토리가 아니라) &lt;strong&gt;Flutter 프로젝트 내 Anroid 디렉토리&lt;/strong&gt;를 오픈&lt;/li&gt;
+  &lt;li&gt;프로젝트 &lt;strong&gt;Sync successfully&lt;/strong&gt; 될때까지 기다린다. (프로젝트를 열면 자동으로 Sync 하지만 그렇지 않은 경우 &lt;strong&gt;File&lt;/strong&gt; 메뉴에서 &lt;strong&gt;Sync Project with Gradle Files&lt;/strong&gt;를 선택)
+    &lt;ul&gt;
+      &lt;li&gt;ERROR : No toolchains found in the NDK toolchains folder for ABI with prefix: mips64el-linux-android
+        &lt;ul&gt;
+          &lt;li&gt;Solution : &lt;strong&gt;app 수준의 buile.gradle&lt;/strong&gt; 에서 &lt;strong&gt;com.android.tools.build:gradle:3.2.1&lt;/strong&gt;로  gradle 올리기 &lt;a href=&quot;https://ddaying.tistory.com/82&quot;&gt;ref&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;gradle &amp;gt; wrapper &amp;gt; gradle-wrapper.properties&lt;/strong&gt; 에서 &lt;strong&gt;distributionUrl=https://services.gradle.org/distributions/gradle-4.10.2-all.zip&lt;/strong&gt; 로 올리기&lt;/li&gt;
+      &lt;li&gt;Warning : The option setting ‘android.enableR8=true’ is experimental and unsupported.
+The current default is ‘false’
+Consider disabling R8 by removing ‘android.enableR8=true’ from your gradle.properties before publishing your app.
+        &lt;ul&gt;
+          &lt;li&gt;Solution : &lt;strong&gt;gradle.properties&lt;/strong&gt;에서 &lt;strong&gt;android.enableR8 = true&lt;/strong&gt; 제거&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Android 디렉토리 오른쪽 클릭 후 &lt;strong&gt;Refactor &amp;gt; Migrate to AndroidX&lt;/strong&gt; 선택
+    &lt;ul&gt;
+      &lt;li&gt;ERROR :&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/flutter_androidx_1.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - Solution : **build.gradle** 에서 **compileSdkVersion, targetSdkVersion** 을 **28**로 수정
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 16 Dec 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/flutter/2019/12/16/flutter-androidx-migration/</link>
+        <guid isPermaLink="true">http://localhost:4000/flutter/2019/12/16/flutter-androidx-migration/</guid>
+        
+        <category>Flutter</category>
+        
+        <category>ERROR</category>
+        
+        <category>AndroidX</category>
+        
+        
+        <category>Flutter</category>
+        
+      </item>
+    
+      <item>
+        <title>딥러닝(3) - Backpropagation</title>
+        <description>&lt;h1 id=&quot;backpropagation&quot;&gt;Backpropagation&lt;/h1&gt;
+
+&lt;h2 id=&quot;역전파란-backpropagation&quot;&gt;역전파란? Backpropagation?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;지난 시간까지는 Input에서 Output으로 가중치를 업데이트하면서 활성화 함수를 통해서 결과값을 가져오는 것까지 배웠다. 이렇게 쭉 오는 것을 순전파(foward)라고 하며 말 그대로 앞쪽으로 input 값을 전파, 보내는 것이라고 보면 된다.&lt;/li&gt;
+  &lt;li&gt;하지만 우리가 임의로 한 번 순전파 했다고 출력 값이 정확하지는 않을 것이다. 우리가 임의로 설정한 가중치 값이 input에 의해서 한 번 업데이트 되긴 했지만 많은 문제가 있을 수 있다.&lt;/li&gt;
+  &lt;li&gt;역전파 방법은 결과 값을 통해서 다시 역으로 input 방향으로 오차를 다시 보내며 가중치를 재업데이트 하는 것이다. 물론 결과에 영향을 많이 미친 노드(뉴런)에 더 많은 오차를 돌려줄 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/backpropagation_3.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;위의 그림을 보면 Input이 들어오는 방향(순전파)으로 output layer에서 결과 값이 나온다. 결과값은 오차(error)를 가지게 되는데 역전파는 이 오차(error)를 다시 역방향으로 hidden layer와 input layer로 오차를 다시 보내면서 가중치를 계산하면서 output에서 발생했던 오차를 적용시키는 것이다.&lt;/li&gt;
+  &lt;li&gt;한 번 돌리는 것을 1 epoch 주기라고 하며 epoch를 늘릴 수록 가중치가 계속 업데이트(학습)되면서 점점 오차가 줄어나가는 방법이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/backpropagation_4.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;위의 그림을 보면 Output layer에서 나온 결과 값이 가진 오차가 0.6이라고 되어 있다. 이전 노드(뉴런에서) Output layer에 각각 3, 2라는 값을 전달하였기 때문에 Ouput의 Error에 위 노드는 60%, 아래 노드는 40% 영향을 주었다고 볼 수 있다. 균등하게 가중치를 나눠줄 수 있지만 영향을 미친 만큼 오차를 다시 역전파하는게 맞는 것 같다.&lt;/li&gt;
+  &lt;li&gt;error 0.6을 0.6, 0.4를 곱하니  위 노드에는 error가 0.36이, 아래 노드에는 0.24가 전달된다.&lt;/li&gt;
+  &lt;li&gt;오차 역전파는 말 그대로 이렇게 오차를 점점 거슬러 올라가면서 다시 전파하는 것을 의미한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/backpropagation.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;왜-역전파를-사용하는가-why-we-use-backpropagation&quot;&gt;왜 역전파를 사용하는가? Why we use Backpropagation?&lt;/h2&gt;
+&lt;p&gt;입력 데이터를 정확히 분류할 수 있는 최적의 Weight와 Bias를 찾기 위해 역전파를 실시한다.
+만약 역전파가 없다면 사람이 일일이 계산해야 하는데 그것은 현실적으로 불가능하다.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/backpropagation_2.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;역전파-순서-backpropagation-flow&quot;&gt;역전파 순서 Backpropagation Flow&lt;/h2&gt;
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/flow.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://subinium.github.io/Keras-1/&quot;&gt;https://subinium.github.io/Keras-1/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sacko.tistory.com/17?category=632408&quot;&gt;https://sacko.tistory.com/17?category=632408&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sacko.tistory.com/37?category=632408&quot;&gt;https://sacko.tistory.com/37?category=632408&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rickiepark/deep-learning-with-python-notebooks&quot;&gt;https://github.com/rickiepark/deep-learning-with-python-notebooks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 24 Nov 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/deep%20learning/2019/11/24/DL(3)/</link>
+        <guid isPermaLink="true">http://localhost:4000/deep%20learning/2019/11/24/DL(3)/</guid>
+        
+        <category>Backpropagation</category>
+        
+        <category>Deep Learning</category>
+        
+        
+        <category>Deep Learning</category>
+        
+      </item>
+    
+      <item>
+        <title>딥러닝(2) - Multi Layer Network, Activate Function, Loss Function</title>
+        <description>&lt;h1 id=&quot;1-신경망-neural-network&quot;&gt;1. 신경망 (Neural Network)&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;퍼셉트론이 가중치를 직접 수동으로 설정하는 작업을 했다는 한계가 있었는데 이를 해결할 방법이 바로 신경망이다. 
+딥러닝을 이야기할 때 ‘자동으로 알아서 학습하는’ 이라는 말을 많이 한다.
+알아서 가중치 값을 설정하고 조정하는 것이 자동으로 학습한다는 말과 동일하며 이것이 신경망의 가장 큰 특징 중 하나이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;11-다중-퍼셉트론과-신경망-multi-layer-perceptron--neural-network&quot;&gt;1.1. 다중 퍼셉트론과 신경망 (Multi Layer Perceptron &amp;amp; Neural Network)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;단일 퍼셉트론 : 여러 개의 신호가 들어오면 이를 조합하여 다음으로 신호를 보낼지 말지 &lt;strong&gt;유무&lt;/strong&gt;(0 또는 1)를 결정한다.&lt;/li&gt;
+  &lt;li&gt;다중 퍼셉트론 : 단일 퍼셉트론을 발전 시킨 개념으로 하나의 단일 퍼셉트론에 여러 신호가 들어오면, 다음 퍼셉트론에 보낼 신호의 &lt;strong&gt;강도&lt;/strong&gt;를 결정한다. XOR과 같은 비선형 분리도 가능해진다.&lt;/li&gt;
+  &lt;li&gt;신경망 구성
+    &lt;ul&gt;
+      &lt;li&gt;Input(입력층)&lt;/li&gt;
+      &lt;li&gt;Hidden(은닉층)&lt;/li&gt;
+      &lt;li&gt;Output(출력층)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/multi_layer_network.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;12-활성화-함수-activate-function&quot;&gt;1.2. 활성화 함수 (Activate Function)&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;불필요한 모든 자극(Input)에 반응(Output) 한다면 제대로 된 학습이 되었다고 할 수 없다. 
+다양하고 수많은 Input 중에 의미 있는 정보만 다음 Perceptron으로 보내야 좋은 신경망이라 할 수 있다. 
+이때 다음 퍼셉트론으로 전달하거나 출력하는 값를 정하는(변환하는) 방법이 활성화 함수이다. 
+활성화 함수는 모든 입력값을 연산 후 그대로 출력값을 내보내지 않고 변환시켜 내보낸다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;단일 퍼셉트론 : 여러 개의 신호가 들어오면 이를 조합하여 다음으로 신호를 보낼지 말지 &lt;strong&gt;유무&lt;/strong&gt;(0 또는 1)를 결정한다.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;step function(임계값을 넘어섰을 때 출력을 1로 하는 함수)을 활성화 함수로 사용한 모델&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;다중 퍼셉트론 : 단일 퍼셉트론을 발전 시킨 개념으로 하나의 단일 퍼셉트론에 여러 신호가 들어오면, 다음 퍼셉트론에 보낼 신호의 &lt;strong&gt;강도&lt;/strong&gt;를 결정한다. XOR과 같은 비선형 분리도 가능해진다.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;층이 여러개이며 sigmoid function을 활성화 함수로 사용하는 네트워크&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;121-linear-activation-function-linear-function&quot;&gt;1.2.1. Linear Activation Function (=Linear Function)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;선형함수는 복잡한 신경망을 쌓을 수 없다.&lt;/li&gt;
+  &lt;li&gt;선형함수는 Backpropagation(역전파)이 불가능하다. (왜냐하면 미분값은 상수이기 때문에 입력값과 상관없는 결과를 얻게된다)
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;strong&gt;왜 비션형 함수를 사용해야하는가?&lt;/strong&gt;
+선형함수를 사용했을 때는 은닉층을 사용하는 이점이 없기 때문이다. 
+다시 말해 선형함수를 여러층으로 구성한다 하더라도 이는 선형함수를 세번 연속 반복한 것에 지나지 않는다는 의미와 같기 때문이다. 
+$y = ax$라는 선형함수가 있다고 한다면 이 것을 3층으로 구성하면 $y = a(a(a(x)))$ 와 동일한 것으로 이는 $y = a^3(x)$와 같다. 굳이 은닉층 없이 선형함수로 네트워크를 구성하는 것은 의미가 없다는 뜻이다. 
+1.2.2.부터는 모두 비선형함수이다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/linear_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;122-binary-step-function-step-function&quot;&gt;1.2.2. Binary Step Function (=Step Function)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;임계치를 기준으로 출력을 해준다.&lt;/li&gt;
+  &lt;li&gt;0보다 크면 1 / 0보다 작으면 0으로 분류를 해준다.&lt;/li&gt;
+  &lt;li&gt;이 함수로는 비선형 문제, 다중 분류 문제를 해결할 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/step_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;123-sigmoid-function&quot;&gt;1.2.3. Sigmoid Function&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;미분 식이 단순한 형태를 가진다.&lt;/li&gt;
+  &lt;li&gt;출력값의 범위가 0과 1로 제한되어 Exploding Gradient 문제를 방지한다.&lt;/li&gt;
+  &lt;li&gt;하지만 역으로 Vanishing Gradiend 문제가 발생한다.&lt;/li&gt;
+  &lt;li&gt;exp 연산 비용이 크다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/sigmoid_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;s(t)=\frac{1}{1+e^{-t}}&lt;/script&gt;
+
+&lt;p&gt;($e^{-t}$ : 자연로그의 역함수인 지수 함수)
+($e$ : 오일러 상수; 근사값=$2.718281828459…$)&lt;/p&gt;
+
+&lt;h3 id=&quot;124-tahn-function&quot;&gt;1.2.4. Tahn Function&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;장단점이 sigmoid와 유사하다.&lt;/li&gt;
+  &lt;li&gt;Sigmoid와 같이 잘 사용하지 않는 함수이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/tahn_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;125-relu-function&quot;&gt;1.2.5 Relu Function&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;선형 함수의 개선된 버전이다. ( Rectified Linear Function )&lt;/li&gt;
+  &lt;li&gt;CNN에서 좋은 성능을 보였고, 현재 딥러닝에서 가장 많이 사용하는 활성화 함수이다.&lt;/li&gt;
+  &lt;li&gt;실제 뇌와 같이 모든 정보에 반응하는 것이 나닌 일부 정보에 대해 무시와 수용을 통해 보다 효율적인 결과를 낸다.&lt;/li&gt;
+  &lt;li&gt;미분값이 상수가 아닌 함수이며 backpropagation을 허용한다.&lt;/li&gt;
+  &lt;li&gt;비선형함수이고 도함수를 가지며 backpropagation을 허용한다.
+    &lt;ul&gt;
+      &lt;li&gt;도함수 : (유)도함수, 미분 원하는 함수를 미분계수 구하는 식에 a대신 x로 넣었을 떄 모두 유도 된 함수를 도함수&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/relu_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;126-swish--leacky-relu--elu&quot;&gt;1.2.6 Swish &amp;amp; Leacky ReLU &amp;amp; ELU&lt;/h3&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/swish_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/leaky_relu_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/elu_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;13-다차원-배열-연산&quot;&gt;1.3. 다차원 배열 연산&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;앞서 설명한 가중치의 값을 보다 편하게 하기 위해서 행렬 연산을 이용하는 것이다. 한 두개의 신경망 층은 인간이 계산할 수 있을지 모르겠지만 그 이상의 수 많은 차원의 수많은 뉴런층으로 구성된 신경망의 weight를 일일이 계산하는 것은 불가능한 일이다. 이를 컴퓨팅적으로도 쉽게 할 수 있도록 돕는 것이 행렬 연산이다.&lt;/li&gt;
+  &lt;li&gt;여기서 중요한 개념은 다차원 배열(행렬) 간의 곱 연산이다. 행렬의 곱이 성립하기 위해서는 기본적으로 아래의 조건을 따라야 한다. 
+&lt;script type=&quot;math/tex&quot;&gt;a \times b  *  c \times d  =  a \times d \ (when \ b = c )&lt;/script&gt;
+    &lt;ul&gt;
+      &lt;li&gt;$*$(곱 연산)의 안쪽에 있는 $b$와 $c$의 값이 일치해야 하며, 곱 연산을 했을 때 결과값은 $a \times d$의 형태로 나온다는 점이다. 이는 한쪽이 1차원 배열일 때도 동일하게 적용된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;예제&quot;&gt;예제&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;W&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;W&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/times.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이런식으로 어떤 층의 노드(뉴런)의 개수가 몇 개가 되든 (위에서는 3개) 한 번의 연산으로 이 작업을 빠르게 수행할 수 있다. 행렬의 내적은 신경망에서 아주 중요한 개념인 것이다. 층이 몇 개이든 이와 같은 방법으로 가중치를 계속해서 계산해 나가는 것이라고 보면 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;14-신경망-용어-정의&quot;&gt;1.4. 신경망 용어 정의&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;타깃(target) : 기대 출력&lt;/li&gt;
+  &lt;li&gt;매핑(mapping) : 입력과 타깃의 관계로 입력을 representation로 변환, 연관시키는 것&lt;/li&gt;
+  &lt;li&gt;가중치(weight) : 머신 러닝, 딥러닝 모두 결국은 가장 효율적인 식을 찾는 것이 목표이며, 이런 식 또는 식에 필요한 파라미터&lt;/li&gt;
+  &lt;li&gt;손실함수(loss function) : 타깃과 출력값의 차이를 계산하는 함수&lt;/li&gt;
+  &lt;li&gt;역전파(Backpropagation) : 손실함수의 결과를 개선하기 위해서 다시 결과에서부터 가중치를 수정하는 과정,  이를 옵티마이저(optimizer)가 담당&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;15-신경망의-훈련-순서&quot;&gt;1.5. 신경망의 훈련 순서&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;데이터를 입력한다.&lt;/li&gt;
+  &lt;li&gt;여러 layer를 통해 예상 결과값을 만든다. (매핑)&lt;/li&gt;
+  &lt;li&gt;실제 값과 비교해서 그 차이를 구한다. (타깃과 손실함수)&lt;/li&gt;
+  &lt;li&gt;차이를 줄이기 위한 방법으로 앞의 layer들의 가중치를 수정해준다. (역전파)&lt;/li&gt;
+  &lt;li&gt;이 방법의 반복으로 규칙을 계속 개선한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/flowchart.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;16-신경망-3층-구현하기&quot;&gt;1.6. 신경망 3층 구현하기&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init_network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sigmoid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;relu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maximum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'W3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;z1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigmoid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b2&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;z2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigmoid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;W3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b3&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a3&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;network&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init_network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;network&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;2-loss-function&quot;&gt;2. Loss Function&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Neural Net을 거쳐서 나온 결과값과 실제 결과 값의 차이를 계산하는 함수&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl2/loss_function.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;21-손실함수를-왜-사용하는가&quot;&gt;2.1. 손실함수를 왜 사용하는가?&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Loss Function이 있어야 학습이 올바르게 진행되는지를 알 수 있다.&lt;/li&gt;
+  &lt;li&gt;Loss function은 연속적으로 변화되는 값을 표시한다.
+    &lt;ul&gt;
+      &lt;li&gt;정답률을 파라미터로 사용하면,&lt;/li&gt;
+      &lt;li&gt;100개 중 33개가 정답으로 판명된다면 정답률은 33%이다.&lt;/li&gt;
+      &lt;li&gt;만약 정확도를 개선한다 하더라도 33.32%와 값이 연속적인 값으로 변화하지 않는다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;22-손실함수-종류&quot;&gt;2.2. 손실함수 종류&lt;/h2&gt;
+&lt;h3 id=&quot;221-mse&quot;&gt;2.2.1. MSE&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;MSE = \frac{1}{n} \sum_{i=1}^N (y_i-\tilde{y}_i)^2&lt;/script&gt;
+
+&lt;h3 id=&quot;222-cross-function&quot;&gt;2.2.2. Cross Function&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{L} (y_i-\tilde{y}_i) = - \sum_{i=1}^N y_i \log \hat{y_i}&lt;/script&gt;
+
+&lt;h2 id=&quot;23-손실함수-테스트&quot;&gt;2.3. 손실함수 테스트&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mean Squared Error 를 python으로 구현 해보자.&lt;/li&gt;
+  &lt;li&gt;Cross Entropy Error를 python을 구현 해보자.&lt;/li&gt;
+  &lt;li&gt;실제 테스트를 해보자.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://subinium.github.io/Keras-1/&quot;&gt;https://subinium.github.io/Keras-1/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sacko.tistory.com/17?category=632408&quot;&gt;https://sacko.tistory.com/17?category=632408&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sacko.tistory.com/37?category=632408&quot;&gt;https://sacko.tistory.com/37?category=632408&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 21 Nov 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/deep%20learning/2019/11/21/DL(2)-mulit-layer-network-activate-function-loss-function-copy/</link>
+        <guid isPermaLink="true">http://localhost:4000/deep%20learning/2019/11/21/DL(2)-mulit-layer-network-activate-function-loss-function-copy/</guid>
+        
+        <category>Activate Function</category>
+        
+        <category>Loss Function</category>
+        
+        <category>Deep Learning</category>
+        
+        
+        <category>Deep Learning</category>
+        
+      </item>
+    
+      <item>
+        <title>딥러닝(1) - 퍼셉트론</title>
+        <description>&lt;h1 id=&quot;1-들어가기-전에&quot;&gt;1. 들어가기 전에&lt;/h1&gt;
+&lt;h2 id=&quot;11-ai의-역사&quot;&gt;1.1. AI의 역사&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;1943년: 최초 신경망 모델 제안&lt;/li&gt;
   &lt;li&gt;1950년: 앨런 튜링이 튜링 테스트 제안&lt;/li&gt;
@@ -28,7 +1356,43 @@
 &lt;/ul&gt;
 &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/history.jpg&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
 
-&lt;h2 id=&quot;deep-learning-machine-learning&quot;&gt;Deep Learning (Machine Learning)&lt;/h2&gt;
+&lt;h2 id=&quot;12-ai-ml-dl&quot;&gt;1.2. AI, ML, DL&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;AI(Artificial Intelligence): 사고나 학습 등 인간이 가진 지적 능력을 컴퓨터를 통해 구현하는 기술&lt;/li&gt;
+  &lt;li&gt;ML(Machine Learning): 컴퓨터가 스스로 학습하여 인공지능의 성능을 향상시키는 기술&lt;/li&gt;
+  &lt;li&gt;DL(Deep Learning): 인간의 뉴런과 비슷한 인공신경망 방식으로 정보를 처리하는 기술&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/ai_ml_dl.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h2 id=&quot;13-machine-learning&quot;&gt;1.3. Machine Learning&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;먼저 그림과 같이 컴퓨터에게 문제와 답을 알려줍니다.&lt;/li&gt;
+  &lt;li&gt;이후, 관련 문제를 내면 컴퓨터가 정답을 알아 맞추게 됩니다.
+    &lt;blockquote&gt;
+      &lt;p&gt;이것이 가능한 이유는 컴퓨터가 데이터(문제) 답(label)으로 학습하며 직접 프로그램(알고리즘)을 작성하기 때문&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/ml.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;종류&quot;&gt;종류&lt;/h3&gt;
+&lt;h4 id=&quot;1-지도학습-supervised-learning&quot;&gt;1) 지도학습 (Supervised Learning)&lt;/h4&gt;
+&lt;p&gt;훈련데이터와 정답을 가지며, 데이터를 분류/예측하는 함수를 만들어내는 기계학습 방법&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;분류: KNN(K-Nearest Neighbors), 나이브 베이즈, 결정트리, 서포트 벡터머신, 아프리오 알고리즘&lt;/li&gt;
+  &lt;li&gt;회귀: 선형회귀(Linear Regression), 신경망&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2-비지도학습-unsupervisedpredictive-learning&quot;&gt;2) 비지도학습 (Unsupervised/Predictive Learning)&lt;/h4&gt;
+&lt;p&gt;정답없이 훈련데이터만 가지고 데이터로부터 숨겨진 패턴을 탐색하는 기계학습의 방법&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;클러스터링: 연관규칙(apriori), k-means&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-강화학습-reinforcement-learning&quot;&gt;3) 강화학습 (Reinforcement Learning)&lt;/h4&gt;
+&lt;p&gt;어떤 환경에서 정의된 에이전트가 현재 상태를 인식하여 선택 가능한 행동들 중 보상을 최대화하는 행동 혹은 행동 순서를 선택하는 방법&lt;/p&gt;
+
+&lt;h2 id=&quot;14-deep-learning&quot;&gt;1.4. Deep Learning&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;딥 러닝은 최신 인공 신경망(Artificial neural network) 기술로 인간 두뇌의 메커니즘을 시뮬레이션&lt;/li&gt;
   &lt;li&gt;인간의 뇌는 정보를 전달하기 위해 뉴런(neuron)과 뉴런들을 연결하는 시냅스(synapse)로 구성&lt;/li&gt;
@@ -62,7 +1426,8 @@
   &lt;li&gt;입력(input) 신호의 총합이 정해진 임계값($\theta$) 넘었을 때 $1$을 출력(output), 넘지 못하면 $0$ 또는 $-1$ 출력&lt;/li&gt;
   &lt;li&gt;각 입력신호에 고유한 weight 부여되며 기계학습은 이 weight(입력을 조절하니 매개변수로도 볼 수 있음)의 값을 정하는 작업&lt;/li&gt;
 &lt;/ul&gt;
-&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/perceptron.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/perceptron_1.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
 &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/perceptron_2.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
 &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/perceptron_3.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
 &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/perceptron_4.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
@@ -76,12 +1441,16 @@
 
 &lt;h2 id=&quot;23-가중치weight와-편향bias&quot;&gt;2.3. 가중치(weight)와 편향(bias)&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;앞의 퍼셉트론 수식에서 나오는 세타$\theta$를 $-b$로 치환하여 좌변으로 넘기면 아래와 같이 되며 여기에서 $b$를 편향(bias)라고 할 수 있다.
-&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+  &lt;li&gt;앞의 퍼셉트론 수식에서 나오는 세타$\theta$를 $-b$로 치환하여 좌변으로 넘기면 아래와 같이 되며 여기에서 $b$를 편향(bias)라고 할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{matrix}
 b+w_1x_1+w_2x_2&lt;0 \Rightarrow 0\\
 b+w_1x_1+w_2x_2 \geqq 0 \Rightarrow 1
-\end{matrix} %]]&gt;&lt;/script&gt;&lt;/li&gt;
+\end{matrix} %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
   &lt;li&gt;기계학습 분야에서는 모델이 학습 데이터에 과적합(overfitting)되는 것을 방지하는 것이 중요
     &lt;ul&gt;
       &lt;li&gt;과적합: 모델이 엄청 유연해서 학습 데이터는 귀신같이 잘 분류하지만, 다른 평가 데이터를 넣어봤을 때는 제대로 성능을 발휘하지 못하는 것을 말한다. 어느 데이터를 넣어도 일반적으로 잘 들어맞는 모델을 만드는 것이 중요하다.&lt;/li&gt;
@@ -103,46 +1472,282 @@ b+w_1x_1+w_2x_2 \geqq 0 \Rightarrow 1
 &lt;ul&gt;
   &lt;li&gt;AND와 OR과 같은 선형 데이터는 분류 가능하지만, XOR과 같은 형태의 비선형 데이터는 분류가 불가능하다
     &lt;ul&gt;
-      &lt;li&gt;AND 함수: x1과 x2 중 모두(and) 1일때 1을 출력
-|x1|x2|y|
-|:-:|:-:|:-:|
-|0|0|0|
-|0|1|0|
-|1|0|0|
-|1|1|1|&lt;/li&gt;
-      &lt;li&gt;OR 함수: x1과 x2 중 하나만(or) 1이면 1을 출력
-|x1|x2|y|
-|:-:|:-:|:-:|
-|0|0|0|
-|0|1|1|
-|1|0|1|
-|1|1|1|&lt;/li&gt;
-      &lt;li&gt;XOR 함수: x1과 x2 중 어느 한쪽이 1일 때만 1을 출력 (둘다 1이면 0 출력)
-|x1|x2|y|
-|:-:|:-:|:-:|
-|0|0|0|
-|0|1|1|
-|1|0|1|
-|1|1|0|&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;AND 게이트: x1과 x2 중 모두(and) 1일때 1을 출력&lt;/p&gt;
+
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_1$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_2$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$y$&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+
+        &lt;blockquote&gt;
+          &lt;h4 id=&quot;python-numpy-패키지&quot;&gt;python numpy 패키지&lt;/h4&gt;
+          &lt;ol&gt;
+            &lt;li&gt;숫자배열 연산을 위한 라이브러리입니다.&lt;/li&gt;
+            &lt;li&gt;numpy array는 파이썬 리스트보다 속도가 빠르며 리스트간 연산에 편의성을 제공합니다.&lt;/li&gt;
+            &lt;li&gt;sorting이나 indexing, intersection을 찾는 경우에도 속도가 빠릅니다.&lt;/li&gt;
+            &lt;li&gt;평균, 중앙값, 최빈값, 사분위수, 분산, 표준편차를 찾는 경우에도 리스트보다 훨씬 코드가 간단하고 속도가 빠릅니다.&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/blockquote&gt;
+
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AND&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.7&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#   print(x1, x2)
+#   print(w*x)
+&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# array의 곱셈의 합
+&lt;/span&gt;      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; ==&amp;gt; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AND&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;OR 게이트: x1과 x2 중 하나만(or) 1이면 1을 출력&lt;/p&gt;
+
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_1$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_2$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$y$&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;OR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; ==&amp;gt; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;NAND 게이트: x1과 x2 중 하나만(or) 0이면 1을 출력&lt;/p&gt;
+
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_1$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_2$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$y$&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;NAND&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.7&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; ==&amp;gt; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAND&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;XOR 게이트: x1과 x2 중 어느 한쪽이 1일 때만 1을 출력 (둘다 1이면 0 출력)&lt;/p&gt;
+
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_1$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$x_2$&lt;/th&gt;
+              &lt;th style=&quot;text-align: center&quot;&gt;$y$&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+              &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+
+        &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/xor.gif&quot; width=&quot;100%&quot; /&gt;&lt;/center&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/xor.gif&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
-
-&lt;ul&gt;
   &lt;li&gt;한계점이 밝혀지면서 한동안 소외 받았고, 퍼셉트론을 제시한 로젠블랫은 자살 같은 사고로 세상을 떠났고 시간이 흐른 뒤에야 그의 업적이 재조명 받았다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;26-다층-퍼셉트론을-통한-한계-극복&quot;&gt;2.6. 다층 퍼셉트론을 통한 한계 극복&lt;/h2&gt;
+&lt;h2 id=&quot;26-다층-퍼셉트론multi-layer-perceptron을-통한-한계-극복&quot;&gt;2.6. 다층 퍼셉트론(Multi Layer Perceptron)을 통한 한계 극복&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;단층 퍼셉트론: AND, OR, NAND 게이트와 같이 입력층에 가중치를 곱해 바로 출력되는 퍼셉트론
+    &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/perceptron.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+  &lt;/li&gt;
+  &lt;li&gt;다층 퍼셉트론: 퍼셉트론을 층으로 쌓은 것으로,입력층과 출력층 사이 은닉층이 존재하는 것
+    &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/multi_perceptron.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+  &lt;/li&gt;
+  &lt;li&gt;위와 같은 다층 퍼셉트론(AND, OR, NAND를 조합)으로 XOR 게이트를 구현할 수 있음
+    &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/XOR_1.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
+    &lt;center&gt;&lt;img src=&quot;https://mioscode.github.io/assets/images/dl1/gate.png&quot; width=&quot;50%&quot; /&gt;&lt;/center&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Users/somi.han/Documents/Deep%20Learning/Perceptron_XOR.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;$x_1$&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;$x_2$&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;$s_1$&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;$s_2$&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;$y$&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
-&lt;p&gt;https://journal.jp.fujitsu.com/en/2016/02/09/01/
-https://sacko.tistory.com/10?category=632408
-https://www.neuraldesigner.com/blog/perceptron-the-main-component-of-neural-networks
-https://github.com/chaitjo/Perceptron
-http://ecee.colorado.edu/~ecen4831/lectures/NNet3.html&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;XOR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AND&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NAND&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; ==&amp;gt; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;XOR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://journal.jp.fujitsu.com/en/2016/02/09/01/&quot;&gt;https://journal.jp.fujitsu.com/en/2016/02/09/01/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sacko.tistory.com/10?category=632408&quot;&gt;https://sacko.tistory.com/10?category=632408&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.neuraldesigner.com/blog/perceptron-the-main-component-of-neural-networks&quot;&gt;https://www.neuraldesigner.com/blog/perceptron-the-main-component-of-neural-networks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/chaitjo/Perceptron&quot;&gt;https://github.com/chaitjo/Perceptron&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ecee.colorado.edu/~ecen4831/lectures/NNet3.html&quot;&gt;http://ecee.colorado.edu/~ecen4831/lectures/NNet3.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Thu, 14 Nov 2019 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/deep%20learning/2019/11/14/DL(1)-perceptron/</link>
@@ -181,6 +1786,106 @@ mysql  Ver 15.1 Distrib 10.3.13-MariaDB, for osx10.14 (x86_64) using readline 5.
         
         
         <category>MySQL Workbench</category>
+        
+      </item>
+    
+      <item>
+        <title>(Docker) Go Docker 빌드 및 실행</title>
+        <description>&lt;h1 id=&quot;macos-docker-설치&quot;&gt;(macOS) Docker 설치&lt;/h1&gt;
+&lt;p&gt;Install Docker Desktop on Mac
+https://docs.docker.com/docker-for-mac/install/&lt;/p&gt;
+
+&lt;h1 id=&quot;docker-image-빌드-및-실행&quot;&gt;Docker image 빌드 및 실행&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;(Dockerfile 없으면) Dockerfile 생성&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dockerfile References: https://docs.docker.com/engine/reference/builder/
+
+# Start from the latest golang base image
+FROM golang:latest
+
+# Add Maintainer Info
+LABEL maintainer=&quot;mioscode &amp;lt;mioscode@email.com&amp;gt;&quot;
+
+# Set the Current Working Directory inside the container
+WORKDIR /app
+
+## Copy go mod and sum files
+# COPY go.mod go.sum ./
+
+## Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed
+# RUN go mod download
+
+# Copy the source from the current directory to the Working Directory inside the container
+COPY . .
+
+# 
+RUN go get github.com/labstack/echo \
+ &amp;amp;&amp;amp; go get github.com/dgrijalva/jwt-go
+
+# Build the Go app
+RUN go build -o main .
+
+# Expose port 8080 to the outside world
+EXPOSE 8080
+
+# Command to run the executable
+CMD [&quot;./main&quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;build the Docker image&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker build -t project_name .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can list all the available images by typing the following command&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker image ls
+REPOSITORY                    TAG                            IMAGE ID            CREATED             SIZE
+go-docker                     latest                         ed03a0732734        21 seconds ago      830MB    
+golang                        latest                           2422e4d43e15     
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Running the Docker image&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker run -d -p 8080:8080 project_name
+84e43b3651aa0ebf7b1ed843127dd2f4d179bab006e6bcf55a873772f838e99c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finding Running containers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker container ls
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES
+84e43b3651aa        project_name             &quot;./main&quot;            8 minutes ago       Up 8 minutes        0.0.0.0:8080-&amp;gt;8080/tcp   practical_shirley
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stopping the container&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker container stop 84e43b3651aa
+84e43b3651aa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sun, 20 Oct 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/docker/2019/10/20/go-docker-build-and-run/</link>
+        <guid isPermaLink="true">http://localhost:4000/docker/2019/10/20/go-docker-build-and-run/</guid>
+        
+        <category>Go</category>
+        
+        <category>Docker</category>
+        
+        
+        <category>Docker</category>
         
       </item>
     
@@ -2346,824 +4051,6 @@ Server running... press ctrl-c to stop.
         
         
         <category>ERMaster</category>
-        
-      </item>
-    
-      <item>
-        <title>(macOS) Go-Vue.js 2-Quasar 개발 셋팅</title>
-        <description>&lt;h1 id=&quot;setting&quot;&gt;Setting&lt;/h1&gt;
-&lt;h2 id=&quot;1-homebrew&quot;&gt;1. Homebrew&lt;/h2&gt;
-&lt;p&gt;update&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;xcode command line tool 없으면 설치&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;2-nodejsnpm-최신-버전-설치&quot;&gt;2. node.js/npm 최신 버전 설치&lt;/h2&gt;
-&lt;p&gt;nodejs.org
-설치 확인&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm -v
-6.4.1
-$ node -v
-v10.15.3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;3-golang-최신-버전-설치&quot;&gt;3. golang 최신 버전 설치&lt;/h2&gt;
-&lt;p&gt;golang.org&lt;/p&gt;
-
-&lt;h2 id=&quot;4-github-desktop-설치&quot;&gt;4. GitHub Desktop 설치&lt;/h2&gt;
-&lt;p&gt;github.com&lt;/p&gt;
-
-&lt;h2 id=&quot;5-mariadb-설치&quot;&gt;5. mariaDB 설치&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew install mariadb 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;6-quasar-설치&quot;&gt;6. Quasar 설치&lt;/h2&gt;
-&lt;p&gt;vue-cli 설치&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install -g vue-cli # or @vue/cli @vue/cli-init // recommended
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;61-quasar-cli-설치&quot;&gt;6.1. quasar-cli 설치&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm uninstall -g quasar-cli
-removed 1111 packages in 9.432s
-$ npm i -g quasar-cli@0.6.5
-$ quasar
-...
-Commands
-init          Create a project folder
-dev           Start a dev server for your App
-build         Build your app for production
-clean         Clean all build artifacts
-new           Quickly scaffold page/layout/component/... vue file
-mode          Add/remove Quasar Modes for your App
-info          Display info about your machine and your App
-serve         Create an ad-hoc (production-ready) server on App distributables
-help          Displays this message
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;62-cordova-설치&quot;&gt;6.2. Cordova 설치&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install -g cordova
-/usr/local/bin/cordova -&amp;gt; /usr/local/lib/node_modules/cordova/bin/cordova
-+ cordova@9.0.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;quasar-cli가-전역-적으로-설치되면-이제-새로운-프로젝트를-생성-가능&quot;&gt;Quasar CLI가 전역 적으로 설치되면 이제 새로운 프로젝트를 생성 가능&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ quasar init &amp;lt;folder-name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;개발-시작&quot;&gt;개발 시작&lt;/h1&gt;
-
-&lt;h2 id=&quot;developing-a-spa&quot;&gt;Developing a SPA&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ quasar dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;or&quot;&gt;…or&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ quasar dev -m spa
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;developing-for-ssr&quot;&gt;Developing for SSR&lt;/h2&gt;
-&lt;p&gt;$ quasar dev -m ssr&lt;/p&gt;
-
-&lt;h2 id=&quot;developing-a-pwa&quot;&gt;Developing a PWA&lt;/h2&gt;
-&lt;p&gt;$ quasar dev -m pwa&lt;/p&gt;
-
-&lt;h2 id=&quot;developing-a-mobile-app-through-cordova&quot;&gt;Developing a Mobile App (through Cordova)&lt;/h2&gt;
-&lt;p&gt;$ quasar dev -m cordova -T [android|ios]&lt;/p&gt;
-
-&lt;h2 id=&quot;developing-an-electron-app&quot;&gt;Developing an Electron App&lt;/h2&gt;
-&lt;p&gt;$ quasar dev -m electron&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-# DB Start, Create
-## Conf 폴더 생성
-## Start 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;$ mysql.service start&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## Create
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;$ mysql -uroot
-[mysql]
-CREATE DATABASE db_name;
-CREATE USER ‘user_name’ IDENTIFIED BY ‘user_name’;
-CREATE USER ‘user_name’@’%’ IDENTIFIED BY ‘user_name’;
-CREATE USER ‘user_name’@’localhost’ IDENTIFIED BY ‘user_name’;
-CREATE USER ‘user_name’@’127.0.0.0’ IDENTIFIED BY ‘user_name’;&lt;/p&gt;
-
-&lt;p&gt;GRANT ALL PRIVILEGES ON db_name.* TO user_name;
-GRANT ALL PRIVILEGES ON db_name.* TO user_name@’%’;
-GRANT ALL PRIVILEGES ON db_name.* TO user_name@’127.0.0.0’ with grant option;
-GRANT ALL PRIVILEGES ON db_name.* TO user_name@’localhost’ with grant option;&lt;/p&gt;
-
-&lt;p&gt;SET SESSION FOREIGN_KEY_CHECKS=0;&lt;/p&gt;
-
-&lt;p&gt;/* Drop Tables */&lt;/p&gt;
-
-&lt;p&gt;DROP TABLE IF EXISTS USER;&lt;/p&gt;
-
-&lt;p&gt;/* Create Tables */&lt;/p&gt;
-
-&lt;p&gt;CREATE TABLE USER
-(
-USER_IDX int NOT NULL AUTO_INCREMENT,
-LOGIN_ID varchar(100) COMMENT ‘email’,
-PASSWORD text,
-NAME varchar(100),
-EMAIL varchar(100),
-LOGIN_TIME datetime COMMENT ‘last login datetime’,
-UPDATE_TIME datetime COMMENT ‘last updated datetime’,
-CREATE_TIME datetime NOT NULL COMMENT ‘created datetime’,
-PRIMARY KEY (USER_IDX)
-);&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-## (macOS) golang backend service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;cd /…/ProjectName
-export GOROOT=”/usr/local/go”
-export GOPATH=”/…/ProjectName” // Cloned Location
-go get github.com/dgrijalva/jwt-go
-go get github.com/jmoiron/sqlx
-go get github.com/go-sql-driver/mysql
-go get github.com/labstack/echo
-go get github.com/sirupsen/logrus
-//go get github.com/spf13/viper
-go build server.go
-./server&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-## (macOS) vue.js 2 frontend service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;cd /…/ProjectName/web
-npm install
-npm run dev&lt;/p&gt;
-
-&lt;p&gt;chrome: http://localhost:8890/#/
-```&lt;/p&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://flutter.dev/docs/get-started/install/macos&quot;&gt;https://flutter.dev/docs/get-started/install/macos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 11 Apr 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/quasar/2019/04/11/Go-Vue.js-Quasar-dev-setting/</link>
-        <guid isPermaLink="true">http://localhost:4000/quasar/2019/04/11/Go-Vue.js-Quasar-dev-setting/</guid>
-        
-        <category>Go</category>
-        
-        <category>Vue.js</category>
-        
-        <category>Quasar</category>
-        
-        
-        <category>Quasar</category>
-        
-      </item>
-    
-      <item>
-        <title>(macOS) Flutter 설치하기</title>
-        <description>&lt;h1 id=&quot;minimum-requirements&quot;&gt;Minimum requirements&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Operating Systems: macOS (64-bit)&lt;/li&gt;
-  &lt;li&gt;Disk Space: 700 MB (does not include disk space for IDE/tools).&lt;/li&gt;
-  &lt;li&gt;Tools: Flutter depends on these command-line tools being available in your environment.
-    &lt;ul&gt;
-      &lt;li&gt;bash&lt;/li&gt;
-      &lt;li&gt;curl&lt;/li&gt;
-      &lt;li&gt;git 2.x&lt;/li&gt;
-      &lt;li&gt;mkdir&lt;/li&gt;
-      &lt;li&gt;rm&lt;/li&gt;
-      &lt;li&gt;unzip&lt;/li&gt;
-      &lt;li&gt;which&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;download&quot;&gt;Download&lt;/h1&gt;
-&lt;h2 id=&quot;최신-stable-release-받기&quot;&gt;최신 stable release 받기&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_v1.2.1-stable.zip&quot;&gt;flutter_macos_v1.2.1-stable.zip&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;원하는-위치로-이동해서-파일-실행&quot;&gt;원하는 위치로 이동해서 파일 실행&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/development
-$ unzip ~/Downloads/flutter_macos_v1.2.1-stable.zip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;path-지정&quot;&gt;Path 지정&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ export PATH=&quot;$PATH:`pwd`/flutter/bin&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;flutter-doctor-실행&quot;&gt;Flutter doctor 실행&lt;/h1&gt;
-&lt;p&gt;셋업 완료하기 위해 설치해야하는 depedencies 있는지 확인&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ flutter doctor
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;위 명령어 실행하면 environment 검사 후 터미널에 리포트를 보여준다.
-Dart SDK는 Flutter와 번들로 제공되므로 설치할 필요 없다.
-리포트에서 설치할 다른 소프트웨어 있는지 확인&lt;/p&gt;
-
-&lt;p&gt;아래는 내 리포트&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Doctor summary (to see all details, run flutter doctor -v):
-[✓] Flutter (Channel stable, v1.2.1, on Mac OS X 10.14 18A391, locale en-KR)
-[!] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
-    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
-[✗] iOS toolchain - develop for iOS devices
-    ✗ Xcode installation is incomplete; a full installation is necessary for iOS development.
-        Download at: https://developer.apple.com/xcode/download/
-        Or install Xcode via the App Store.
-        Once installed, run:
-        sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-    ✗ libimobiledevice and ideviceinstaller are not installed. To install with Brew, run:
-        brew update
-        brew install --HEAD usbmuxd
-        brew link usbmuxd
-        brew install --HEAD libimobiledevice
-        brew install ideviceinstaller
-    ✗ ios-deploy not installed. To install:
-        brew install ios-deploy
-    ✗ CocoaPods not installed.
-        CocoaPods is used to retrieve the iOS platform side's plugin code that responds to your
-        plugin usage on the Dart side.
-        Without resolving iOS dependencies with CocoaPods, plugins will not work on iOS.
-        For more info, see https://flutter.io/platform-plugins
-        To install:
-        brew install cocoapods
-        pod setup
-[!] Android Studio (version 3.2)
-    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
-    ✗ Dart plugin not installed; this adds Dart specific functionality.
-[!] Connected device
-    ! No devices available
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;리포트에서 말하는대로 순서대로 설치
-먼저 안드로이드 라이센스&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ flutter doctor --android-licenses
-Warning: File /Users/somi.han/.android/repositories.cfg could not be loaded.    
-5 of 6 SDK package licenses not accepted. 100% Computing updates...             
-Review licenses that have not been accepted (y/N)? y
-....
-Accept? (y/N): y
-.....
-Accept? (y/N): y
-.....
-Accept? (y/N): y
-....
-Accept? (y/N): y
-...
-Accept? (y/N): y
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew update
-$ brew install --HEAD usbmuxd
-$ brew link usbmuxd
-$ brew install --HEAD libimobiledevice
-$ brew install ideviceinstaller
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew install ios-deploy
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew install cocoapods
-$ pod setup
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;안드로이드 스튜디오에서 Dart, Flutter repository검색해서 설치
-(Flutter 설치하면 Dart 함께 설치됨)&lt;/p&gt;
-
-&lt;h1 id=&quot;update-path&quot;&gt;Update Path&lt;/h1&gt;
-
-&lt;h1 id=&quot;platform-setup&quot;&gt;Platform setup&lt;/h1&gt;
-&lt;h2 id=&quot;ios&quot;&gt;iOS&lt;/h2&gt;
-&lt;h3 id=&quot;install-xcode&quot;&gt;Install Xcode&lt;/h3&gt;
-&lt;p&gt;Xcode 9.0 이후 버전 필요
-설치 (web or Mac App Store)&lt;/p&gt;
-
-&lt;h3 id=&quot;set-up-the-ios-simulator&quot;&gt;Set up the iOS simulator&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;시뮬레이터 찾아서 실행하거나, 아래 커맨드 사용
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ open -a Simulator
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;시뮬레이터 메뉴 Hadrware &amp;gt; Device 에서 64-bit 디바이스(iPhone 5s 이후) 사용하는지 확인&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;create-and-run-a-simple-flutter-app&quot;&gt;Create and run a simple Flutter app&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;앱 생성
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ flutter create my_app
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;스타터 앱이 포함된 my_app 디렉토리 만들어진다. 디렉토리 안으로 이동
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd my_app
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;시뮬레이터에서 앱 실행
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ flutter run
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;img src=&quot;./assets/image/flutter_demo_app.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;ios-devices로-배포&quot;&gt;iOS devices로 배포&lt;/h3&gt;
-
-&lt;h2 id=&quot;android&quot;&gt;Android&lt;/h2&gt;
-&lt;h3 id=&quot;install-android-studio&quot;&gt;Install Android Studio&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Android Studio 다운로드 및 설치&lt;/li&gt;
-  &lt;li&gt;Android Studio를 시작하고 ‘Android Studio 설치 마법사’를 실행한다. Android 용으로 개발할 때 Flutter에서 필요로하는 최신 Android SDK, Android SDK Platform-Tools 및 Android SDK Build-Tools가 설치된다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;set-up-the-android-emulator&quot;&gt;Set up the Android emulator&lt;/h3&gt;
-
-&lt;h1 id=&quot;set-up-an-editor&quot;&gt;Set up an editor&lt;/h1&gt;
-&lt;p&gt;Android Studio or IntelliJ or Visual Studio Code&lt;/p&gt;
-
-&lt;h1 id=&quot;test-dirve-android-studio&quot;&gt;Test dirve (Android Studio)&lt;/h1&gt;
-
-&lt;h2 id=&quot;create-the-app&quot;&gt;Create the App&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Start a new Flutter project&lt;/strong&gt; 선택&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Flutter Application&lt;/strong&gt; 선택, &lt;strong&gt;Next&lt;/strong&gt; 버튼 클릭&lt;/li&gt;
-  &lt;li&gt;Flutter SDK Path 텍스트 필드에 SDK의 위치가 지정되어 있는지 확인 (SDK를 아직 설치하지 않은 경우 설치)&lt;/li&gt;
-  &lt;li&gt;프로젝트 이름 입력 (예: myapp) 후 &lt;strong&gt;Next&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Finish&lt;/strong&gt; 클릭&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;run-the-app&quot;&gt;Run the app&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;./assets/image/android_toolbar.png&quot; alt=&quot;&quot; /&gt;
-안드로이드 스튜디오 메인 툴바에서 Target 선택 후 Run 아이콘 클릭
-안드로이드 디바이스가 사용 가능한 것으로 표시되지 않으면 &lt;strong&gt;Tools &amp;gt; Android &amp;gt; AVD Manager&lt;/strong&gt;를 선택하고 거기에 아이콘을 생성&lt;/p&gt;
-
-&lt;h2 id=&quot;try-hot-reload&quot;&gt;Try hot reload&lt;/h2&gt;
-&lt;p&gt;Flutter는 재부팅이 빠른 개발주기를 제공하며 앱 상태를 다시 시작하거나 잃지 않고 실행중인 앱의 코드를 다시로드 할 수 있다.
-소스 변경을 IDE, CLI에 바로 반영하여 시뮬레이터, 에뮬레이터, 실제 장치에 변경
-APP 실행 중 아래 대로 변경해보자&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;lib/main.dart&lt;/strong&gt; 오픈&lt;/li&gt;
-  &lt;li&gt;다음 String을
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'You have pushed the button this many times'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;다음으로 변경&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'You have clicked the button this many times'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;변화 저장: &lt;strong&gt;Save All&lt;/strong&gt; 호출하거나 &lt;strong&gt;Hot Reload&lt;/strong&gt; 클릭 (cmd+)&lt;/li&gt;
-  &lt;li&gt;실행 중인 앱에 String 업데이트 거의 즉시 반영됨&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://flutter.dev/docs/get-started/install/macos&quot;&gt;https://flutter.dev/docs/get-started/install/macos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 03 Apr 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/flutter/2019/04/03/flutter-install/</link>
-        <guid isPermaLink="true">http://localhost:4000/flutter/2019/04/03/flutter-install/</guid>
-        
-        <category>Flutter</category>
-        
-        <category>install</category>
-        
-        
-        <category>Flutter</category>
-        
-      </item>
-    
-      <item>
-        <title>한 대의 컴퓨터에서 여러 개의 github 계정 사용하기</title>
-        <description>&lt;h1 id=&quot;1-새로운-ssh-키-생성&quot;&gt;1. 새로운 SSH 키 생성&lt;/h1&gt;
-&lt;p&gt;SSH 키들은 기본적으로 사용자의 ~/.ssh 디렉토리에 저장됨
-먼저 기존의 키들을 확인&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ~/.ssh
-$ ls
-id_rsa.pub    id_rsa
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;.pub 이 붙은 파일과 그렇지 않은 파일을 볼 수 있는데, .pub 이 붙은 것이 공개키이고 다른 것은 개인키&lt;/p&gt;
-
-&lt;p&gt;새로운 SSH 키를 만들기
-기존에 생성된 SSH 키가 없거나, .ssh 디렉토리가 없어도 다음 명령으로 만들 수 있다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &quot;username@gmail.com&quot; // 새 계정의 이메일 주소
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;새로운 키를 저장할 경로를 묻는데 이 때, 기존의 키를 덮어쓰지 않도록 조심
-id_second 라는 이름으로 SSH 키를 생성&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ Enter file in which to save the key (/Users/YOURNAME/.ssh/id_rsa):/Users/YOURNAME/.ssh/id_rsa_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;암호를 두 번 입력하라고 하는데 엔터를 쳐서 넘어가면 새로운 키가 생성된 것을 확인 가능&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls
-id_rsa.pub    id_rsa_second.pub   id_rsa    id_rsa_second   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;id_rsa_second.pub 의 내용을 복사해서 다음 단계에서 사용&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat id_rsa_second.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBvlgEqRqaVp/zOoxtAnKdMr6/y9SaP0Y3MGG4648N+MLD6yy+JjOYE3HnLNDWsOhsOXkjr7phVHYBqVd6QtpHZrgw5PXOEo1V00Es+HGcHU0sONLWK/OWtV7598eULXnQfNjPlND/09BW+D5IXI8plNRcjfaD4dRxtSOtolZ5jxxxT4gpR5v17Axm3ut4ukS+6f6GHNYZ4QcZJtlaps+eN0Ol/juEYy47r3l5CPIc9sxyQGE4o5Mm4LhLk769yVQGgGcR21Aj0DuEVN0HyeEZcAbqFqze9ZY5kdtYcI2L4B23X781nlX6zfpeVL9iU9pxkw/UGLUx2bcSGHOfrvhX username@gmail.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;2-ssh-키-설정&quot;&gt;2. SSH 키 설정&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;github&lt;/a&gt; 사이트에서 두 번쨰 계정 생성하고 로그인&lt;/p&gt;
-
-&lt;p&gt;오른쪽 위 아이콘 클릭
-Settings -&amp;gt; SSH Keys -&amp;gt; Nes SSH key 클릭&lt;/p&gt;
-
-&lt;p&gt;Title : 구별 가능한 간단한 이름
-Key : 복사해둔 키&lt;/p&gt;
-
-&lt;p&gt;Add SSH key 버튼 눌러서 완료&lt;/p&gt;
-
-&lt;p&gt;터미널에서 생성한 키를 SSH에 추가&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-add ~/.ssh/id_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;3-config-파일-만들기&quot;&gt;3. Config 파일 만들기&lt;/h1&gt;
-&lt;p&gt;로컬 저장소에서 github으로 푸시할 때 어떤 키 참조할 것인지 결정하도록 config 만들기&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd .ssh
-$ vim config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;config 파일에 다음 내용 입력&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Default account
-Host github.com
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa
-# Second account
-Host github.com-second
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;4-새-계정으로-push&quot;&gt;4. 새 계정으로 Push&lt;/h1&gt;
-&lt;p&gt;지금까지의 작업이 잘 되었는지 확인
-먼저 github 사이트에서 새 repository 를 만든다. 그리고 로컬에서 원하는 위치에 새 폴더를 만들고 다음 명령을 입력&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init
-$ git commit -am &quot;first commit&quot;
-$ git remote add origin git@github.com-second:YOURNAME/REPOSITORY.git
-$ git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;여기서 YOURNAME 에는 github 계정의 이름, REPOSITORY 에는 새로 만든 repository의 이름을 입력
-유의해야 할 점은, config 파일에서 Host github.com-second 라고 입력했으므로 원격저장소 설정시 git@github.com 대신 git@github.com-second 를 입력해야 한다는 점
-이것은 clone 시에도 마찬가지&lt;/p&gt;
-
-&lt;p&gt;만약 기존의 계정으로 작업하려면 원래하던 방법으로 git@github.com으로 하면 된다.&lt;/p&gt;
-
-&lt;p&gt;추가적으로, 새 계정으로 작업하는 폴더에서 다음 명령으로 commit 시 사용될 이름과 이메일 주소를 변경할 수 있다.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git config user.name &quot;YOURNAME&quot;
-$ git config user.email &quot;YOUREMAIL&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;note--만약-잘-사용하다가-갑자기-git-access-denied-라는-메세지가-뜨면-아래-명령을-입력한-뒤-다시-시도&quot;&gt;NOTE : 만약 잘 사용하다가 갑자기 git access denied 라는 메세지가 뜨면 아래 명령을 입력한 뒤 다시 시도&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-add ~/.ssh/id_rsa_second
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://aweekj.github.io/using-multiple-accounts-in-git/&quot;&gt;https://aweekj.github.io/using-multiple-accounts-in-git/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574&quot;&gt;How to Work with GitHub and Multiple Accounts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/ko/v1/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot;&gt;Git 서버 - SSH 공개키 만들기&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 31 Mar 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/github/2019/03/31/using-multiple-accounts-in-git/</link>
-        <guid isPermaLink="true">http://localhost:4000/github/2019/03/31/using-multiple-accounts-in-git/</guid>
-        
-        <category>Github</category>
-        
-        
-        <category>Github</category>
-        
-      </item>
-    
-      <item>
-        <title>Git 명령어</title>
-        <description>&lt;h1 id=&quot;1-새로운-git-저장소-만들기&quot;&gt;1. 새로운 Git 저장소 만들기&lt;/h1&gt;
-&lt;p&gt;원하는 작업 폴더 새로 만들고 폴더 안으로 이동해서 새로운 git 저장소 만들기&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd 작업디렉토리
-$ git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;2-저장소-받아오기&quot;&gt;2. 저장소 받아오기&lt;/h1&gt;
-&lt;h2 id=&quot;21-로컬-저장소-복제&quot;&gt;2.1. 로컬 저장소 복제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone /로컬/저장소/경로
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;22-원격-서버-저장소-복제&quot;&gt;2.2. 원격 서버 저장소 복제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone 사용자명@호스트:/원격/저장소/경로
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;3-변경-파일-index에-추가&quot;&gt;3. 변경 파일 Index에 추가&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add *
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add -A
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h1 id=&quot;4-변경-내용-확정-commit--head에-반영&quot;&gt;4. 변경 내용 확정 (Commit) = Head에 반영&lt;/h1&gt;
-&lt;p&gt;변경 파일들을 로컬 저장소에 등록하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt; 명령어 사용 &lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt;은 message&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m &quot;이번 확정본에 대한 설명&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;5-변경-내용-발행-push&quot;&gt;5. 변경 내용 발행 (Push)&lt;/h1&gt;
-&lt;p&gt;만약 기존 원격 서버 저장소 복제한 것이 아니라면 원격 서버 주소를 git에 등록
-이제 origin을 사용하면 원격 저장소에 접근 가능해진다&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin https://~~~.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;변경 내용 원격 서버에 올리기 (master brunch)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;다른 brunch로 발행하려면 이름만 변경&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;6-brunch-관리&quot;&gt;6. brunch 관리&lt;/h1&gt;
-&lt;h2 id=&quot;61-로컬에서-branch-만들고-갈아타기&quot;&gt;6.1. 로컬에서 branch 만들고 갈아타기&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -b &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;62-로컬에서-master로-돌아오기&quot;&gt;6.2. 로컬에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;로 돌아오기&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;63-로컬-branch-삭제&quot;&gt;6.3. 로컬 branch 삭제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch -d &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;64-로컬-branch-목록-보기&quot;&gt;6.4 로컬 branch 목록 보기&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch
-  issue1
-* master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;65-새로-만든-로컬-branch를-리모트-저장소에-전송하기-전까지는-다른-사람-접근-불가&quot;&gt;6.5. 새로 만든 로컬 branch를 리모트 저장소에 전송하기 전까지는 다른 사람 접근 불가&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;66-리모트-branch-삭제&quot;&gt;6.6. 리모트 branch 삭제&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin --delete &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;7-pull&quot;&gt;7. pull&lt;/h1&gt;
-&lt;p&gt;로컬 저장소를 원격 저장소에 맞춰 갱신
-원격 저장소의 변경 내용이 로컬 작업 디렉토리에 받아지고(fetch), 병합(merge)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git pull
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;다른 가지에 있는 변경 내용을 현재 가지(예를 들면, master 가지)에 병합하려면 아래 명령 실행&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git merge &amp;lt;brunch 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;충돌 나면 충돌 부분 수정해서 해결&lt;/p&gt;
-
-&lt;p&gt;충돌을 해결했다면, 아래 명령으로 git에게 아까의 파일을 병합하라고 명령&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add &amp;lt;파일 이름&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;변경 내용을 병합하기 전에, 어떻게 바뀌었는지 비교 가능&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git diff &amp;lt;원래 brunch&amp;gt; &amp;lt;비교 대상 brunch&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rogerdudler.github.io/git-guide/index.ko.html&quot;&gt;https://rogerdudler.github.io/git-guide/index.ko.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 31 Mar 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/github/2019/03/31/git-command/</link>
-        <guid isPermaLink="true">http://localhost:4000/github/2019/03/31/git-command/</guid>
-        
-        <category>Github</category>
-        
-        
-        <category>Github</category>
-        
-      </item>
-    
-      <item>
-        <title>Jekyll 테마 변경</title>
-        <description>&lt;h1 id=&quot;gem-based-테마-구조&quot;&gt;Gem-based 테마 구조&lt;/h1&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;assets&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;gem-based-테마-설치&quot;&gt;Gem-based 테마 설치&lt;/h1&gt;
-&lt;h2 id=&quot;gemfile-에-다음-줄-추가&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; 에 다음 줄 추가&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &quot;minimaldmistakes-jekyll&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;terminal에서-bundler실행&quot;&gt;Terminal에서 Bundler실행&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mioscode.github.io$ bundle
-The dependency tzinfo-data (&amp;gt;= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
-Using concurrent-ruby 1.1.5
-Following files may not be writable, so sudo is needed:
-/Library/Ruby/Gems/2.3.0
-/Library/Ruby/Gems/2.3.0/build_info
-/Library/Ruby/Gems/2.3.0/cache
-/Library/Ruby/Gems/2.3.0/doc
-/Library/Ruby/Gems/2.3.0/extensions
-/Library/Ruby/Gems/2.3.0/gems
-/Library/Ruby/Gems/2.3.0/specifications
-Using i18n 0.9.5
-Using minitest 5.8.5
-Using thread_safe 0.3.6
-Using tzinfo 1.2.5
-Using activesupport 4.2.10
-Using public_suffix 3.0.3
-Using addressable 2.5.2
-Using bundler 2.0.1
-Using coffee-script-source 1.11.1
-Using execjs 2.7.0
-Using coffee-script 2.4.1
-Using colorator 1.1.0
-Using ruby-enum 0.7.2
-Using commonmarker 0.17.13
-Using dnsruby 1.61.2
-Using eventmachine 1.2.7
-Using http_parser.rb 0.6.0
-Using em-websocket 0.5.1
-Using ffi 1.10.0
-Using ethon 0.12.0
-Using multipart-post 2.0.0
-Using faraday 0.15.4
-Using forwardable-extended 2.6.0
-Using gemoji 3.0.0
-Using sawyer 0.8.1
-Using octokit 4.13.0
-Using typhoeus 1.3.1
-Using github-pages-health-check 1.16.1
-Using rb-fsevent 0.10.3
-Using rb-inotify 0.10.0
-Using sass-listen 4.0.0
-Using sass 3.7.3
-Using jekyll-sass-converter 1.5.2
-Using ruby_dep 1.5.0
-Using listen 3.1.5
-Using jekyll-watch 2.2.1
-Using kramdown 1.17.0
-Using liquid 4.0.0
-Using mercenary 0.3.6
-Using pathutil 0.16.2
-Using rouge 2.2.1
-Using safe_yaml 1.0.5
-Using jekyll 3.7.4
-Using jekyll-avatar 0.6.0
-Using jekyll-coffeescript 1.1.1
-Using jekyll-commonmark 1.3.1
-Using jekyll-commonmark-ghpages 0.1.5
-Using jekyll-default-layout 0.1.4
-Using jekyll-feed 0.11.0
-Using jekyll-gist 1.5.0
-Using jekyll-github-metadata 2.12.1
-Using mini_portile2 2.4.0
-Using nokogiri 1.10.2
-Using html-pipeline 2.10.0
-Using jekyll-mentions 1.4.1
-Using jekyll-optional-front-matter 0.3.0
-Using jekyll-paginate 1.1.0
-Using jekyll-readme-index 0.2.0
-Using jekyll-redirect-from 0.14.0
-Using jekyll-relative-links 0.6.0
-Using rubyzip 1.2.2
-Using jekyll-remote-theme 0.3.1
-Using jekyll-seo-tag 2.5.0
-Using jekyll-sitemap 1.2.0
-Using jekyll-swiss 0.4.0
-Using jekyll-theme-architect 0.1.1
-Using jekyll-theme-cayman 0.1.1
-Using jekyll-theme-dinky 0.1.1
-Using jekyll-theme-hacker 0.1.1
-Using jekyll-theme-leap-day 0.1.1
-Using jekyll-theme-merlot 0.1.1
-Using jekyll-theme-midnight 0.1.1
-Using jekyll-theme-minimal 0.1.1
-Using jekyll-theme-modernist 0.1.1
-Using jekyll-theme-primer 0.5.3
-Using jekyll-theme-slate 0.1.1
-Using jekyll-theme-tactile 0.1.1
-Using jekyll-theme-time-machine 0.1.1
-Using jekyll-titles-from-headings 0.5.1
-Using jemoji 0.10.2
-Using minima 2.5.0
-Using unicode-display_width 1.5.0
-Using terminal-table 1.8.0
-Using github-pages 197
-Bundle complete! 3 Gemfile dependencies, 85 gems now installed.
-Use `bundle info [gemname]` to see where a bundled gem is installed.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;_configyml-에-테마-셋팅&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; 에 테마 셋팅&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;theme: minimal-mistakes-jekyll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 28 Mar 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/jekyll/2019/03/28/jekyll-theme-change/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2019/03/28/jekyll-theme-change/</guid>
-        
-        <category>Jekyll</category>
-        
-        <category>Github</category>
-        
-        
-        <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Jekyll 사용하여 GitHub Pages 블로그 만들기</title>
-        <description>&lt;h1 id=&quot;jekyll&quot;&gt;Jekyll?&lt;/h1&gt;
-&lt;p&gt;jekyll은 Markdown (또는 Textile), Liquid, HTML &amp;amp; CSS 로 구성된 페이지를 repository 에 push 하면 포스팅이 가능하게 해준다.&lt;/p&gt;
-
-&lt;h1 id=&quot;ruby-설치&quot;&gt;Ruby 설치&lt;/h1&gt;
-&lt;p&gt;mac은 설치되어 있어 생략&lt;/p&gt;
-
-&lt;h1 id=&quot;jekyll-설치&quot;&gt;Jekyll 설치&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo gem install jekyll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;gem: Ruby 언어에서 서드파티 라이브러리를 설치하도록 도와주는 시스템&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;jekyll-로-지역-저장소에-블로그-만들기&quot;&gt;Jekyll 로 지역 저장소에 블로그 만들기&lt;/h1&gt;
-&lt;p&gt;원하는 지역 저장소 위치로 이동&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd local-repository-path/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;블로그 생성&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ jekyll new username.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;이때 username 안쓰면 연동 오류 생기는 듯&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;로컬에서 테스트 실행&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd username.github.io
-~/username.github.io $ jekyll serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;실행 후 웹브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt; 입력&lt;/p&gt;
-
-&lt;h1 id=&quot;github-pages로-원격-저장소-만들기&quot;&gt;GitHub Pages로 원격 저장소 만들기&lt;/h1&gt;
-&lt;h2 id=&quot;git으로-블로그-변동-추적하고-원격-저장소-등록&quot;&gt;Git으로 블로그 변동 추적하고 원격 저장소 등록&lt;/h2&gt;
-&lt;p&gt;Jekyll로 만든 지역 저장소&lt;code class=&quot;highlighter-rouge&quot;&gt;local-repository-path&lt;/code&gt;에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt; 명령어 사용하여 Git 저장소 생성(해당 저장소의 변경사항을 Git이 추적 가능해짐)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add&lt;/code&gt; 명령어로 원격 저장소&lt;code class=&quot;highlighter-rouge&quot;&gt;remote-repository-url&lt;/code&gt;를 &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt;이라는 이름으로 등록(이제 origin을 사용하면 원격 저장소에 접근 가능)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;방법 1:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin https://github.com/username/username.github.io.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;방법 2:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin git@github.com:username/username.github.io.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;블로그-변동-사항-지역-저장소에-저장하기&quot;&gt;블로그 변동 사항 지역 저장소에 저장하기&lt;/h2&gt;
-&lt;p&gt;블로그 파일 변경되면 &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; 명령어 사용해서 지역 저장소에 변경 사항 추가&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;변경 파일들을 로컬 저장소에 등록하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt; 명령어 사용 &lt;code class=&quot;highlighter-rouge&quot;&gt;-m&lt;/code&gt;은 message&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m &quot;first commit&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;지역-저장소-내용을-원격-저장소로-push하여-블로그-업데이트&quot;&gt;지역 저장소 내용을 원격 저장소로 push하여 블로그 업데이트&lt;/h2&gt;
-&lt;p&gt;지역 저장소의 master에 있는 내용을 아까 등록한 원격 저장소 &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt;으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;push&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;끝-확인하기&quot;&gt;끝! 확인하기&lt;/h1&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://username.github.io&lt;/code&gt; 주소로 블로그 업데이트된 것 확인 가능&lt;/p&gt;
-
-&lt;h1 id=&quot;reference&quot;&gt;Reference&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jekyllrb-ko.github.io/&quot;&gt;https://jekyllrb-ko.github.io/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Jekyll 기반의 GitHub Pages에 블로그 만들기 &lt;a href=&quot;http://xho95.github.io/blog/github/jekyll/git/2016/01/11/Make-a-blog-with-Jekyll.html&quot;&gt;http://xho95.github.io/blog/github/jekyll/git/2016/01/11/Make-a-blog-with-Jekyll.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Jekyll 테마 &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;http://jekyllthemes.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 26 Mar 2019 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/jekyll/2019/03/26/github-pages-blog-used-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2019/03/26/github-pages-blog-used-jekyll/</guid>
-        
-        <category>Jekyll</category>
-        
-        <category>Github</category>
-        
-        
-        <category>Jekyll</category>
         
       </item>
     
